@@ -21,10 +21,23 @@ npm run dev
 ## Supabase setup
 
 1. Create a project at [supabase.com](https://supabase.com).
-2. In the SQL editor, run `supabase/schema.sql` to create the `rsvps` table used by the RSVP form.
+2. In the SQL editor, run `supabase/schema.sql` to create the `guests` and `rsvps` tables.
 3. Copy your project's URL and anon (public) key into `.env.local` (see `.env.example`).
 
 The site runs fine without Supabase configured &mdash; every page works except RSVP submission, which shows a notice until credentials are set.
+
+### Uploading the guest list
+
+The RSVP form looks a guest up by name and only shows the Rehearsal Dinner question to people flagged for it. To upload the list:
+
+1. In Supabase, go to **Table Editor** &rarr; **guests** &rarr; **Insert** &rarr; **Import data via spreadsheet**.
+2. Prepare a CSV with these columns:
+   - `full_name` &mdash; exactly how the guest should type it to find themselves (e.g. `Jane Smith`)
+   - `invited_to_rehearsal_dinner` &mdash; `true` or `false`
+   - `plus_one_allowed` &mdash; `true` or `false` (lets that guest indicate they're bringing someone)
+3. Upload it. That's it &mdash; the RSVP page reads live from this table.
+
+RSVP responses land in the `rsvps` table, joined to `guests` by `guest_id`. View or export them from **Table Editor** &rarr; **rsvps**.
 
 ## Deploying to Vercel
 
