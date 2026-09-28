@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react'
 import WatercolorDivider from '../components/WatercolorDivider'
 import PhotoPlaceholder from '../components/PhotoPlaceholder'
+import castleHero from '../assets/watercolor/castle-leslie-hero.jpg'
+import engagementPosed from '../assets/photos/engagement-posed.jpg'
+import engagementOnKnee from '../assets/photos/engagement-on-knee.jpg'
+import engagementBwBoat from '../assets/photos/engagement-bw-boat.jpg'
 
 const WEDDING_DATE = new Date('2027-08-21T15:00:00+01:00')
 
@@ -24,8 +28,14 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden bg-ivy-700 px-4 text-center text-parchment">
-        <div className="absolute inset-0 bg-gradient-to-b from-ivy-900/40 via-ivy-700 to-ivy-800" aria-hidden="true" />
+      <section
+        className="relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden bg-ivy-700 bg-cover bg-center px-4 text-center text-parchment"
+        style={{ backgroundImage: `url(${castleHero})` }}
+      >
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-ivy-900/75 via-ivy-800/65 to-ivy-900/85"
+          aria-hidden="true"
+        />
         <div className="relative z-10">
           <p className="text-sm uppercase tracking-[0.3em] text-gold-300">We&rsquo;re getting married</p>
           <h1 className="font-display mt-4 text-5xl sm:text-7xl">Ciara &amp; Zach</h1>
@@ -43,21 +53,15 @@ export default function Home() {
           the day, travel, and everything in between are coming soon &mdash; for now, here&rsquo;s a little bit about us.
         </p>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3">
-          <div className="aspect-[3/4] overflow-hidden rounded-lg shadow-md sm:col-span-1 sm:row-span-2 sm:aspect-auto">
-            <PhotoPlaceholder alt="Photo of Ciara & Zach" />
+        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="aspect-[3/4] overflow-hidden rounded-lg shadow-md">
+            <PhotoPlaceholder src={engagementPosed} alt="Ciara & Zach, engagement photo" />
           </div>
-          <div className="aspect-square overflow-hidden rounded-lg shadow-md">
-            <PhotoPlaceholder alt="Photo of Ciara & Zach" />
+          <div className="aspect-[3/4] overflow-hidden rounded-lg shadow-md">
+            <PhotoPlaceholder src={engagementOnKnee} alt="Zach proposing to Ciara" />
           </div>
-          <div className="aspect-square overflow-hidden rounded-lg shadow-md">
-            <PhotoPlaceholder alt="Photo of Ciara & Zach" />
-          </div>
-          <div className="aspect-square overflow-hidden rounded-lg shadow-md">
-            <PhotoPlaceholder alt="Photo of Ciara & Zach" />
-          </div>
-          <div className="aspect-square overflow-hidden rounded-lg shadow-md">
-            <PhotoPlaceholder alt="Photo of Ciara & Zach" />
+          <div className="aspect-[3/4] overflow-hidden rounded-lg shadow-md">
+            <PhotoPlaceholder src={engagementBwBoat} alt="Ciara & Zach celebrating with friends" />
           </div>
         </div>
       </section>
