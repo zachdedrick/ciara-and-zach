@@ -161,35 +161,6 @@ export default function Travel() {
         </section>
 
         <section>
-          <h2 className="font-display text-2xl text-ivy-800">Staying on the Estate</h2>
-          <p className="mt-2 text-ivy-700">
-            The most special option &mdash; stay right on the grounds of Castle Leslie itself.
-          </p>
-
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {ON_ESTATE.map((place) => (
-              <div key={place.name} className="rounded-lg border border-ivy-100 p-5">
-                <div className="flex items-start gap-3">
-                  <HotelIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
-                  <div>
-                    <a
-                      href={place.websiteUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 text-lg text-ivy-800 hover:text-gold-600"
-                    >
-                      {place.name}
-                      <ExternalLinkIcon className="h-4 w-4" />
-                    </a>
-                    <p className="mt-1 text-sm text-ivy-700">{place.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section>
           <h2 className="font-display text-2xl text-ivy-800">Where to Stay</h2>
 
           <h3 className="mt-6 text-lg uppercase tracking-wide text-ivy-600">Hotels</h3>
@@ -255,6 +226,33 @@ export default function Travel() {
                     )}
                     <p className="mt-1 text-sm text-ivy-600">{listing.capacity}</p>
                     {!listing.url && <p className="mt-1 text-xs italic text-ivy-600/70">Link coming soon</p>}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="mt-8 text-lg uppercase tracking-wide text-ivy-600">Staying on the Estate</h3>
+          <p className="mt-2 text-ivy-700">
+            The most special option &mdash; stay right on the grounds of Castle Leslie itself.
+          </p>
+
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {ON_ESTATE.map((place) => (
+              <div key={place.name} className="rounded-lg border border-ivy-100 p-5">
+                <div className="flex items-start gap-3">
+                  <HotelIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
+                  <div>
+                    <a
+                      href={place.websiteUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 text-lg text-ivy-800 hover:text-gold-600"
+                    >
+                      {place.name}
+                      <ExternalLinkIcon className="h-4 w-4" />
+                    </a>
+                    <p className="mt-1 text-sm text-ivy-700">{place.description}</p>
                   </div>
                 </div>
               </div>
