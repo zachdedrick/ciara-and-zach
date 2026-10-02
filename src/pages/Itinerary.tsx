@@ -3,7 +3,7 @@ import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
 import { MapPinIcon } from '../components/icons'
 import castleHero from '../assets/watercolor/castle-leslie-hero.jpg'
-import cathedralSketch from '../assets/watercolor/cathedral-sketch.png'
+import cathedralPhoto from '../assets/watercolor/cathedral-armagh.jpg'
 import coachHousePub from '../assets/watercolor/coach-house-pub.jpg'
 
 function mapsUrl(address: string) {
@@ -88,13 +88,7 @@ export default function Itinerary() {
               time="1:00 &ndash; 2:00 PM"
               title="Ceremony"
               address="St. Patrick's Cathedral, 41 Cathedral Road, Armagh, BT61 7QX"
-              visual={
-                <img
-                  src={cathedralSketch}
-                  alt="St. Patrick's Cathedral, Armagh"
-                  className="h-full w-full bg-ivy-50 object-contain p-6"
-                />
-              }
+              visual={<img src={cathedralPhoto} alt="St. Patrick's Cathedral, Armagh" className="h-full w-full object-cover" />}
             >
               <p>
                 We&rsquo;ll say &ldquo;I do&rdquo; at St. Patrick&rsquo;s Cathedral in Armagh, about a 25-minute
