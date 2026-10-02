@@ -49,8 +49,7 @@ const HILLGROVE = {
   name: 'Hillgrove Hotel',
   address: 'Old Armagh Road, Monaghan, Co. Monaghan, Ireland',
   websiteUrl: 'https://www.hillgrovehotel.com',
-  // TODO: replace once the hotel confirms the group booking reference.
-  bookingCode: 'XXXXX',
+  bookingCode: 'REF 199847',
 }
 
 const AIRBNBS: { name: string; capacity: string; url?: string }[] = [
@@ -263,7 +262,8 @@ export default function Travel() {
                 </a>
 
                 <p className="mt-2 text-sm text-ivy-600">
-                  Booking reference for our room block: <span className="font-medium">{HILLGROVE.bookingCode}</span>
+                  Use this reference when booking directly with the hotel:{' '}
+                  <span className="font-medium">{HILLGROVE.bookingCode}</span>
                 </p>
               </div>
             </div>
