@@ -1,5 +1,17 @@
 type IconProps = { className?: string }
 
+export function PlaneIcon({ className = 'h-5 w-5' }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={className} aria-hidden="true">
+      <path
+        d="M10.5 15.5 3 13l1-2 7 1.2V7l-2.5-3 1.5-1 3.5 2.5 3.5-2.5 1.5 1-2.5 3v5.2l7-1.2 1 2-7.5 2.5v3l2.5 1.5-.5 1.5-3.5-1-3.5 1-.5-1.5 2.5-1.5v-3Z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
 export function HotelIcon({ className = 'h-5 w-5' }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={className} aria-hidden="true">

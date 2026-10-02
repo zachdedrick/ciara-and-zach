@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import {
   BusIcon,
@@ -7,7 +8,29 @@ import {
   HouseIcon,
   MapPinIcon,
   PhoneIcon,
+  PlaneIcon,
 } from '../components/icons'
+
+const AIRPORTS = [
+  {
+    code: 'DUB',
+    name: 'Dublin Airport',
+    driveTime: 'about 1.5 hours (90 min) from Glaslough',
+    note: 'The most direct route for most people.',
+  },
+  {
+    code: 'BFS',
+    name: 'Belfast International',
+    driveTime: 'about 1h 20m from Glaslough',
+    note: 'A good option if you want to spend some time in Northern Ireland.',
+  },
+  {
+    code: 'SNN',
+    name: 'Shannon Airport',
+    driveTime: 'about 3 hours from Glaslough',
+    note: null,
+  },
+]
 
 const HILLGROVE = {
   name: 'Hillgrove Hotel',
@@ -70,11 +93,40 @@ export default function Travel() {
       <div className="mx-auto max-w-3xl px-4 py-16 space-y-14">
         <section>
           <h2 className="font-display text-2xl text-ivy-800">Getting Here</h2>
-          <p className="mt-2 text-ivy-700">
-            The nearest airport is Dublin Airport (DUB), about 1.5&ndash;2 hours from Glaslough by road.
-          </p>
 
-          <div className="mt-5 rounded-lg border border-ivy-100 p-5">
+          <h3 className="mt-5 text-lg uppercase tracking-wide text-ivy-600">Flying In</h3>
+          <p className="mt-2 text-ivy-700">Three airports to choose from, depending on how you want to spend your trip.</p>
+
+          <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            {AIRPORTS.map((airport) => (
+              <div key={airport.code} className="rounded-lg border border-ivy-100 p-5">
+                <div className="flex items-start gap-3">
+                  <PlaneIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
+                  <div>
+                    <p className="text-lg text-ivy-800">{airport.name}</p>
+                    <p className="text-xs uppercase tracking-wide text-gold-600">{airport.code}</p>
+                    <p className="mt-1 text-sm text-ivy-600">{airport.driveTime}</p>
+                    <p className="mt-2 text-sm text-ivy-700">
+                      {airport.code === 'SNN' ? (
+                        <>
+                          Worth it if you want to explore the west of Ireland before heading over &mdash; see{' '}
+                          <Link to="/things-to-do" className="underline hover:text-gold-600">
+                            Things to Do
+                          </Link>
+                          .
+                        </>
+                      ) : (
+                        airport.note
+                      )}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="mt-8 text-lg uppercase tracking-wide text-ivy-600">Dublin Airport Bus</h3>
+          <div className="mt-3 rounded-lg border border-ivy-100 p-5">
             <div className="flex items-start gap-3">
               <BusIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
               <div>
