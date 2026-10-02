@@ -2,8 +2,9 @@ import type { ReactNode } from 'react'
 import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
 import { MapPinIcon } from '../components/icons'
-import { CathedralSketch, PubSketch } from '../components/illustrations'
 import castleHero from '../assets/watercolor/castle-leslie-hero.jpg'
+import cathedralSketch from '../assets/watercolor/cathedral-sketch.png'
+import coachHousePub from '../assets/watercolor/coach-house-pub.jpg'
 
 function mapsUrl(address: string) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
@@ -65,7 +66,9 @@ export default function Itinerary() {
             time="7:00 PM"
             title="Welcome Party"
             address="The Coach House & Olde Bar, Main Street, Glaslough, Co. Monaghan"
-            visual={<PubSketch />}
+            visual={
+              <img src={coachHousePub} alt="The Coach House & Olde Bar, Glaslough" className="h-full w-full object-cover" />
+            }
           >
             <p>
               Kick off the weekend with us! Join us at the Coach House &amp; Olde Bar &mdash; Glaslough&rsquo;s
@@ -85,7 +88,13 @@ export default function Itinerary() {
               time="1:00 &ndash; 2:00 PM"
               title="Ceremony"
               address="St. Patrick's Cathedral, 41 Cathedral Road, Armagh, BT61 7QX"
-              visual={<CathedralSketch />}
+              visual={
+                <img
+                  src={cathedralSketch}
+                  alt="St. Patrick's Cathedral, Armagh"
+                  className="h-full w-full bg-ivy-50 object-contain p-6"
+                />
+              }
             >
               <p>
                 We&rsquo;ll say &ldquo;I do&rdquo; at St. Patrick&rsquo;s Cathedral in Armagh, about a 25-minute
