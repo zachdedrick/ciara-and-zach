@@ -52,44 +52,37 @@ const FEATURED = [
   { src: galleryPubToast, alt: 'Raising a glass with friends at a Dublin pub' },
   { src: galleryGolfFlagGroup, alt: 'A round of golf on the Co. Clare coast' },
   { src: galleryCliffsOfMoherBoys, alt: 'The lads at the Cliffs of Moher' },
-]
-
-const STRIP = [
-  { src: dublinGrogans, alt: "At Grogan's in Dublin" },
-  { src: dundalkFamilyHome, alt: "Outside Ciara's family home in Dundalk" },
   { src: galleryBarGuinness, alt: 'The lads pulling pints of Guinness' },
   { src: lahinchGolfDunes, alt: 'A round at Lahinch' },
   { src: golfCourseGroup, alt: 'A round of golf on the Co. Clare coast' },
   { src: galleryChurch, alt: 'A church we visited in Ireland' },
   { src: galleryFamilyFenceDog, alt: 'Cousins and the dog back home' },
   { src: galleryAlpacas, alt: 'Alpacas on a hillside in Co. Kerry' },
-  { src: galleryTempleBar, alt: 'Temple Bar, Dublin' },
-  { src: galleryPubToast, alt: 'Cheers at a Dublin pub' },
 ]
 
 const THROUGH_THE_YEARS = [
-  { src: engagementPosed, alt: 'Ciara & Zach, engagement photo' },
+  { src: engagementPosed, alt: 'Ciara & Zach, engagement photo', objectPosition: '50% 20%' },
   { src: engagementOnKnee, alt: 'Zach proposing to Ciara' },
-  { src: engagementBwBoat, alt: 'Ciara & Zach celebrating with friends' },
+  { src: engagementBwBoat, alt: 'Ciara & Zach celebrating with friends', objectPosition: '30% 45%' },
   { src: galleryGlydeInn, alt: 'Ciara & Zach outside the Glyde Inn', objectPosition: '50% 75%' },
-  { src: throughYearsCliffside, alt: 'Ciara & Zach at sunset by the sea' },
-  { src: throughYearsSunsetSelfie, alt: 'Ciara & Zach at sunset' },
-  { src: throughYearsFilmParty, alt: 'Ciara & Zach at a party' },
-  { src: throughYearsGolfCart, alt: 'Ciara & Zach golfing together' },
-  { src: throughYearsFormalNight, alt: 'Ciara & Zach dressed up for a night out' },
-  { src: throughYearsPoolSunset, alt: 'Ciara & Zach at sunset by the pool' },
-  { src: throughYearsGolfFormal, alt: 'Ciara & Zach at a wedding' },
+  { src: throughYearsCliffside, alt: 'Ciara & Zach at sunset by the sea', objectPosition: '50% 15%' },
+  { src: throughYearsSunsetSelfie, alt: 'Ciara & Zach at sunset', objectPosition: '50% 60%' },
+  { src: throughYearsFilmParty, alt: 'Ciara & Zach at a party', objectPosition: '75% 60%' },
+  { src: throughYearsGolfCart, alt: 'Ciara & Zach golfing together', objectPosition: '50% 40%' },
+  { src: throughYearsFormalNight, alt: 'Ciara & Zach dressed up for a night out', objectPosition: '45% 20%' },
+  { src: throughYearsPoolSunset, alt: 'Ciara & Zach at sunset by the pool', objectPosition: '50% 20%' },
+  { src: throughYearsGolfFormal, alt: 'Ciara & Zach at a wedding', objectPosition: '50% 42%' },
   { src: throughYearsLakeHats, alt: 'Ciara & Zach by the water' },
-  { src: throughYearsFilmHug, alt: 'Ciara & Zach laughing together' },
+  { src: throughYearsFilmHug, alt: 'Ciara & Zach laughing together', objectPosition: '50% 58%' },
   { src: throughYearsDockSelfie, alt: 'Ciara & Zach on the water' },
-  { src: throughYearsRainbow, alt: 'Ciara & Zach under a rainbow' },
-  { src: throughYearsHatShop, alt: 'Ciara & Zach trying on hats' },
-  { src: throughYearsCubsGame, alt: 'Ciara & Zach at a baseball game' },
-  { src: throughYearsGoldenDome, alt: "Ciara & Zach at Notre Dame" },
+  { src: throughYearsRainbow, alt: 'Ciara & Zach under a rainbow', objectPosition: '50% 70%' },
+  { src: throughYearsHatShop, alt: 'Ciara & Zach trying on hats', objectPosition: '50% 30%' },
+  { src: throughYearsCubsGame, alt: 'Ciara & Zach at a baseball game', objectPosition: '50% 45%' },
+  { src: throughYearsGoldenDome, alt: "Ciara & Zach at Notre Dame", objectPosition: '50% 40%' },
   { src: throughYearsSnowGame, alt: 'Ciara & Zach at a snowy Notre Dame football game' },
   { src: throughYearsFormalPlaid, alt: 'Ciara & Zach at a formal in front of the Golden Dome' },
-  { src: throughYearsCinqueTerre, alt: 'Ciara & Zach in Cinque Terre, Italy' },
-  { src: throughYearsTailgate, alt: 'Ciara & Zach tailgating at Notre Dame' },
+  { src: throughYearsCinqueTerre, alt: 'Ciara & Zach in Cinque Terre, Italy', objectPosition: '50% 55%' },
+  { src: throughYearsTailgate, alt: 'Ciara & Zach tailgating at Notre Dame', objectPosition: '50% 38%' },
 ]
 
 export default function Gallery() {
@@ -101,13 +94,7 @@ export default function Gallery() {
         <section>
           <h2 className="font-display text-center text-2xl text-ivy-800">From Our Trips</h2>
           <WatercolorDivider />
-          <MarqueeStrip photos={FEATURED} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={36} />
-        </section>
-
-        <section>
-          <h2 className="font-display text-center text-2xl text-ivy-800">More From Our Trips</h2>
-          <WatercolorDivider />
-          <MarqueeStrip photos={STRIP} />
+          <MarqueeStrip photos={FEATURED} tileClassName="aspect-[4/3] w-80 sm:w-[28rem]" durationSeconds={48} />
         </section>
 
         <section>
