@@ -6,7 +6,7 @@ const links = [
   { to: '/itinerary', label: 'Itinerary' },
   { to: '/travel', label: 'Travel' },
   { to: '/things-to-do', label: 'Things to Do & Know' },
-  { to: '/our-story', label: 'Our Story' },
+  { to: '/gallery', label: 'Gallery' },
   { to: '/registry', label: 'Registry' },
   { to: '/rsvp', label: 'RSVP' },
   { to: '/faq', label: 'FAQ' },

@@ -2,12 +2,20 @@ import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
 import PhotoPlaceholder from '../components/PhotoPlaceholder'
+import SlideCarousel from '../components/SlideCarousel'
 import { BusIcon, CarIcon, GolfIcon, TrainIcon } from '../components/icons'
 import cliffsOfMoher from '../assets/photos/cliffs-of-moher.jpg'
 import howthCouple from '../assets/photos/howth-couple.jpg'
 import kerryTown from '../assets/photos/kerry-town.jpg'
 import dingleHarbour from '../assets/photos/dingle-harbour.jpg'
 import ringOfKerryCliffs from '../assets/photos/ring-of-kerry-cliffs.jpg'
+
+const GOLF_COURSES = [
+  { alt: 'Lahinch Golf Club, Co. Clare' },
+  { alt: 'Royal County Down, Co. Down' },
+  { alt: 'Portmarnock Golf Club, Co. Dublin' },
+  { alt: 'Ballybunion Golf Club, Co. Kerry' },
+]
 
 const WEST_COAST = [
   {
@@ -41,14 +49,6 @@ const WEST_COAST = [
     description:
       'A 111-mile loop of coastal views, mountains, and little villages. Give yourself a full day to do it properly.',
     photos: [kerryTown, ringOfKerryCliffs],
-  },
-  {
-    name: 'Golf at Lahinch',
-    county: 'Co. Clare',
-    driveTime: 'about 45 min from Shannon',
-    description:
-      'One of Ireland’s great links courses, right on the coast near the Cliffs of Moher. Book a tee time well ahead.',
-    photos: [],
   },
 ]
 
@@ -107,6 +107,24 @@ export default function ThingsToDo() {
               </div>
             ))}
           </div>
+
+          <div className="mt-6 overflow-hidden rounded-lg border border-ivy-100 shadow-sm">
+            <SlideCarousel photos={GOLF_COURSES} />
+            <div className="p-5">
+              <div className="flex items-start gap-3">
+                <GolfIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
+                <div>
+                  <h3 className="font-display text-xl text-ivy-800">Golfing in Ireland</h3>
+                  <p className="mt-2 text-sm text-ivy-700">
+                    If you want to fit in a round while you&rsquo;re here, Ireland has no shortage of world-class
+                    links courses &mdash; Lahinch in Co. Clare is a great option near Shannon, and Royal County
+                    Down, Portmarnock, and Ballybunion are all worth the detour if you have the time. Book tee
+                    times well ahead.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section>
@@ -131,13 +149,19 @@ export default function ThingsToDo() {
                 </div>
                 <div className="flex items-start gap-3 p-5">
                   <TrainIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
-                  <p className="text-ivy-700">
-                    Howth is only a short DART ride from the city centre and one of our favourite spots &mdash; see{' '}
-                    <Link to="/our-story" className="underline hover:text-gold-600">
-                      Our Story
-                    </Link>{' '}
-                    for the full recommendation.
-                  </p>
+                  <div className="space-y-2 text-ivy-700">
+                    <h3 className="font-display text-lg text-ivy-800">A Day Trip to Howth</h3>
+                    <p>
+                      One of our favourite days in Ireland together was a trip out to Howth, just outside Dublin.
+                      Hop on the DART (the train, not a bus!) from Tara Street or Connolly Station &mdash; it&rsquo;s
+                      about 30 minutes and drops you right at the harbour.
+                    </p>
+                    <p>
+                      Walk the cliff path for the views, then grab fish and chips from one of the stalls by the
+                      pier. If you&rsquo;ve got a day to spare in Dublin before or after the wedding, we can&rsquo;t
+                      recommend it enough.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -175,16 +199,6 @@ export default function ThingsToDo() {
                 <CarIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
                 <p className="text-ivy-700">It&rsquo;s about a 1.5&ndash;2 hour drive from Dublin, mostly via the N2.</p>
               </div>
-            </div>
-          </div>
-
-          <div className="mx-auto mt-4 max-w-2xl rounded-lg border border-ivy-100 p-5">
-            <div className="flex items-start gap-3">
-              <GolfIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
-              <p className="text-ivy-700">
-                There are some excellent golf courses around Monaghan and Armagh if you want to fit in a round while
-                you&rsquo;re here &mdash; reach out to us and we&rsquo;ll point you to our favourites.
-              </p>
             </div>
           </div>
         </section>
