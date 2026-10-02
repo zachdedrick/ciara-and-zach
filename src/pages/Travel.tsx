@@ -17,12 +17,37 @@ const HILLGROVE = {
   bookingCode: 'XXXXX',
 }
 
-// TODO: swap in the real listing name + Airbnb URL for each rental once we have them.
-const AIRBNBS: { name: string; sleeps: number; url?: string }[] = [
-  { name: 'Glaslough Airbnb #1', sleeps: 8 },
-  { name: 'Glaslough Airbnb #2', sleeps: 8 },
-  { name: 'Glaslough Airbnb #3', sleeps: 10 },
-  { name: 'Glaslough Airbnb #4', sleeps: 11 },
+const AIRBNBS: { name: string; capacity: string; url?: string }[] = [
+  {
+    name: '5 Bed House in Glaslough',
+    capacity: 'Sleeps 8',
+    url: 'https://www.airbnb.com/rooms/44093585?check_in=2027-08-20&check_out=2027-08-22&guests=8',
+  },
+  {
+    name: '5 Bed Townhouse in Glaslough',
+    capacity: 'Sleeps 8',
+    url: 'https://www.airbnb.com/rooms/42213711?check_in=2027-08-20&check_out=2027-08-22&guests=8',
+  },
+  {
+    name: '6 Bed Cottage in Glaslough',
+    capacity: 'Sleeps 10',
+    url: 'https://www.airbnb.com/rooms/44455976?check_in=2027-08-20&check_out=2027-08-22&guests=10',
+  },
+  {
+    name: '7 Bed House in Glaslough',
+    capacity: 'Sleeps 11',
+    url: 'https://www.airbnb.com/rooms/1424552398036837395?check_in=2027-08-20&check_out=2027-08-22&guests=11',
+  },
+  {
+    name: '5 Bed Townhouse in Glaslough',
+    capacity: '5 bedrooms',
+    url: 'https://www.airbnb.com/rooms/832412021470029339?check_in=2027-08-20&check_out=2027-08-22',
+  },
+  {
+    name: '2 Bed Townhouse in Glaslough',
+    capacity: '2 bedrooms',
+    url: 'https://www.airbnb.com/rooms/25003224?check_in=2027-08-20&check_out=2027-08-22',
+  },
 ]
 
 // Numbers pulled from public directory listings for Monaghan taxi firms —
@@ -160,8 +185,8 @@ export default function Travel() {
           </p>
 
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {AIRBNBS.map((listing) => (
-              <div key={listing.name} className="rounded-lg border border-ivy-100 p-5">
+            {AIRBNBS.map((listing, index) => (
+              <div key={index} className="rounded-lg border border-ivy-100 p-5">
                 <div className="flex items-start gap-3">
                   <HouseIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
                   <div>
@@ -178,7 +203,7 @@ export default function Travel() {
                     ) : (
                       <p className="text-lg text-ivy-800">{listing.name}</p>
                     )}
-                    <p className="mt-1 text-sm text-ivy-600">Sleeps {listing.sleeps}</p>
+                    <p className="mt-1 text-sm text-ivy-600">{listing.capacity}</p>
                     {!listing.url && <p className="mt-1 text-xs italic text-ivy-600/70">Link coming soon</p>}
                   </div>
                 </div>
