@@ -25,6 +25,11 @@ import throughYearsSunsetSelfie from '../assets/photos/through-years-sunset-self
 import throughYearsFilmParty from '../assets/photos/through-years-film-party.jpg'
 import throughYearsGolfCart from '../assets/photos/through-years-golf-cart.jpg'
 import throughYearsFormalNight from '../assets/photos/through-years-formal-night.jpg'
+import throughYearsPoolSunset from '../assets/photos/through-years-pool-sunset.jpg'
+import throughYearsGolfFormal from '../assets/photos/through-years-golf-formal.jpg'
+import throughYearsLakeHats from '../assets/photos/through-years-lake-hats.jpg'
+import throughYearsFilmHug from '../assets/photos/through-years-film-hug.jpg'
+import throughYearsDockSelfie from '../assets/photos/through-years-dock-selfie.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -64,6 +69,11 @@ const THROUGH_THE_YEARS = [
   { src: throughYearsFilmParty, alt: 'Ciara & Zach at a party' },
   { src: throughYearsGolfCart, alt: 'Ciara & Zach golfing together' },
   { src: throughYearsFormalNight, alt: 'Ciara & Zach dressed up for a night out' },
+  { src: throughYearsPoolSunset, alt: 'Ciara & Zach at sunset by the pool' },
+  { src: throughYearsGolfFormal, alt: 'Ciara & Zach at a wedding' },
+  { src: throughYearsLakeHats, alt: 'Ciara & Zach by the water' },
+  { src: throughYearsFilmHug, alt: 'Ciara & Zach laughing together' },
+  { src: throughYearsDockSelfie, alt: 'Ciara & Zach on the water' },
 ]
 
 export default function Gallery() {
