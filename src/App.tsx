@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Itinerary from './pages/Itinerary'
 import Travel from './pages/Travel'
 import ThingsToDo from './pages/ThingsToDo'
+import OurStory from './pages/OurStory'
 import Registry from './pages/Registry'
 import RSVP from './pages/RSVP'
 import FAQ from './pages/FAQ'
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="itinerary" element={<Itinerary />} />
         <Route path="travel" element={<Travel />} />
         <Route path="things-to-do" element={<ThingsToDo />} />
+        <Route path="our-story" element={<OurStory />} />
         <Route path="registry" element={<Registry />} />
         <Route path="rsvp" element={<RSVP />} />
         <Route path="faq" element={<FAQ />} />
