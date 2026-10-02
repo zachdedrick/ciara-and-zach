@@ -34,6 +34,10 @@ import throughYearsRainbow from '../assets/photos/through-years-rainbow.jpg'
 import throughYearsHatShop from '../assets/photos/through-years-hat-shop.jpg'
 import throughYearsCubsGame from '../assets/photos/through-years-cubs-game.jpg'
 import throughYearsGoldenDome from '../assets/photos/through-years-golden-dome.jpg'
+import throughYearsSnowGame from '../assets/photos/through-years-snow-game.jpg'
+import throughYearsFormalPlaid from '../assets/photos/through-years-formal-plaid.jpg'
+import throughYearsCinqueTerre from '../assets/photos/through-years-cinque-terre.jpg'
+import throughYearsTailgate from '../assets/photos/through-years-tailgate.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -82,6 +86,10 @@ const THROUGH_THE_YEARS = [
   { src: throughYearsHatShop, alt: 'Ciara & Zach trying on hats' },
   { src: throughYearsCubsGame, alt: 'Ciara & Zach at a baseball game' },
   { src: throughYearsGoldenDome, alt: "Ciara & Zach at Notre Dame" },
+  { src: throughYearsSnowGame, alt: 'Ciara & Zach at a snowy Notre Dame football game' },
+  { src: throughYearsFormalPlaid, alt: 'Ciara & Zach at a formal in front of the Golden Dome' },
+  { src: throughYearsCinqueTerre, alt: 'Ciara & Zach in Cinque Terre, Italy' },
+  { src: throughYearsTailgate, alt: 'Ciara & Zach tailgating at Notre Dame' },
 ]
 
 export default function Gallery() {
