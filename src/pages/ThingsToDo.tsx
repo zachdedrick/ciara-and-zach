@@ -11,13 +11,14 @@ import dingleHarbour from '../assets/photos/dingle-harbour.jpg'
 import ringOfKerryCliffs from '../assets/photos/ring-of-kerry-cliffs.jpg'
 import lahinchGolfDunes from '../assets/photos/lahinch-golf-dunes.jpg'
 import lahinchGolfGreen from '../assets/photos/lahinch-golf-green.jpg'
+import golfCourseGroup from '../assets/photos/golf-course-group.jpg'
 
 const GOLF_COURSES = [
   { src: lahinchGolfDunes, alt: 'Lahinch Golf Club, Co. Clare' },
   { src: lahinchGolfGreen, alt: 'Lahinch Golf Club, Co. Clare' },
+  { src: golfCourseGroup, alt: 'A round of golf on the Co. Clare coast' },
   { alt: 'Royal County Down, Co. Down' },
   { alt: 'Portmarnock Golf Club, Co. Dublin' },
-  { alt: 'Ballybunion Golf Club, Co. Kerry' },
 ]
 
 const WEST_COAST = [
