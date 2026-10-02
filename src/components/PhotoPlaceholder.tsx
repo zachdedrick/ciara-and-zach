@@ -6,13 +6,22 @@ export default function PhotoPlaceholder({
   src,
   alt,
   className = '',
+  objectPosition,
 }: {
   src?: string
   alt: string
   className?: string
+  objectPosition?: string
 }) {
   if (src) {
-    return <img src={src} alt={alt} className={`h-full w-full object-cover ${className}`} />
+    return (
+      <img
+        src={src}
+        alt={alt}
+        className={`h-full w-full object-cover ${className}`}
+        style={objectPosition ? { objectPosition } : undefined}
+      />
+    )
   }
 
   return (

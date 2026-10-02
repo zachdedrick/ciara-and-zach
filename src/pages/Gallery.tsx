@@ -1,7 +1,6 @@
 import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
 import SwipeCarousel from '../components/SwipeCarousel'
-import SlideCarousel from '../components/SlideCarousel'
 import MarqueeStrip from '../components/MarqueeStrip'
 import dublinGrogans from '../assets/photos/dublin-grogans.jpg'
 import dundalkFamilyHome from '../assets/photos/dundalk-family-home.jpg'
@@ -19,15 +18,12 @@ import lahinchGolfDunes from '../assets/photos/lahinch-golf-dunes.jpg'
 import golfCourseGroup from '../assets/photos/golf-course-group.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
-// and drop it into one of the arrays below.
+// and drop it into the array below.
 const FEATURED = [
   { src: dundalkFamilyHome, alt: "Ciara and her family outside their home in Dundalk, Co. Louth" },
-  { src: galleryGlydeInn, alt: 'Ciara & Zach outside the Glyde Inn' },
+  { src: galleryGlydeInn, alt: 'Ciara & Zach outside the Glyde Inn', objectPosition: '50% 75%' },
   { src: galleryKerryCliffsGroup, alt: 'Family at the Kerry Cliffs' },
   { src: galleryGrandmaSelfie, alt: "Ciara and her grandmother" },
-]
-
-const SLIDES = [
   { src: dublinGrogans, alt: "Ciara, Zach, and a friend at Grogan's on South William Street, Dublin" },
   { src: galleryTempleBar, alt: 'Ciara with friends at Temple Bar, Dublin' },
   { src: galleryMountainGroup, alt: 'Family in the mountains of Co. Kerry' },
@@ -57,15 +53,7 @@ export default function Gallery() {
           <h2 className="font-display text-center text-2xl text-ivy-800">Featured Moments</h2>
           <WatercolorDivider />
           <div className="mx-auto max-w-2xl">
-            <SwipeCarousel photos={FEATURED} className="aspect-[4/3]" />
-          </div>
-        </section>
-
-        <section>
-          <h2 className="font-display text-center text-2xl text-ivy-800">On Our Travels</h2>
-          <WatercolorDivider />
-          <div className="mx-auto max-w-3xl">
-            <SlideCarousel photos={SLIDES} />
+            <SwipeCarousel photos={FEATURED} className="aspect-[4/3]" autoplayMs={1000} />
           </div>
         </section>
 

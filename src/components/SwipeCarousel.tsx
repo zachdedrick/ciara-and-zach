@@ -1,16 +1,19 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import PhotoPlaceholder from './PhotoPlaceholder'
 
 /**
- * Manual-only carousel: advances on swipe/drag or the arrow buttons, never
- * on a timer.
+ * Swipeable carousel: advances on swipe/drag, the arrow buttons, or the dots.
+ * Optionally also auto-advances on a timer (paused while the user is
+ * actively dragging).
  */
 export default function SwipeCarousel({
   photos,
   className = 'aspect-[3/2] sm:aspect-[16/9]',
+  autoplayMs,
 }: {
-  photos: { src?: string; alt: string }[]
+  photos: { src?: string; alt: string; objectPosition?: string }[]
   className?: string
+  autoplayMs?: number
 }) {
   const [active, setActive] = useState(0)
   const [isDragging, setIsDragging] = useState(false)
@@ -20,6 +23,14 @@ export default function SwipeCarousel({
   function go(delta: number) {
     setActive((current) => (current + delta + photos.length) % photos.length)
   }
+
+  useEffect(() => {
+    if (!autoplayMs || photos.length <= 1 || isDragging) return
+    const id = window.setInterval(() => {
+      setActive((current) => (current + 1) % photos.length)
+    }, autoplayMs)
+    return () => window.clearInterval(id)
+  }, [autoplayMs, photos.length, isDragging])
 
   function handleStart(clientX: number) {
     dragStartX.current = clientX
@@ -64,7 +75,7 @@ export default function SwipeCarousel({
       >
         {photos.map((photo, index) => (
           <div key={index} className="h-full w-full shrink-0">
-            <PhotoPlaceholder src={photo.src} alt={photo.alt} />
+            <PhotoPlaceholder src={photo.src} alt={photo.alt} objectPosition={photo.objectPosition} />
           </div>
         ))}
       </div>
