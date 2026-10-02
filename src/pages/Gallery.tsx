@@ -15,6 +15,8 @@ import galleryMountainGroup from '../assets/photos/gallery-mountain-group.jpg'
 import galleryAlpacas from '../assets/photos/gallery-alpacas.jpg'
 import lahinchGolfDunes from '../assets/photos/lahinch-golf-dunes.jpg'
 import golfCourseGroup from '../assets/photos/golf-course-group.jpg'
+import galleryGolfFlagGroup from '../assets/photos/gallery-golf-flag-group.jpg'
+import galleryCliffsOfMoherBoys from '../assets/photos/gallery-cliffs-of-moher-boys.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -27,6 +29,8 @@ const FEATURED = [
   { src: galleryTempleBar, alt: 'Ciara with friends at Temple Bar, Dublin' },
   { src: galleryMountainGroup, alt: 'Family in the mountains of Co. Kerry' },
   { src: galleryPubToast, alt: 'Raising a glass with friends at a Dublin pub' },
+  { src: galleryGolfFlagGroup, alt: 'A round of golf on the Co. Clare coast' },
+  { src: galleryCliffsOfMoherBoys, alt: 'The lads at the Cliffs of Moher' },
 ]
 
 const STRIP = [
@@ -49,7 +53,7 @@ export default function Gallery() {
 
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
         <section>
-          <h2 className="font-display text-center text-2xl text-ivy-800">Featured Moments</h2>
+          <h2 className="font-display text-center text-2xl text-ivy-800">From Our Trips</h2>
           <WatercolorDivider />
           <MarqueeStrip photos={FEATURED} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={36} />
         </section>
