@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
 import { MapPinIcon } from '../components/icons'
-import castleHero from '../assets/watercolor/castle-leslie-hero.jpg'
+import castleAerial from '../assets/watercolor/castle-leslie-aerial.jpg'
 import cathedralPhoto from '../assets/watercolor/cathedral-armagh.jpg'
 import coachHousePub from '../assets/watercolor/coach-house-pub.jpg'
 
@@ -101,7 +101,7 @@ export default function Itinerary() {
               time="3:00 PM onward"
               title="Reception"
               address="Castle Leslie Estate, Glaslough, Co. Monaghan"
-              visual={<img src={castleHero} alt="Castle Leslie Estate" className="h-full w-full object-cover" />}
+              visual={<img src={castleAerial} alt="Castle Leslie Estate" className="h-full w-full object-cover" />}
               imageSide="right"
             >
               <p>Cocktail hour starts at 3:00 PM back at the Estate, flowing into dinner as the evening goes on.</p>
