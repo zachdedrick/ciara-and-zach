@@ -30,6 +30,10 @@ import throughYearsGolfFormal from '../assets/photos/through-years-golf-formal.j
 import throughYearsLakeHats from '../assets/photos/through-years-lake-hats.jpg'
 import throughYearsFilmHug from '../assets/photos/through-years-film-hug.jpg'
 import throughYearsDockSelfie from '../assets/photos/through-years-dock-selfie.jpg'
+import throughYearsRainbow from '../assets/photos/through-years-rainbow.jpg'
+import throughYearsHatShop from '../assets/photos/through-years-hat-shop.jpg'
+import throughYearsCubsGame from '../assets/photos/through-years-cubs-game.jpg'
+import throughYearsGoldenDome from '../assets/photos/through-years-golden-dome.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -74,6 +78,10 @@ const THROUGH_THE_YEARS = [
   { src: throughYearsLakeHats, alt: 'Ciara & Zach by the water' },
   { src: throughYearsFilmHug, alt: 'Ciara & Zach laughing together' },
   { src: throughYearsDockSelfie, alt: 'Ciara & Zach on the water' },
+  { src: throughYearsRainbow, alt: 'Ciara & Zach under a rainbow' },
+  { src: throughYearsHatShop, alt: 'Ciara & Zach trying on hats' },
+  { src: throughYearsCubsGame, alt: 'Ciara & Zach at a baseball game' },
+  { src: throughYearsGoldenDome, alt: "Ciara & Zach at Notre Dame" },
 ]
 
 export default function Gallery() {
