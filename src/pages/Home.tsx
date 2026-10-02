@@ -64,7 +64,11 @@ export default function Home() {
             <PhotoPlaceholder src={engagementOnKnee} alt="Zach proposing to Ciara" />
           </div>
           <div className="aspect-[3/4] overflow-hidden rounded-lg shadow-md">
-            <PhotoPlaceholder src={engagementBwBoat} alt="Ciara & Zach celebrating with friends" />
+            <PhotoPlaceholder
+              src={engagementBwBoat}
+              alt="Ciara & Zach celebrating with friends"
+              className="object-[32%_48%]"
+            />
           </div>
         </div>
       </section>
