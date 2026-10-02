@@ -1,11 +1,39 @@
+import type { ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
+
+const FAQS: { question: string; answer: ReactNode }[] = [
+  {
+    question: 'What should I wear?',
+    answer: (
+      <>
+        <p>
+          See the{' '}
+          <Link to="/itinerary" className="underline hover:text-gold-600">
+            Itinerary page
+          </Link>{' '}
+          for the dress code for each event.
+        </p>
+        <ul className="mt-2 list-disc space-y-1 pl-4">
+          <li>Ladies, bring a shawl &mdash; evenings can turn cool.</li>
+          <li>Bring a raincoat &mdash; Irish weather is unpredictable!</li>
+        </ul>
+      </>
+    ),
+  },
+]
 
 export default function FAQ() {
   return (
     <div>
       <PageHeader title="FAQ" />
-      <div className="mx-auto max-w-3xl px-4 py-16 text-center text-ivy-700">
-        <p>Frequently asked questions will go here.</p>
+      <div className="mx-auto max-w-3xl space-y-6 px-4 py-16">
+        {FAQS.map((faq) => (
+          <div key={faq.question} className="rounded-lg border border-ivy-100 p-5">
+            <h2 className="font-display text-xl text-ivy-800">{faq.question}</h2>
+            <div className="mt-2 text-ivy-700">{faq.answer}</div>
+          </div>
+        ))}
       </div>
     </div>
   )
