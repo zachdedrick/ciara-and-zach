@@ -8,6 +8,11 @@ import dundalkFamilyHome from '../assets/photos/dundalk-family-home.jpg'
 import engagementPosed from '../assets/photos/engagement-posed.jpg'
 import engagementOnKnee from '../assets/photos/engagement-on-knee.jpg'
 import engagementBwBoat from '../assets/photos/engagement-bw-boat.jpg'
+import galleryBarGuinness from '../assets/photos/gallery-bar-guinness.jpg'
+import galleryGlydeInn from '../assets/photos/gallery-glyde-inn.jpg'
+import galleryChurch from '../assets/photos/gallery-church.jpg'
+import galleryTempleBar from '../assets/photos/gallery-temple-bar.jpg'
+import galleryPubToast from '../assets/photos/gallery-pub-toast.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into one of the arrays below.
@@ -15,12 +20,14 @@ const FEATURED = [
   { src: engagementPosed, alt: 'Ciara & Zach, engagement photo' },
   { src: dundalkFamilyHome, alt: "Ciara and her family outside their home in Dundalk, Co. Louth" },
   { src: engagementOnKnee, alt: 'Zach proposing to Ciara' },
+  { src: galleryGlydeInn, alt: 'Ciara & Zach outside the Glyde Inn' },
 ]
 
 const SLIDES = [
   { src: dublinGrogans, alt: "Ciara, Zach, and a friend at Grogan's on South William Street, Dublin" },
+  { src: galleryTempleBar, alt: 'Ciara with friends at Temple Bar, Dublin' },
   { src: engagementBwBoat, alt: 'Ciara & Zach celebrating with friends' },
-  { alt: 'More of our trips to Ireland, coming soon' },
+  { src: galleryPubToast, alt: 'Raising a glass with friends at a Dublin pub' },
 ]
 
 const STRIP = [
@@ -28,8 +35,10 @@ const STRIP = [
   { src: dublinGrogans, alt: "At Grogan's in Dublin" },
   { src: dundalkFamilyHome, alt: "Outside Ciara's family home in Dundalk" },
   { src: engagementOnKnee, alt: 'The proposal' },
-  { alt: 'More photos coming soon' },
-  { alt: 'More photos coming soon' },
+  { src: galleryBarGuinness, alt: 'The lads pulling pints of Guinness' },
+  { src: galleryChurch, alt: 'A church we visited in Ireland' },
+  { src: galleryTempleBar, alt: 'Temple Bar, Dublin' },
+  { src: galleryPubToast, alt: 'Cheers at a Dublin pub' },
 ]
 
 export default function Gallery() {
