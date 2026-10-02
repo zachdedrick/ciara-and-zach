@@ -17,6 +17,9 @@ import lahinchGolfDunes from '../assets/photos/lahinch-golf-dunes.jpg'
 import golfCourseGroup from '../assets/photos/golf-course-group.jpg'
 import galleryGolfFlagGroup from '../assets/photos/gallery-golf-flag-group.jpg'
 import galleryCliffsOfMoherBoys from '../assets/photos/gallery-cliffs-of-moher-boys.jpg'
+import engagementPosed from '../assets/photos/engagement-posed.jpg'
+import engagementOnKnee from '../assets/photos/engagement-on-knee.jpg'
+import engagementBwBoat from '../assets/photos/engagement-bw-boat.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -46,6 +49,13 @@ const STRIP = [
   { src: galleryPubToast, alt: 'Cheers at a Dublin pub' },
 ]
 
+const THROUGH_THE_YEARS = [
+  { src: engagementPosed, alt: 'Ciara & Zach, engagement photo' },
+  { src: engagementOnKnee, alt: 'Zach proposing to Ciara' },
+  { src: engagementBwBoat, alt: 'Ciara & Zach celebrating with friends' },
+  { src: galleryGlydeInn, alt: 'Ciara & Zach outside the Glyde Inn', objectPosition: '50% 75%' },
+]
+
 export default function Gallery() {
   return (
     <div>
@@ -62,6 +72,12 @@ export default function Gallery() {
           <h2 className="font-display text-center text-2xl text-ivy-800">More From Our Trips</h2>
           <WatercolorDivider />
           <MarqueeStrip photos={STRIP} />
+        </section>
+
+        <section>
+          <h2 className="font-display text-center text-2xl text-ivy-800">Ciara &amp; Zach Through the Years</h2>
+          <WatercolorDivider />
+          <MarqueeStrip photos={THROUGH_THE_YEARS} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={32} reverse />
         </section>
       </div>
     </div>

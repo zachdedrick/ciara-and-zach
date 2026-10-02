@@ -12,6 +12,7 @@ import ringOfKerryCliffs from '../assets/photos/ring-of-kerry-cliffs.jpg'
 import lahinchGolfDunes from '../assets/photos/lahinch-golf-dunes.jpg'
 import lahinchGolfGreen from '../assets/photos/lahinch-golf-green.jpg'
 import golfCourseGroup from '../assets/photos/golf-course-group.jpg'
+import cliffsOfMoherBoys from '../assets/photos/gallery-cliffs-of-moher-boys.jpg'
 
 const GOLF_COURSES = [
   { src: lahinchGolfDunes, alt: 'Lahinch Golf Club, Co. Clare' },
@@ -28,7 +29,7 @@ const WEST_COAST = [
     driveTime: 'about 55 min from Shannon',
     description:
       'Ireland’s most famous sea cliffs, rising 700 feet straight out of the Atlantic. Go for sunset if you can.',
-    photos: [cliffsOfMoher],
+    photos: [cliffsOfMoher, cliffsOfMoherBoys],
   },
   {
     name: 'Galway',
