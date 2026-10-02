@@ -1,8 +1,9 @@
 /**
- * Procedural placeholder for a watercolor divider. Swap for a scanned/painted
- * watercolor asset in src/assets/watercolor once we have one — see
- * src/assets/README.md.
+ * Celtic chain-link divider, echoing the knotwork border on the couple's
+ * save-the-date. A row of interlocking rings tiled across a fixed viewBox.
  */
+const RING_X = [25, 40, 55, 70, 85, 100, 115, 130, 145, 160, 175]
+
 export default function WatercolorDivider({ className = 'my-10' }: { className?: string }) {
   return (
     <svg
@@ -11,14 +12,9 @@ export default function WatercolorDivider({ className = 'my-10' }: { className?:
       aria-hidden="true"
       preserveAspectRatio="xMidYMid meet"
     >
-      <path
-        d="M0 12 C 40 2, 60 22, 100 12 S 160 2, 200 12"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <circle cx="100" cy="12" r="3" fill="currentColor" />
+      {RING_X.map((x) => (
+        <circle key={x} cx={x} cy="12" r="9" fill="none" stroke="currentColor" strokeWidth="1.4" />
+      ))}
     </svg>
   )
 }

@@ -1,6 +1,7 @@
 import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
 import PhotoPlaceholder from '../components/PhotoPlaceholder'
+import FamilyTree from '../components/FamilyTree'
 import { TrainIcon } from '../components/icons'
 import dublinGrogans from '../assets/photos/dublin-grogans.jpg'
 import dundalkFamilyHome from '../assets/photos/dundalk-family-home.jpg'
@@ -33,6 +34,11 @@ export default function OurStory() {
               </p>
               <p>It&rsquo;s a quick detour if you&rsquo;re driving between Dublin and the wedding.</p>
             </div>
+          </div>
+
+          <h3 className="font-display mt-10 text-center text-xl text-ivy-800">Family Tree</h3>
+          <div className="mt-6">
+            <FamilyTree />
           </div>
         </section>
 
