@@ -48,6 +48,11 @@ import loveyouMuralFamily from '../assets/photos/loveyou-mural-family.jpg'
 import loveyouDockFamily from '../assets/photos/loveyou-dock-family.jpg'
 import loveyouStpatricksGroup from '../assets/photos/loveyou-stpatricks-group.jpg'
 import loveyouMetlifeTailgate from '../assets/photos/loveyou-metlife-tailgate.jpg'
+import loveyouGraduation from '../assets/photos/loveyou-graduation.jpg'
+import loveyouFlowersGirls from '../assets/photos/loveyou-flowers-girls.jpg'
+import loveyouGrandmaCafe from '../assets/photos/loveyou-grandma-cafe.jpg'
+import loveyouPorchGirls from '../assets/photos/loveyou-porch-girls.jpg'
+import loveyouBeachGirlsSunset from '../assets/photos/loveyou-beach-girls-sunset.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -107,6 +112,11 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouDockFamily, alt: "Zach and Ciara with Zach's family", objectPosition: '50% 38%' },
   { src: loveyouStpatricksGroup, alt: "Ciara and friends celebrating St. Patrick's Day" },
   { src: loveyouMetlifeTailgate, alt: "Zach and friends tailgating at MetLife Stadium", objectPosition: '50% 32%' },
+  { src: loveyouGraduation, alt: "Ciara with her grandparents at graduation", objectPosition: '50% 25%' },
+  { src: loveyouFlowersGirls, alt: "Ciara and friends in Italy", objectPosition: '50% 65%' },
+  { src: loveyouGrandmaCafe, alt: "Ciara's grandmother enjoying dessert", objectPosition: '50% 22%' },
+  { src: loveyouPorchGirls, alt: "Ciara and friends at sunset", objectPosition: '50% 38%' },
+  { src: loveyouBeachGirlsSunset, alt: "Ciara and friends on the beach at sunset", objectPosition: '50% 44%' },
 ]
 
 export default function Gallery() {
