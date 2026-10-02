@@ -38,6 +38,11 @@ import throughYearsSnowGame from '../assets/photos/through-years-snow-game.jpg'
 import throughYearsFormalPlaid from '../assets/photos/through-years-formal-plaid.jpg'
 import throughYearsCinqueTerre from '../assets/photos/through-years-cinque-terre.jpg'
 import throughYearsTailgate from '../assets/photos/through-years-tailgate.jpg'
+import loveyouFilmFamily from '../assets/photos/loveyou-film-family.jpg'
+import loveyouPierMom from '../assets/photos/loveyou-pier-mom.jpg'
+import loveyouBeachFamily from '../assets/photos/loveyou-beach-family.jpg'
+import loveyouRooftopGirls from '../assets/photos/loveyou-rooftop-girls.jpg'
+import loveyouPubGuys from '../assets/photos/loveyou-pub-guys.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -85,6 +90,15 @@ const THROUGH_THE_YEARS = [
   { src: throughYearsTailgate, alt: 'Ciara & Zach tailgating at Notre Dame', objectPosition: '50% 38%' },
 ]
 
+// TODO: add more family & friends photos here as we get them.
+const WE_LOVE_YOU_ALL = [
+  { src: loveyouFilmFamily, alt: "Ciara with family at a celebration", objectPosition: '50% 42%' },
+  { src: loveyouPierMom, alt: "Zach and his mom", objectPosition: '50% 38%' },
+  { src: loveyouBeachFamily, alt: "Ciara's family on the beach at sunset", objectPosition: '50% 42%' },
+  { src: loveyouRooftopGirls, alt: "Ciara and friends on a NYC rooftop", objectPosition: '50% 45%' },
+  { src: loveyouPubGuys, alt: "Zach and friends at a pub" },
+]
+
 export default function Gallery() {
   return (
     <div>
@@ -101,6 +115,12 @@ export default function Gallery() {
           <h2 className="font-display text-center text-2xl text-ivy-800">Ciara &amp; Zach Through the Years</h2>
           <WatercolorDivider />
           <MarqueeStrip photos={THROUGH_THE_YEARS} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={32} reverse />
+        </section>
+
+        <section>
+          <h2 className="font-display text-center text-2xl text-ivy-800">We Love You All!</h2>
+          <WatercolorDivider />
+          <MarqueeStrip photos={WE_LOVE_YOU_ALL} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={30} />
         </section>
       </div>
     </div>
