@@ -38,7 +38,6 @@ export default function Home() {
         />
         <div className="relative z-10">
           <p className="font-display text-xl italic text-gold-300 sm:text-2xl">C&eacute;ad M&iacute;le F&aacute;ilte</p>
-          <p className="mt-3 text-sm uppercase tracking-[0.3em] text-gold-300">We&rsquo;re getting married</p>
           <h1 className="font-display mt-4 text-5xl sm:text-7xl">Ciara &amp; Zach</h1>
           <WatercolorDivider />
           <p className="text-lg sm:text-xl">21 August 2027</p>
