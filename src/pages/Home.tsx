@@ -37,7 +37,8 @@ export default function Home() {
           aria-hidden="true"
         />
         <div className="relative z-10">
-          <p className="text-sm uppercase tracking-[0.3em] text-gold-300">We&rsquo;re getting married</p>
+          <p className="font-display text-xl italic text-gold-300 sm:text-2xl">C&eacute;ad M&iacute;le F&aacute;ilte</p>
+          <p className="mt-3 text-sm uppercase tracking-[0.3em] text-gold-300">We&rsquo;re getting married</p>
           <h1 className="font-display mt-4 text-5xl sm:text-7xl">Ciara &amp; Zach</h1>
           <WatercolorDivider />
           <p className="text-lg sm:text-xl">21 August 2027</p>
@@ -47,10 +48,12 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-5xl px-4 py-16 sm:py-20">
-        <h2 className="font-display text-center text-3xl text-ivy-800">A castle in the Irish countryside</h2>
+        <h2 className="font-display text-center text-3xl text-ivy-800">
+          We are so excited to share our special day with everyone we love in such a magical place.
+        </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-ivy-700">
-          We can&rsquo;t wait to celebrate with you at Castle Leslie, our favourite corner of Ireland. More details on
-          the day, travel, and everything in between are coming soon &mdash; for now, here&rsquo;s a little bit about us.
+          You&rsquo;ll find all of our travel tips, events for the weekend, RSVP links and more, but if you have any
+          questions please don&rsquo;t hesitate to reach out! Can&rsquo;t wait to celebrate in the Emerald Isle!
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
