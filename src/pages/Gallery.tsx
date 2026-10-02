@@ -1,6 +1,6 @@
 import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
-import FadeCarousel from '../components/FadeCarousel'
+import SwipeCarousel from '../components/SwipeCarousel'
 import SlideCarousel from '../components/SlideCarousel'
 import MarqueeStrip from '../components/MarqueeStrip'
 import dublinGrogans from '../assets/photos/dublin-grogans.jpg'
@@ -51,7 +51,7 @@ export default function Gallery() {
           <h2 className="font-display text-center text-2xl text-ivy-800">Featured Moments</h2>
           <WatercolorDivider />
           <div className="mx-auto max-w-2xl">
-            <FadeCarousel photos={FEATURED} />
+            <SwipeCarousel photos={FEATURED} />
           </div>
         </section>
 
