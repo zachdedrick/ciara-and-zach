@@ -2,6 +2,8 @@ import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
 import PhotoPlaceholder from '../components/PhotoPlaceholder'
 import { GolfIcon, TrainIcon } from '../components/icons'
+import dublinGrogans from '../assets/photos/dublin-grogans.jpg'
+import dundalkFamilyHome from '../assets/photos/dundalk-family-home.jpg'
 
 const DESTINATIONS = [
   {
@@ -41,11 +43,20 @@ export default function ThingsToDo() {
 
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
         <section>
-          <p className="mx-auto max-w-2xl text-center text-lg text-ivy-700">
-            Castle Leslie is tucked up in the northeast, so Ireland&rsquo;s big bucket-list spots are a proper road
-            trip away &mdash; not a day trip. If you&rsquo;re turning this into a longer Irish adventure before or
-            after the wedding, here are a few of our favourites.
-          </p>
+          <div className="grid items-center gap-6 sm:grid-cols-2">
+            <p className="text-lg text-ivy-700">
+              We&rsquo;ve spent plenty of our own evenings exploring Ireland together &mdash; Castle Leslie is tucked
+              up in the northeast, so Ireland&rsquo;s big bucket-list spots are a proper road trip away, not a day
+              trip. If you&rsquo;re turning this into a longer Irish adventure before or after the wedding, here are
+              a few of our favourites.
+            </p>
+            <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-md">
+              <PhotoPlaceholder
+                src={dublinGrogans}
+                alt="Ciara, Zach, and a friend at Grogan's on South William Street, Dublin"
+              />
+            </div>
+          </div>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {DESTINATIONS.map((spot) => (
@@ -74,6 +85,24 @@ export default function ThingsToDo() {
                 There are some excellent golf courses around Monaghan and Armagh if you want to fit in a round while
                 you&rsquo;re here &mdash; reach out to us and we&rsquo;ll point you to our favourites.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="font-display text-center text-2xl text-ivy-800">Ciara&rsquo;s Family Roots</h2>
+          <WatercolorDivider />
+
+          <div className="grid items-center gap-6 sm:grid-cols-2">
+            <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-md">
+              <PhotoPlaceholder src={dundalkFamilyHome} alt="Ciara and her family outside their home in Dundalk" />
+            </div>
+            <div className="space-y-2 text-ivy-700">
+              <p>
+                Ciara&rsquo;s family is based in Dundalk, Co. Louth, just south of the border &mdash; it&rsquo;s
+                where her mother and grandmother call home, and where Ciara grew up visiting often.
+              </p>
+              <p>It&rsquo;s a quick detour if you&rsquo;re driving between Dublin and the wedding.</p>
             </div>
           </div>
         </section>
