@@ -32,6 +32,19 @@ const AIRPORTS = [
   },
 ]
 
+const ON_ESTATE = [
+  {
+    name: 'The Lodge',
+    description: 'A 4-star hotel right at the entrance to the Estate, steps from the Equestrian Centre.',
+    websiteUrl: 'https://www.castleleslie.com/stay/the-lodge/',
+  },
+  {
+    name: 'The Old Stable Mews',
+    description: 'Self-catering courtyard cottages on the Estate grounds — great for groups.',
+    websiteUrl: 'https://www.castleleslie.com/stay/old-stable-mews/',
+  },
+]
+
 const HILLGROVE = {
   name: 'Hillgrove Hotel',
   address: 'Old Armagh Road, Monaghan, Co. Monaghan, Ireland',
@@ -77,7 +90,7 @@ const AIRBNBS: { name: string; capacity: string; url?: string }[] = [
 // worth a quick call ahead on the night to confirm availability.
 const TAXIS = [
   { name: 'ABC Cabs', phone: '047 71500', tel: '+3534771500' },
-  { name: 'Carn Hackneys', phone: '047 71122', tel: '+3534771122' },
+  { name: 'Carn Taxis', phone: '047 71122', tel: '+3534771122' },
   { name: 'Call A Car', phone: '087 142 5666', tel: '+353871425666' },
 ]
 
@@ -91,6 +104,35 @@ export default function Travel() {
       <PageHeader title="Travel" subtitle="Getting to Glaslough, Co. Monaghan" />
 
       <div className="mx-auto max-w-3xl px-4 py-16 space-y-14">
+        <section>
+          <h2 className="font-display text-2xl text-ivy-800">Staying on the Estate</h2>
+          <p className="mt-2 text-ivy-700">
+            The most special option &mdash; stay right on the grounds of Castle Leslie itself.
+          </p>
+
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {ON_ESTATE.map((place) => (
+              <div key={place.name} className="rounded-lg border border-ivy-100 p-5">
+                <div className="flex items-start gap-3">
+                  <HotelIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
+                  <div>
+                    <a
+                      href={place.websiteUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 text-lg text-ivy-800 hover:text-gold-600"
+                    >
+                      {place.name}
+                      <ExternalLinkIcon className="h-4 w-4" />
+                    </a>
+                    <p className="mt-1 text-sm text-ivy-700">{place.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section>
           <h2 className="font-display text-2xl text-ivy-800">Getting Here</h2>
 
