@@ -151,6 +151,10 @@ export default function Travel() {
           </div>
 
           <h3 className="mt-8 text-lg uppercase tracking-wide text-ivy-600">Airbnbs</h3>
+          <p className="mt-2 text-sm italic text-ivy-600">
+            Most convenient if not staying on property &mdash; located in the village of Glaslough, directly adjacent
+            to the Leslie estate.
+          </p>
           <p className="mt-2 text-ivy-700">
             A few houses in the village of Glaslough itself, for groups who&rsquo;d rather stay together.
           </p>

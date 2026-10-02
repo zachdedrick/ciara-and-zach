@@ -3,11 +3,11 @@
  * watercolor asset in src/assets/watercolor once we have one — see
  * src/assets/README.md.
  */
-export default function WatercolorDivider() {
+export default function WatercolorDivider({ className = 'my-10' }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 200 24"
-      className="mx-auto my-10 h-6 w-48 text-gold-500"
+      className={`mx-auto h-6 w-48 text-gold-500 ${className}`}
       aria-hidden="true"
       preserveAspectRatio="xMidYMid meet"
     >
