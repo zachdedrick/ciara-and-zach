@@ -75,6 +75,29 @@ export function CarIcon({ className = 'h-5 w-5' }: IconProps) {
   )
 }
 
+export function GolfIcon({ className = 'h-5 w-5' }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={className} aria-hidden="true">
+      <path d="M7 21h10" strokeLinecap="round" />
+      <path d="M12 21V9" strokeLinecap="round" />
+      <path d="M12 4v5l7-2.5L12 4Z" strokeLinejoin="round" />
+      <circle cx="6" cy="19" r="1.5" />
+    </svg>
+  )
+}
+
+export function TrainIcon({ className = 'h-5 w-5' }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={className} aria-hidden="true">
+      <rect x="5" y="3" width="14" height="13" rx="4" />
+      <path d="M5 11h14" strokeLinecap="round" />
+      <path d="M8 16l-2 4M16 16l2 4" strokeLinecap="round" />
+      <circle cx="9" cy="13.5" r="1" />
+      <circle cx="15" cy="13.5" r="1" />
+    </svg>
+  )
+}
+
 export function ExternalLinkIcon({ className = 'h-4 w-4' }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={className} aria-hidden="true">
