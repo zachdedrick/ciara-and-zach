@@ -3,6 +3,11 @@ import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
 import PhotoPlaceholder from '../components/PhotoPlaceholder'
 import { BusIcon, CarIcon, GolfIcon, TrainIcon } from '../components/icons'
+import cliffsOfMoher from '../assets/photos/cliffs-of-moher.jpg'
+import howthCouple from '../assets/photos/howth-couple.jpg'
+import kerryTown from '../assets/photos/kerry-town.jpg'
+import dingleHarbour from '../assets/photos/dingle-harbour.jpg'
+import ringOfKerryCliffs from '../assets/photos/ring-of-kerry-cliffs.jpg'
 
 const WEST_COAST = [
   {
@@ -11,6 +16,7 @@ const WEST_COAST = [
     driveTime: 'about 55 min from Shannon',
     description:
       'Ireland’s most famous sea cliffs, rising 700 feet straight out of the Atlantic. Go for sunset if you can.',
+    photos: [cliffsOfMoher],
   },
   {
     name: 'Galway',
@@ -18,6 +24,7 @@ const WEST_COAST = [
     driveTime: 'about 1h 20m from Shannon',
     description:
       'A lively, colourful city with some of the best live music and food in Ireland. Wander the Latin Quarter and stay for dinner.',
+    photos: [],
   },
   {
     name: 'Dingle Peninsula',
@@ -25,6 +32,7 @@ const WEST_COAST = [
     driveTime: 'about 2h 15m from Shannon',
     description:
       'Dramatic coastline, Irish-speaking villages, and the Slea Head Drive — one of the most beautiful routes in the country.',
+    photos: [dingleHarbour],
   },
   {
     name: 'Ring of Kerry',
@@ -32,6 +40,7 @@ const WEST_COAST = [
     driveTime: 'about 1.5h from Shannon to Killarney',
     description:
       'A 111-mile loop of coastal views, mountains, and little villages. Give yourself a full day to do it properly.',
+    photos: [kerryTown, ringOfKerryCliffs],
   },
   {
     name: 'Golf at Lahinch',
@@ -39,6 +48,7 @@ const WEST_COAST = [
     driveTime: 'about 45 min from Shannon',
     description:
       'One of Ireland’s great links courses, right on the coast near the Cliffs of Moher. Book a tee time well ahead.',
+    photos: [],
   },
 ]
 
@@ -62,9 +72,19 @@ export default function ThingsToDo() {
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {WEST_COAST.map((spot) => (
               <div key={spot.name} className="overflow-hidden rounded-lg border border-ivy-100 shadow-sm">
-                <div className="aspect-[16/9]">
-                  <PhotoPlaceholder alt={`Photo of ${spot.name}`} />
-                </div>
+                {spot.photos.length > 1 ? (
+                  <div className="grid grid-cols-2 gap-0.5">
+                    {spot.photos.map((photo, index) => (
+                      <div key={index} className="aspect-square">
+                        <PhotoPlaceholder src={photo} alt={`Photo of ${spot.name}`} />
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="aspect-[16/9]">
+                    <PhotoPlaceholder src={spot.photos[0]} alt={`Photo of ${spot.name}`} />
+                  </div>
+                )}
                 <div className="p-5">
                   <h3 className="font-display text-xl text-ivy-800">{spot.name}</h3>
                   <p className="text-sm uppercase tracking-wide text-gold-600">{spot.county}</p>
@@ -91,16 +111,21 @@ export default function ThingsToDo() {
               Trinity College&rsquo;s campus is beautiful to just walk around, and Dublin has no shortage of museums
               &mdash; the National Museum and National Gallery are both free.
             </div>
-            <div className="rounded-lg border border-ivy-100 p-5">
-              <div className="flex items-start gap-3">
-                <TrainIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
-                <p className="text-ivy-700">
-                  Howth is only a short DART ride from the city centre and one of our favourite spots &mdash; see{' '}
-                  <Link to="/our-story" className="underline hover:text-gold-600">
-                    Our Story
-                  </Link>{' '}
-                  for the full recommendation.
-                </p>
+            <div className="overflow-hidden rounded-lg border border-ivy-100">
+              <div className="grid items-center sm:grid-cols-[160px_1fr]">
+                <div className="aspect-[4/3] sm:aspect-square">
+                  <PhotoPlaceholder src={howthCouple} alt="Ciara & Zach in Howth" />
+                </div>
+                <div className="flex items-start gap-3 p-5">
+                  <TrainIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
+                  <p className="text-ivy-700">
+                    Howth is only a short DART ride from the city centre and one of our favourite spots &mdash; see{' '}
+                    <Link to="/our-story" className="underline hover:text-gold-600">
+                      Our Story
+                    </Link>{' '}
+                    for the full recommendation.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
