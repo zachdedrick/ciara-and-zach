@@ -9,10 +9,12 @@ export default function MarqueeStrip({
   photos,
   durationSeconds = 28,
   reverse = false,
+  tileClassName = 'aspect-square w-40 sm:w-52',
 }: {
-  photos: { src?: string; alt: string }[]
+  photos: { src?: string; alt: string; objectPosition?: string }[]
   durationSeconds?: number
   reverse?: boolean
+  tileClassName?: string
 }) {
   const track = [...photos, ...photos]
 
@@ -26,8 +28,8 @@ export default function MarqueeStrip({
         }}
       >
         {track.map((photo, index) => (
-          <div key={index} className="aspect-square w-40 shrink-0 overflow-hidden rounded-lg shadow-md sm:w-52">
-            <PhotoPlaceholder src={photo.src} alt={photo.alt} />
+          <div key={index} className={`shrink-0 overflow-hidden rounded-lg shadow-md ${tileClassName}`}>
+            <PhotoPlaceholder src={photo.src} alt={photo.alt} objectPosition={photo.objectPosition} />
           </div>
         ))}
       </div>

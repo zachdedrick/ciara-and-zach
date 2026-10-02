@@ -1,6 +1,5 @@
 import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
-import SwipeCarousel from '../components/SwipeCarousel'
 import MarqueeStrip from '../components/MarqueeStrip'
 import dublinGrogans from '../assets/photos/dublin-grogans.jpg'
 import dundalkFamilyHome from '../assets/photos/dundalk-family-home.jpg'
@@ -52,9 +51,7 @@ export default function Gallery() {
         <section>
           <h2 className="font-display text-center text-2xl text-ivy-800">Featured Moments</h2>
           <WatercolorDivider />
-          <div className="mx-auto max-w-2xl">
-            <SwipeCarousel photos={FEATURED} className="aspect-[4/3]" autoplayMs={1000} />
-          </div>
+          <MarqueeStrip photos={FEATURED} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={36} />
         </section>
 
         <section>
