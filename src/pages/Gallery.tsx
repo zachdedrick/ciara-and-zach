@@ -76,13 +76,18 @@ import loveyouChristmasSelfie from '../assets/photos/loveyou-christmas-selfie.jp
 import loveyouDockGroupTen from '../assets/photos/loveyou-dock-group-ten.jpg'
 import loveyouFormalFourDark from '../assets/photos/loveyou-formal-four-dark.jpg'
 import loveyouNdStadiumGroup from '../assets/photos/loveyou-nd-stadium-group.jpg'
+import throughYearsNantucketFormal from '../assets/photos/through-years-nantucket-formal.jpg'
+import throughYearsFilmTable from '../assets/photos/through-years-film-table.jpg'
+import throughYearsFilmBar from '../assets/photos/through-years-film-bar.jpg'
+import throughYearsPartyHats from '../assets/photos/through-years-party-hats.jpg'
+import throughYearsBalconyHug from '../assets/photos/through-years-balcony-hug.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
 const FEATURED = [
   { src: dundalkFamilyHome, alt: "Ciara and her family outside their home in Dundalk, Co. Louth" },
   { src: galleryGolfFlagGroup, alt: 'A round of golf on the Co. Clare coast' },
-  { src: galleryGlydeInn, alt: 'Ciara & Zach outside the Glyde Inn', objectPosition: '50% 75%' },
+  { src: galleryGlydeInn, alt: 'Ciara & Zach outside the Glyde Inn', objectPosition: '50% 92%' },
   { src: galleryCliffsOfMoherBoys, alt: 'The lads at the Cliffs of Moher' },
   { src: galleryKerryCliffsGroup, alt: 'Family at the Kerry Cliffs' },
   { src: galleryBarGuinness, alt: 'The lads pulling pints of Guinness' },
@@ -103,19 +108,24 @@ const THROUGH_THE_YEARS = [
   { src: throughYearsLakeHats, alt: 'Ciara & Zach by the water' },
   { src: engagementOnKnee, alt: 'Zach proposing to Ciara' },
   { src: throughYearsFilmHug, alt: 'Ciara & Zach laughing together', objectPosition: '50% 58%' },
+  { src: throughYearsNantucketFormal, alt: 'Ciara & Zach at a wedding in Nantucket', objectPosition: '50% 30%' },
   { src: engagementBwBoat, alt: 'Ciara & Zach celebrating with friends', objectPosition: '30% 45%' },
   { src: throughYearsDockSelfie, alt: 'Ciara & Zach on the water' },
-  { src: galleryGlydeInn, alt: 'Ciara & Zach outside the Glyde Inn', objectPosition: '50% 75%' },
+  { src: throughYearsFilmTable, alt: 'Ciara & Zach at dinner', objectPosition: '50% 15%' },
+  { src: galleryGlydeInn, alt: 'Ciara & Zach outside the Glyde Inn', objectPosition: '50% 92%' },
   { src: throughYearsRainbow, alt: 'Ciara & Zach under a rainbow', objectPosition: '50% 70%' },
   { src: throughYearsCliffside, alt: 'Ciara & Zach at sunset by the sea', objectPosition: '50% 15%' },
+  { src: throughYearsBalconyHug, alt: 'Ciara & Zach watching the sunset', objectPosition: '50% 36%' },
   { src: throughYearsHatShop, alt: 'Ciara & Zach trying on hats', objectPosition: '50% 30%' },
   { src: throughYearsSunsetSelfie, alt: 'Ciara & Zach at sunset', objectPosition: '50% 60%' },
   { src: throughYearsCubsGame, alt: 'Ciara & Zach at a baseball game', objectPosition: '50% 45%' },
+  { src: throughYearsFilmBar, alt: 'Ciara & Zach at a bar', objectPosition: '50% 25%' },
   { src: throughYearsFilmParty, alt: 'Ciara & Zach at a party', objectPosition: '75% 60%' },
   { src: throughYearsGoldenDome, alt: "Ciara & Zach at Notre Dame", objectPosition: '50% 40%' },
   { src: throughYearsGolfCart, alt: 'Ciara & Zach golfing together', objectPosition: '50% 40%' },
   { src: throughYearsSnowGame, alt: 'Ciara & Zach at a snowy Notre Dame football game' },
   { src: throughYearsFormalNight, alt: 'Ciara & Zach dressed up for a night out', objectPosition: '45% 20%' },
+  { src: throughYearsPartyHats, alt: 'Ciara & Zach ringing in the new year' },
   { src: throughYearsFormalPlaid, alt: 'Ciara & Zach at a formal in front of the Golden Dome' },
   { src: throughYearsPoolSunset, alt: 'Ciara & Zach at sunset by the pool', objectPosition: '50% 20%' },
   { src: throughYearsCinqueTerre, alt: 'Ciara & Zach in Cinque Terre, Italy', objectPosition: '50% 55%' },
@@ -174,19 +184,19 @@ export default function Gallery() {
         <section>
           <h2 className="font-display text-center text-2xl text-ivy-800">From Our Trips</h2>
           <WatercolorDivider />
-          <MarqueeStrip photos={FEATURED} tileClassName="aspect-[4/3] w-80 sm:w-[28rem]" durationSeconds={48} />
+          <MarqueeStrip photos={FEATURED} tileClassName="aspect-[4/3] w-80 sm:w-[28rem]" durationSeconds={80} />
         </section>
 
         <section>
           <h2 className="font-display text-center text-2xl text-ivy-800">Ciara &amp; Zach Through the Years</h2>
           <WatercolorDivider />
-          <MarqueeStrip photos={THROUGH_THE_YEARS} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={32} reverse />
+          <MarqueeStrip photos={THROUGH_THE_YEARS} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={55} reverse />
         </section>
 
         <section>
           <h2 className="font-display text-center text-2xl text-ivy-800">We Love You All!</h2>
           <WatercolorDivider />
-          <MarqueeStrip photos={WE_LOVE_YOU_ALL} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={30} />
+          <MarqueeStrip photos={WE_LOVE_YOU_ALL} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={55} />
         </section>
       </div>
     </div>
