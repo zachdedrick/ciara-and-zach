@@ -52,7 +52,7 @@ export default function Home() {
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-ivy-700">
           You&rsquo;ll find all of our travel tips, events for the weekend, RSVP links and more, but if you have any
-          questions please don&rsquo;t hesitate to reach out! Can&rsquo;t wait to celebrate in the Emerald Isle!
+          questions please don&rsquo;t hesitate to reach out!
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">

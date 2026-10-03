@@ -1,55 +1,29 @@
 /**
- * Celtic rope-braid divider with a trinity-knot accent at centre, matching
- * the woven knotwork border on the couple's save-the-date: a two-strand
- * plait of tight interlocking links with a triquetra inserted mid-way.
+ * A line of interconnected hearts, echoing the trinity-knot accents on the
+ * couple's save-the-date in a softer, more legible motif for a thin
+ * divider strip.
  */
-const PERIOD = 26
-const AMPLITUDE = 8
-const WIDTH = 208
-const STEP = 3
-const CENTER_Y = 12
+const HEART_SPACING = 15
+const HEART_COUNT = 13
+const WIDTH = (HEART_COUNT - 1) * HEART_SPACING
+const CENTER_Y = 13
 
-function wavePath(phase: number) {
-  let d = ''
-  for (let x = 0; x <= WIDTH; x += STEP) {
-    const y = CENTER_Y + AMPLITUDE * Math.sin((2 * Math.PI * (x + phase)) / PERIOD)
-    d += x === 0 ? `M${x},${y.toFixed(2)}` : `L${x},${y.toFixed(2)}`
-  }
-  return d
-}
-
-const STRAND_A = wavePath(0)
-const STRAND_B = wavePath(PERIOD / 2)
-
-// A simplified triquetra: three overlapping vesica "petals" rotated 120°
-// apart around the centre.
-const PETAL = 'M0,0 C-2.6,-2.6 -2.6,-7.4 0,-10 C2.6,-7.4 2.6,-2.6 0,0 Z'
+// A single heart, centred on its own origin, pointing down.
+const HEART = 'M0,6.5 C-7,0.5 -7,-5.5 -3,-6.8 C-1,-7.4 0,-5 0,-2.8 C0,-5 1,-7.4 3,-6.8 C7,-5.5 7,0.5 0,6.5 Z'
 
 export default function WatercolorDivider({ className = 'my-10' }: { className?: string }) {
-  const midX = WIDTH / 2
-
   return (
     <svg
-      viewBox={`0 0 ${WIDTH} 24`}
+      viewBox={`-10 0 ${WIDTH + 20} 24`}
       className={`mx-auto h-6 w-56 text-gold-500 ${className}`}
       aria-hidden="true"
       preserveAspectRatio="xMidYMid meet"
     >
-      <path d={STRAND_B} fill="none" stroke="currentColor" strokeWidth="1.6" opacity="0.45" />
-      <path d={STRAND_A} fill="none" stroke="currentColor" strokeWidth="1.8" />
-
-      {/* trinity-knot accent at centre, echoing the knot inserted along the reference border */}
-      <g transform={`translate(${midX}, ${CENTER_Y})`}>
-        <g transform="rotate(0) scale(0.6)">
-          <path d={PETAL} fill="none" stroke="currentColor" strokeWidth="1.3" />
+      {Array.from({ length: HEART_COUNT }).map((_, index) => (
+        <g key={index} transform={`translate(${index * HEART_SPACING}, ${CENTER_Y})`}>
+          <path d={HEART} fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
         </g>
-        <g transform="rotate(120) scale(0.6)">
-          <path d={PETAL} fill="none" stroke="currentColor" strokeWidth="1.3" />
-        </g>
-        <g transform="rotate(240) scale(0.6)">
-          <path d={PETAL} fill="none" stroke="currentColor" strokeWidth="1.3" />
-        </g>
-      </g>
+      ))}
     </svg>
   )
 }

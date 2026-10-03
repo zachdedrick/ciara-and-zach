@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { CladdaghIcon } from './icons'
 
 const links = [
   { to: '/', label: 'Home' },
@@ -23,7 +24,12 @@ export default function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-ivy-800/95 backdrop-blur-sm shadow-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <NavLink to="/" className="font-display text-xl text-parchment sm:text-2xl" onClick={() => setOpen(false)}>
+        <NavLink
+          to="/"
+          className="flex flex-col items-center font-display text-xl text-parchment sm:text-2xl"
+          onClick={() => setOpen(false)}
+        >
+          <CladdaghIcon className="h-4 w-4 text-gold-400 sm:h-5 sm:w-5" />
           Ciara &amp; Zach
         </NavLink>
 
