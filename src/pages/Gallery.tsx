@@ -68,6 +68,11 @@ import loveyouSkiBalconyGirls from '../assets/photos/loveyou-ski-balcony-girls.j
 import loveyouCouchWomen from '../assets/photos/loveyou-couch-women.jpg'
 import loveyouPubHugFilm from '../assets/photos/loveyou-pub-hug-film.jpg'
 import loveyouMarlinRestaurant from '../assets/photos/loveyou-marlin-restaurant.jpg'
+import loveyouDockBrothers from '../assets/photos/loveyou-dock-brothers.jpg'
+import loveyouGrandparentsSelfie from '../assets/photos/loveyou-grandparents-selfie.jpg'
+import loveyouCoupleWine from '../assets/photos/loveyou-couple-wine.jpg'
+import loveyouBridesmaidsDock from '../assets/photos/loveyou-bridesmaids-dock.jpg'
+import loveyouChristmasSelfie from '../assets/photos/loveyou-christmas-selfie.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -147,6 +152,11 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouCouchWomen, alt: "Ciara, her mom, and a friend" },
   { src: loveyouPubHugFilm, alt: "Zach and friends at a pub", objectPosition: '50% 24%' },
   { src: loveyouMarlinRestaurant, alt: "Zach and his dad", objectPosition: '50% 40%' },
+  { src: loveyouDockBrothers, alt: "Zach and his brother", objectPosition: '50% 28%' },
+  { src: loveyouGrandparentsSelfie, alt: "Ciara and her grandparents", objectPosition: '50% 38%' },
+  { src: loveyouCoupleWine, alt: "Ciara's parents", objectPosition: '50% 36%' },
+  { src: loveyouBridesmaidsDock, alt: "Ciara and family at a wedding" },
+  { src: loveyouChristmasSelfie, alt: "Ciara and her family at Christmas" },
 ]
 
 export default function Gallery() {
