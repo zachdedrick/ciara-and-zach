@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 const links = [
   { to: '/', label: 'Home' },
   { to: '/itinerary', label: 'Itinerary' },
-  { to: '/travel', label: 'Travel' },
-  { to: '/things-to-do', label: 'Things to Do & Know' },
+  { to: '/travel', label: 'Travel & Accommodation' },
+  { to: '/things-to-do', label: 'Exploring Ireland' },
   { to: '/gallery', label: 'Gallery' },
   { to: '/registry', label: 'Registry' },
   { to: '/rsvp', label: 'RSVP' },

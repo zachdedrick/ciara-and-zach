@@ -73,7 +73,7 @@ const GLOSSARY = [
 export default function ThingsToDo() {
   return (
     <div>
-      <PageHeader title="Things to Do &amp; Know" subtitle="Making the most of your trip" />
+      <PageHeader title="Exploring Ireland" subtitle="Making the most of your trip" />
 
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
         <section>

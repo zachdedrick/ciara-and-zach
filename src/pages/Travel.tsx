@@ -100,7 +100,7 @@ function mapsUrl(address: string) {
 export default function Travel() {
   return (
     <div>
-      <PageHeader title="Travel" subtitle="Getting to Glaslough, Co. Monaghan" />
+      <PageHeader title="Travel &amp; Accommodation" subtitle="Getting to Glaslough, Co. Monaghan" />
 
       <div className="mx-auto max-w-3xl px-4 py-16 space-y-14">
         <p className="text-center text-lg text-ivy-700">
