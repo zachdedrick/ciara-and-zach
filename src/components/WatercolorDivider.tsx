@@ -1,13 +1,12 @@
 /**
- * Celtic rope-braid divider, echoing the woven knotwork border on the
- * couple's save-the-date. Two interlacing strands twist across the width,
- * crossing at a shared centre point, with a small trinity-knot bead at
- * the midpoint to echo the knot accents on the reference border.
+ * Celtic rope-braid divider with a trinity-knot accent at centre, matching
+ * the woven knotwork border on the couple's save-the-date: a two-strand
+ * plait of tight interlocking links with a triquetra inserted mid-way.
  */
-const PERIOD = 36
-const AMPLITUDE = 6
-const WIDTH = 216
-const STEP = 4
+const PERIOD = 26
+const AMPLITUDE = 8
+const WIDTH = 208
+const STEP = 3
 const CENTER_Y = 12
 
 function wavePath(phase: number) {
@@ -22,6 +21,10 @@ function wavePath(phase: number) {
 const STRAND_A = wavePath(0)
 const STRAND_B = wavePath(PERIOD / 2)
 
+// A simplified triquetra: three overlapping vesica "petals" rotated 120°
+// apart around the centre.
+const PETAL = 'M0,0 C-2.6,-2.6 -2.6,-7.4 0,-10 C2.6,-7.4 2.6,-2.6 0,0 Z'
+
 export default function WatercolorDivider({ className = 'my-10' }: { className?: string }) {
   const midX = WIDTH / 2
 
@@ -35,10 +38,17 @@ export default function WatercolorDivider({ className = 'my-10' }: { className?:
       <path d={STRAND_B} fill="none" stroke="currentColor" strokeWidth="1.6" opacity="0.45" />
       <path d={STRAND_A} fill="none" stroke="currentColor" strokeWidth="1.8" />
 
-      {/* trinity-knot bead at centre, echoing the knot accents on the border */}
+      {/* trinity-knot accent at centre, echoing the knot inserted along the reference border */}
       <g transform={`translate(${midX}, ${CENTER_Y})`}>
-        <circle r="3.4" fill="none" stroke="currentColor" strokeWidth="1.1" />
-        <circle r="1" fill="currentColor" />
+        <g transform="rotate(0) scale(0.6)">
+          <path d={PETAL} fill="none" stroke="currentColor" strokeWidth="1.3" />
+        </g>
+        <g transform="rotate(120) scale(0.6)">
+          <path d={PETAL} fill="none" stroke="currentColor" strokeWidth="1.3" />
+        </g>
+        <g transform="rotate(240) scale(0.6)">
+          <path d={PETAL} fill="none" stroke="currentColor" strokeWidth="1.3" />
+        </g>
       </g>
     </svg>
   )

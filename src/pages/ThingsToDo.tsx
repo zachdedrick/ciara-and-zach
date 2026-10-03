@@ -157,9 +157,9 @@ export default function ThingsToDo() {
                   <div className="space-y-2 text-ivy-700">
                     <h3 className="font-display text-lg text-ivy-800">A Day Trip to Howth</h3>
                     <p>
-                      One of our favourite days in Ireland together was a trip out to Howth, just outside Dublin.
-                      Hop on the DART (the train, not a bus!) from Tara Street or Connolly Station &mdash; it&rsquo;s
-                      about 30 minutes and drops you right at the harbour.
+                      A trip out to Howth, just outside Dublin, is well worth the trip. Hop on the DART from Tara
+                      Street or Connolly Station &mdash; it&rsquo;s about 30 minutes and drops you right at the
+                      harbour.
                     </p>
                     <p>
                       Walk the cliff path for the views, then grab fish and chips from one of the stalls by the
