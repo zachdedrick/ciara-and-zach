@@ -103,6 +103,11 @@ export default function Travel() {
       <PageHeader title="Travel" subtitle="Getting to Glaslough, Co. Monaghan" />
 
       <div className="mx-auto max-w-3xl px-4 py-16 space-y-14">
+        <p className="text-center text-lg text-ivy-700">
+          We&rsquo;re so grateful you&rsquo;re all making the trip to Ireland for our wedding. Below you&rsquo;ll find
+          lots of travel and accommodation options depending on what your itinerary looks like!
+        </p>
+
         <section>
           <h2 className="font-display text-2xl text-ivy-800">Getting Here</h2>
 
