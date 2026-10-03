@@ -13,6 +13,8 @@ import lahinchGolfDunes from '../assets/photos/lahinch-golf-dunes.jpg'
 import lahinchGolfGreen from '../assets/photos/lahinch-golf-green.jpg'
 import golfCourseGroup from '../assets/photos/golf-course-group.jpg'
 import cliffsOfMoherBoys from '../assets/photos/gallery-cliffs-of-moher-boys.jpg'
+import galwayFlagsStreet from '../assets/photos/galway-flags-street.jpg'
+import galwayAranCliffs from '../assets/photos/galway-aran-cliffs.jpg'
 
 const GOLF_COURSES = [
   { src: lahinchGolfDunes, alt: 'Lahinch Golf Club, Co. Clare' },
@@ -36,8 +38,8 @@ const WEST_COAST = [
     county: 'Co. Galway',
     driveTime: 'about 1h 20m from Shannon',
     description:
-      'A lively, colourful city with some of the best live music and food in Ireland. Wander the Latin Quarter and stay for dinner.',
-    photos: [],
+      'A lively, colourful city with some of the best pubs, live music, and food in Ireland. Wander the Latin Quarter and stay for dinner. Take the ferry over to the Aran Islands and rent bikes for about €15 to ride around and see all the views.',
+    photos: [galwayFlagsStreet, galwayAranCliffs],
   },
   {
     name: 'Dingle Peninsula',
