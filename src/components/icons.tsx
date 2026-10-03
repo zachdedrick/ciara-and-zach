@@ -1,24 +1,5 @@
 type IconProps = { className?: string }
 
-export function CladdaghIcon({ className = 'h-5 w-5' }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" className={className} aria-hidden="true">
-      {/* crown */}
-      <path d="M7.5,7 L8.5,4 L10,6.3 L12,3.5 L14,6.3 L15.5,4 L16.5,7 Z" strokeLinejoin="round" />
-      {/* heart */}
-      <path
-        d="M12,16.5 C7,13 6.3,9.6 8.6,8.3 C10,7.5 12,9 12,10.8 C12,9 14,7.5 15.4,8.3 C17.7,9.6 17,13 12,16.5 Z"
-        strokeLinejoin="round"
-      />
-      {/* hands / cuffs */}
-      <path d="M3,20.5 L7.6,15.8" strokeLinecap="round" />
-      <path d="M2,21.5 L4.2,19.3" strokeLinecap="round" />
-      <path d="M21,20.5 L16.4,15.8" strokeLinecap="round" />
-      <path d="M22,21.5 L19.8,19.3" strokeLinecap="round" />
-    </svg>
-  )
-}
-
 export function PlaneIcon({ className = 'h-5 w-5' }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={className} aria-hidden="true">
