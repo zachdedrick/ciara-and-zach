@@ -4,7 +4,7 @@ export function PlaneIcon({ className = 'h-5 w-5' }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={className} aria-hidden="true">
       <path
-        d="M10.5 15.5 3 13l1-2 7 1.2V7l-2.5-3 1.5-1 3.5 2.5 3.5-2.5 1.5 1-2.5 3v5.2l7-1.2 1 2-7.5 2.5v3l2.5 1.5-.5 1.5-3.5-1-3.5 1-.5-1.5 2.5-1.5v-3Z"
+        d="M17.8 19.2 16 11l3.5-3.5c1.5-1.5 2-3.5 1.5-4.5-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-1 .1-1.3.5l-.7.9c-.4.4-.2 1.1.3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.4 5.9c.3.5 1 .6 1.3.3l.7-.7c.4-.3.6-.8.4-1.3Z"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

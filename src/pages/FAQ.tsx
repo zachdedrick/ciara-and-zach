@@ -21,6 +21,21 @@ const FAQS: { question: string; answer: ReactNode }[] = [
       </>
     ),
   },
+  {
+    question: 'Should I rent a car?',
+    answer: (
+      <>
+        <p>
+          Renting a car will be convenient for those traveling around Ireland before or after the wedding &mdash;
+          just remember to drive on the left ;)
+        </p>
+        <p className="mt-2">
+          If you&rsquo;re planning on driving yourself to and from the ceremony in Armagh, be sure to tell your car
+          rental provider that you&rsquo;ll be in Northern Ireland!
+        </p>
+      </>
+    ),
+  },
 ]
 
 export default function FAQ() {
