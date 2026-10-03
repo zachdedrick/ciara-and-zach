@@ -94,7 +94,7 @@ export default function Itinerary() {
                 We&rsquo;ll say &ldquo;I do&rdquo; at St. Patrick&rsquo;s Cathedral in Armagh, about a 25-minute
                 drive from Castle Leslie Estate.
               </p>
-              <p>We&rsquo;ll have transportation bringing everyone back to the Estate after the ceremony.</p>
+              <p>Bus transportation will be provided to the ceremony in Armagh from Glaslough. Details to come!</p>
             </EventCard>
 
             <EventCard

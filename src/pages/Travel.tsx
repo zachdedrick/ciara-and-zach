@@ -167,8 +167,17 @@ export default function Travel() {
 
         <section>
           <h2 className="font-display text-2xl text-ivy-800">Where to Stay</h2>
+          <p className="mt-2 text-ivy-700">
+            Three options depending on what you&rsquo;re after: staying right on the Estate, a hotel nearby, or an
+            Airbnb in the village with your group.
+          </p>
 
-          <h3 className="mt-6 text-lg uppercase tracking-wide text-ivy-600">Staying on the Estate</h3>
+          <div className="mt-6 flex items-center gap-3">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-ivy-700 font-display text-sm text-parchment">
+              1
+            </span>
+            <h3 className="text-lg uppercase tracking-wide text-ivy-600">Staying on the Estate</h3>
+          </div>
           <p className="mt-2 text-ivy-700">
             The most special option &mdash; stay right on the grounds of Castle Leslie itself.
           </p>
@@ -195,7 +204,12 @@ export default function Travel() {
             ))}
           </div>
 
-          <h3 className="mt-8 text-lg uppercase tracking-wide text-ivy-600">Hotels</h3>
+          <div className="mt-10 flex items-center gap-3">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-ivy-700 font-display text-sm text-parchment">
+              2
+            </span>
+            <h3 className="text-lg uppercase tracking-wide text-ivy-600">Hotels in the Area</h3>
+          </div>
           <div className="mt-3 rounded-lg border border-ivy-100 p-5">
             <div className="flex items-start gap-3">
               <HotelIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
@@ -228,7 +242,12 @@ export default function Travel() {
             </div>
           </div>
 
-          <h3 className="mt-8 text-lg uppercase tracking-wide text-ivy-600">Airbnbs</h3>
+          <div className="mt-10 flex items-center gap-3">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-ivy-700 font-display text-sm text-parchment">
+              3
+            </span>
+            <h3 className="text-lg uppercase tracking-wide text-ivy-600">Local Airbnbs in the Village</h3>
+          </div>
           <p className="mt-2 text-sm italic text-ivy-600">
             Most convenient if not staying on property &mdash; located in the village of Glaslough, directly adjacent
             to the Leslie estate.
