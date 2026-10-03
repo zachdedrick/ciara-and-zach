@@ -58,6 +58,11 @@ import loveyouDerbyBlazers from '../assets/photos/loveyou-derby-blazers.jpg'
 import loveyouNdTailgateFour from '../assets/photos/loveyou-nd-tailgate-four.jpg'
 import loveyouFormalTrio from '../assets/photos/loveyou-formal-trio.jpg'
 import loveyouNdTailgateGroup from '../assets/photos/loveyou-nd-tailgate-group.jpg'
+import loveyouPorchGuys from '../assets/photos/loveyou-porch-guys.jpg'
+import loveyouGrandparentsBackyard from '../assets/photos/loveyou-grandparents-backyard.jpg'
+import loveyouTentFamily from '../assets/photos/loveyou-tent-family.jpg'
+import loveyouNdBannerGroup from '../assets/photos/loveyou-nd-banner-group.jpg'
+import loveyouGardenFamilyFormal from '../assets/photos/loveyou-garden-family-formal.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -127,6 +132,11 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouNdTailgateFour, alt: "Zach and friends tailgating at Notre Dame", objectPosition: '50% 38%' },
   { src: loveyouFormalTrio, alt: "Zach and friends at a formal event", objectPosition: '50% 15%' },
   { src: loveyouNdTailgateGroup, alt: "Zach and friends tailgating at Notre Dame" },
+  { src: loveyouPorchGuys, alt: "Zach and friends on a porch", objectPosition: '50% 45%' },
+  { src: loveyouGrandparentsBackyard, alt: "Zach's family in the backyard", objectPosition: '50% 32%' },
+  { src: loveyouTentFamily, alt: "Ciara and family at a wedding reception" },
+  { src: loveyouNdBannerGroup, alt: "Zach and friends at Notre Dame" },
+  { src: loveyouGardenFamilyFormal, alt: "Zach and his family dressed up for a wedding", objectPosition: '50% 40%' },
 ]
 
 export default function Gallery() {
