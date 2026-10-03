@@ -20,8 +20,6 @@ const GOLF_COURSES = [
   { src: lahinchGolfDunes, alt: 'Lahinch Golf Club, Co. Clare' },
   { src: lahinchGolfGreen, alt: 'Lahinch Golf Club, Co. Clare' },
   { src: golfCourseGroup, alt: 'A round of golf on the Co. Clare coast' },
-  { alt: 'Royal County Down, Co. Down' },
-  { alt: 'Portmarnock Golf Club, Co. Dublin' },
 ]
 
 const WEST_COAST = [
@@ -127,6 +125,9 @@ export default function ThingsToDo() {
                     links courses &mdash; Lahinch in Co. Clare is a great option near Shannon, and Royal County
                     Down, Portmarnock, and Ballybunion are all worth the detour if you have the time. Book tee
                     times well ahead.
+                  </p>
+                  <p className="mt-2 text-sm italic text-ivy-600">
+                    If you&rsquo;re unsure where to play, reach out to the groom for some golf recs!
                   </p>
                 </div>
               </div>
