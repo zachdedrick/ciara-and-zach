@@ -6,7 +6,7 @@ export default function WatercolorDivider({ className = 'my-10' }: { className?:
       src={celticDivider}
       alt=""
       aria-hidden="true"
-      className={`mx-auto h-8 w-80 object-contain sm:h-10 sm:w-[28rem] ${className}`}
+      className={`mx-auto h-auto w-[26rem] sm:w-[36rem] ${className}`}
     />
   )
 }
