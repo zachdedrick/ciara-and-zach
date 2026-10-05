@@ -46,12 +46,19 @@ const ON_ESTATE = [
   },
 ]
 
-const HILLGROVE = {
-  name: 'Hillgrove Hotel',
-  address: 'Old Armagh Road, Monaghan, Co. Monaghan, Ireland',
-  websiteUrl: 'https://www.hillgrovehotel.com',
-  bookingCode: 'REF 199847',
-}
+const HOTELS: { name: string; address: string; websiteUrl: string; bookingCode?: string }[] = [
+  {
+    name: 'Hillgrove Hotel',
+    address: 'Old Armagh Road, Monaghan, Co. Monaghan, Ireland',
+    websiteUrl: 'https://www.hillgrovehotel.com',
+    bookingCode: 'REF 199847',
+  },
+  {
+    name: 'Westenra Hotel',
+    address: 'The Diamond, Monaghan, Co. Monaghan, Ireland',
+    websiteUrl: 'https://www.westenrahotel.com',
+  },
+]
 
 const AIRBNBS: { name: string; capacity: string; url?: string }[] = [
   {
@@ -211,36 +218,42 @@ export default function Travel() {
             </span>
             <h3 className="text-lg uppercase tracking-wide text-ivy-600">Hotels in the Area</h3>
           </div>
-          <div className="mt-3 rounded-lg border border-ivy-100 p-5">
-            <div className="flex items-start gap-3">
-              <HotelIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
-              <div>
-                <a
-                  href={HILLGROVE.websiteUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 font-display text-xl text-ivy-800 hover:text-gold-600"
-                >
-                  {HILLGROVE.name}
-                  <ExternalLinkIcon className="h-4 w-4" />
-                </a>
+          <div className="mt-3 grid gap-4 sm:grid-cols-2">
+            {HOTELS.map((hotel) => (
+              <div key={hotel.name} className="rounded-lg border border-ivy-100 p-5">
+                <div className="flex items-start gap-3">
+                  <HotelIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
+                  <div>
+                    <a
+                      href={hotel.websiteUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 font-display text-xl text-ivy-800 hover:text-gold-600"
+                    >
+                      {hotel.name}
+                      <ExternalLinkIcon className="h-4 w-4" />
+                    </a>
 
-                <a
-                  href={mapsUrl(HILLGROVE.address)}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-1 flex items-center gap-1.5 text-sm text-ivy-700 hover:text-gold-600"
-                >
-                  <MapPinIcon className="h-4 w-4 shrink-0" />
-                  {HILLGROVE.address}
-                </a>
+                    <a
+                      href={mapsUrl(hotel.address)}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-1 flex items-center gap-1.5 text-sm text-ivy-700 hover:text-gold-600"
+                    >
+                      <MapPinIcon className="h-4 w-4 shrink-0" />
+                      {hotel.address}
+                    </a>
 
-                <p className="mt-2 text-sm text-ivy-600">
-                  Use this reference when booking directly with the hotel:{' '}
-                  <span className="font-medium">{HILLGROVE.bookingCode}</span>
-                </p>
+                    {hotel.bookingCode && (
+                      <p className="mt-2 text-sm text-ivy-600">
+                        Use this reference when booking directly with the hotel:{' '}
+                        <span className="font-medium">{hotel.bookingCode}</span>
+                      </p>
+                    )}
+                  </div>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
 
           <div className="mt-10 flex items-center gap-3">
