@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Reveal from '../components/Reveal'
 import WatercolorDivider from '../components/WatercolorDivider'
 import PhotoPlaceholder from '../components/PhotoPlaceholder'
 import castleHero from '../assets/watercolor/castle-leslie-hero.jpg'
@@ -36,26 +37,28 @@ export default function Home() {
           className="absolute inset-0 bg-gradient-to-b from-ivy-900/75 via-ivy-800/65 to-ivy-900/85"
           aria-hidden="true"
         />
-        <div className="relative z-10">
+        <Reveal className="relative z-10">
           <p className="font-display text-xl italic text-gold-300 sm:text-2xl">C&eacute;ad M&iacute;le F&aacute;ilte</p>
           <h1 className="font-display mt-4 text-5xl sm:text-7xl">Ciara &amp; Zach</h1>
           <WatercolorDivider />
           <p className="text-lg sm:text-xl">21 August 2027</p>
           <p className="mt-1 text-base text-ivy-100">Castle Leslie &middot; Glaslough, Ireland</p>
           <p className="mt-6 text-sm uppercase tracking-[0.2em] text-gold-300">{daysToGo} days to go</p>
-        </div>
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-5xl px-4 py-16 sm:py-20">
-        <h2 className="font-display text-center text-3xl text-ivy-800">
-          We are so excited to share our special day with everyone we love in such a magical place.
-        </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-ivy-700">
-          You&rsquo;ll find all of our travel tips, events for the weekend, RSVP links and more, but if you have any
-          questions please don&rsquo;t hesitate to reach out!
-        </p>
+        <Reveal>
+          <h2 className="font-display text-center text-3xl text-ivy-800">
+            We are so excited to share our special day with everyone we love in such a magical place.
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-ivy-700">
+            You&rsquo;ll find all of our travel tips, events for the weekend, RSVP links and more, but if you have any
+            questions please don&rsquo;t hesitate to reach out!
+          </p>
+        </Reveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <Reveal delayMs={150} className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
           <div className="aspect-[3/4] overflow-hidden rounded-lg shadow-md">
             <PhotoPlaceholder src={engagementPosed} alt="Ciara & Zach, engagement photo" />
           </div>
@@ -69,7 +72,7 @@ export default function Home() {
               className="object-[32%_48%]"
             />
           </div>
-        </div>
+        </Reveal>
       </section>
     </div>
   )

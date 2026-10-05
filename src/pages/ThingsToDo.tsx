@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Reveal from '../components/Reveal'
 import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
 import PhotoPlaceholder from '../components/PhotoPlaceholder'
@@ -76,7 +77,7 @@ export default function ThingsToDo() {
       <PageHeader title="Exploring Ireland" subtitle="Making the most of your trip" />
 
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">If You Have a Week</h2>
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">The Southwest &amp; West Coast</p>
           <WatercolorDivider />
@@ -133,9 +134,9 @@ export default function ThingsToDo() {
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">If You Have a Couple of Days</h2>
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">Dublin</p>
           <WatercolorDivider />
@@ -174,9 +175,9 @@ export default function ThingsToDo() {
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">Coming Straight to Glaslough</h2>
           <WatercolorDivider />
 
@@ -209,9 +210,9 @@ export default function ThingsToDo() {
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">Irish Slang &amp; Glossary</h2>
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">So You&rsquo;re Not Lost at the Bar</p>
           <WatercolorDivider />
@@ -224,7 +225,7 @@ export default function ThingsToDo() {
               </div>
             ))}
           </div>
-        </section>
+        </Reveal>
       </div>
     </div>
   )

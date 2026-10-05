@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
+import Reveal from '../components/Reveal'
 
 const FAQS: { question: string; answer: ReactNode }[] = [
   {
@@ -43,11 +44,11 @@ export default function FAQ() {
     <div>
       <PageHeader title="FAQ" />
       <div className="mx-auto max-w-3xl space-y-6 px-4 py-16">
-        {FAQS.map((faq) => (
-          <div key={faq.question} className="rounded-lg border border-ivy-100 p-5">
+        {FAQS.map((faq, index) => (
+          <Reveal key={faq.question} delayMs={index * 80} className="rounded-lg border border-ivy-100 p-5">
             <h2 className="font-display text-xl text-ivy-800">{faq.question}</h2>
             <div className="mt-2 text-ivy-700">{faq.answer}</div>
-          </div>
+          </Reveal>
         ))}
       </div>
     </div>

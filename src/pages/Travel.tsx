@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Reveal from '../components/Reveal'
 import PageHeader from '../components/PageHeader'
 import {
   BusIcon,
@@ -108,7 +109,7 @@ export default function Travel() {
           lots of travel and accommodation options depending on what your itinerary looks like!
         </p>
 
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-2xl text-ivy-800">Getting Here</h2>
 
           <h3 className="mt-5 text-lg uppercase tracking-wide text-ivy-600">Flying In</h3>
@@ -163,9 +164,9 @@ export default function Travel() {
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-2xl text-ivy-800">Where to Stay</h2>
           <p className="mt-2 text-ivy-700">
             Three options depending on what you&rsquo;re after: staying right on the Estate, a hotel nearby, or an
@@ -282,9 +283,9 @@ export default function Travel() {
               </div>
             ))}
           </div>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-2xl text-ivy-800">Getting Around</h2>
 
           <div className="mt-5 rounded-lg border border-ivy-100 p-5">
@@ -326,7 +327,7 @@ export default function Travel() {
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
       </div>
     </div>
   )

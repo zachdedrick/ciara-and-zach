@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import Reveal from '../components/Reveal'
 import PageHeader from '../components/PageHeader'
 import WatercolorDivider from '../components/WatercolorDivider'
 import { MapPinIcon } from '../components/icons'
@@ -56,7 +57,7 @@ export default function Itinerary() {
       <PageHeader title="Itinerary" subtitle="A weekend at Castle Leslie" />
 
       <div className="mx-auto max-w-4xl px-4 py-16 space-y-16">
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-center text-xl uppercase tracking-[0.25em] text-gold-600">
             Friday, 20 August
           </h2>
@@ -75,9 +76,9 @@ export default function Itinerary() {
               favourite old pub &mdash; for light bites and drinks. Come whenever you land, stay as late as you like.
             </p>
           </EventCard>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-center text-xl uppercase tracking-[0.25em] text-gold-600">
             Saturday, 21 August
           </h2>
@@ -108,9 +109,9 @@ export default function Itinerary() {
               <p>Then it&rsquo;s dancing long into the night &mdash; we&rsquo;ll keep going until 3:30 AM.</p>
             </EventCard>
           </div>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-center text-xl uppercase tracking-[0.25em] text-gold-600">
             Sunday, 22 August
           </h2>
@@ -118,7 +119,7 @@ export default function Itinerary() {
           <p className="text-center text-ivy-700">
             Details to come &mdash; we&rsquo;re still figuring this one out. Check back soon!
           </p>
-        </section>
+        </Reveal>
       </div>
     </div>
   )

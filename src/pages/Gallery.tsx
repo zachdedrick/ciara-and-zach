@@ -1,4 +1,5 @@
 import PageHeader from '../components/PageHeader'
+import Reveal from '../components/Reveal'
 import WatercolorDivider from '../components/WatercolorDivider'
 import MarqueeStrip from '../components/MarqueeStrip'
 import dublinGrogans from '../assets/photos/dublin-grogans.jpg'
@@ -181,23 +182,23 @@ export default function Gallery() {
       <PageHeader title="Gallery" subtitle="Snapshots from our trips to Ireland" />
 
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">From Our Trips</h2>
           <WatercolorDivider />
           <MarqueeStrip photos={FEATURED} tileClassName="aspect-[4/3] w-80 sm:w-[28rem]" durationSeconds={80} />
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">Ciara &amp; Zach Through the Years</h2>
           <WatercolorDivider />
           <MarqueeStrip photos={THROUGH_THE_YEARS} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={55} reverse />
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">We Love You All!</h2>
           <WatercolorDivider />
           <MarqueeStrip photos={WE_LOVE_YOU_ALL} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={55} />
-        </section>
+        </Reveal>
       </div>
     </div>
   )
