@@ -61,7 +61,6 @@ export default function Itinerary() {
           <h2 className="font-display text-center text-xl uppercase tracking-[0.25em] text-gold-600">
             Friday, 20 August
           </h2>
-          <WatercolorDivider />
 
           <EventCard
             time="7:00 PM"

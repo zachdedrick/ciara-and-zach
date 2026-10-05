@@ -80,7 +80,6 @@ export default function ThingsToDo() {
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">If You Have a Week</h2>
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">The Southwest &amp; West Coast</p>
-          <WatercolorDivider />
 
           <p className="mx-auto max-w-2xl text-center text-lg text-ivy-700">
             Flying in early or staying on after the wedding? Consider flying into Shannon Airport (SNN) instead of

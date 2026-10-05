@@ -39,8 +39,8 @@ export default function Home() {
         />
         <Reveal className="relative z-10">
           <p className="font-display text-xl italic text-gold-300 sm:text-2xl">C&eacute;ad M&iacute;le F&aacute;ilte</p>
-          <h1 className="font-display mt-4 text-5xl sm:text-7xl">Ciara &amp; Zach</h1>
-          <WatercolorDivider />
+          <h1 className="font-script mt-4 text-6xl sm:text-8xl">Ciara &amp; Zach</h1>
+          <WatercolorDivider className="my-2" size="sm" />
           <p className="text-lg sm:text-xl">21 August 2027</p>
           <p className="mt-1 text-base text-ivy-100">Castle Leslie &middot; Glaslough, Ireland</p>
           <p className="mt-6 text-sm uppercase tracking-[0.2em] text-gold-300">{daysToGo} days to go</p>

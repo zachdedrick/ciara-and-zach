@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Fraunces", serif;
-  --font-body: "Inter", sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-body: "Cormorant Garamond", serif;
+  --font-script: "Alex Brush", cursive;
 
   --color-ivy-900: #1d2f26;
   --color-ivy-800: #263f32;
@@ -34,6 +35,10 @@ body {
 
 h1, h2, h3, .font-display {
   font-family: var(--font-display);
+}
+
+.font-script {
+  font-family: var(--font-script);
 }
 
 .reveal {

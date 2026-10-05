@@ -184,7 +184,6 @@ export default function Gallery() {
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">From Our Trips</h2>
-          <WatercolorDivider />
           <MarqueeStrip photos={FEATURED} tileClassName="aspect-[4/3] w-80 sm:w-[28rem]" durationSeconds={80} />
         </Reveal>
 
