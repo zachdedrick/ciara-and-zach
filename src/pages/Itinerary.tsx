@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react'
 import Reveal from '../components/Reveal'
 import PageHeader from '../components/PageHeader'
-import WatercolorDivider from '../components/WatercolorDivider'
 import { MapPinIcon } from '../components/icons'
 import castleAerial from '../assets/watercolor/castle-leslie-aerial.jpg'
 import cathedralPhoto from '../assets/watercolor/cathedral-armagh.jpg'
@@ -72,7 +71,7 @@ export default function Itinerary() {
           >
             <p>
               Kick off the weekend with us! Join us at the Coach House &amp; Olde Bar &mdash; Glaslough&rsquo;s
-              favourite old pub &mdash; for light bites and drinks. Come whenever you land, stay as late as you like.
+              favourite old pub &mdash; for light bites and drinks. Stay as late as you like.
             </p>
           </EventCard>
         </Reveal>
@@ -81,7 +80,6 @@ export default function Itinerary() {
           <h2 className="font-display text-center text-xl uppercase tracking-[0.25em] text-gold-600">
             Saturday, 21 August
           </h2>
-          <WatercolorDivider />
 
           <div className="space-y-12">
             <EventCard
@@ -91,21 +89,22 @@ export default function Itinerary() {
               visual={<img src={cathedralPhoto} alt="St. Patrick's Cathedral, Armagh" className="h-full w-full object-cover" />}
             >
               <p>
-                We&rsquo;ll say &ldquo;I do&rdquo; at St. Patrick&rsquo;s Cathedral in Armagh, about a 25-minute
-                drive from Castle Leslie Estate.
+                Please join us for the ceremony at St Patrick&rsquo;s Cathedral, about a 25 minute drive from Castle
+                Leslie.
               </p>
               <p>Bus transportation will be provided to the ceremony in Armagh from Glaslough. Details to come!</p>
             </EventCard>
 
             <EventCard
-              time="3:00 PM onward"
+              time="3:00 PM"
               title="Reception"
               address="Castle Leslie Estate, Glaslough, Co. Monaghan"
               visual={<img src={castleAerial} alt="Castle Leslie Estate" className="h-full w-full object-cover" />}
               imageSide="right"
             >
-              <p>Cocktail hour starts at 3:00 PM back at the Estate, flowing into dinner as the evening goes on.</p>
-              <p>Then it&rsquo;s dancing long into the night &mdash; we&rsquo;ll keep going until 3:30 AM.</p>
+              <p>Buses will bring everyone back to the Castle after the ceremony.</p>
+              <p>Cocktail hours in Ireland are twice as long &mdash; lucky us!</p>
+              <p>Dress code: castle formal</p>
             </EventCard>
           </div>
         </Reveal>
@@ -114,9 +113,9 @@ export default function Itinerary() {
           <h2 className="font-display text-center text-xl uppercase tracking-[0.25em] text-gold-600">
             Sunday, 22 August
           </h2>
-          <WatercolorDivider />
           <p className="text-center text-ivy-700">
-            Details to come &mdash; we&rsquo;re still figuring this one out. Check back soon!
+            The Lodge will offer breakfast the next day in Snaffles for those staying on the Estate, and most
+            hotels/B&amp;Bs in the area also include breakfast. More details to come!!
           </p>
         </Reveal>
       </div>

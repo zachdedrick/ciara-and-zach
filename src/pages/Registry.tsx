@@ -5,7 +5,7 @@ export default function Registry() {
     <div>
       <PageHeader title="Registry" />
       <div className="mx-auto max-w-3xl px-4 py-16 text-center text-ivy-700">
-        <p>Registry links will go here.</p>
+        <p>Check back later!</p>
       </div>
     </div>
   )

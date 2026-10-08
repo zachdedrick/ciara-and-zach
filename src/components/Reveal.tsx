@@ -22,6 +22,14 @@ export default function Reveal({
     const el = ref.current
     if (!el) return
 
+    // If it's already on screen at mount (above the fold), show it right
+    // away instead of waiting on the observer's first callback.
+    const rect = el.getBoundingClientRect()
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      setVisible(true)
+      return
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -29,7 +37,7 @@ export default function Reveal({
           observer.unobserve(el)
         }
       },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' },
+      { threshold: 0, rootMargin: '0px' },
     )
 
     observer.observe(el)

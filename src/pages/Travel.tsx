@@ -330,12 +330,14 @@ export default function Travel() {
                 <p className="text-lg text-ivy-800">Renting a car</p>
                 <ul className="mt-2 list-disc space-y-1.5 pl-4 text-sm text-ivy-700">
                   <li>It&rsquo;s about a 1.5&ndash;2 hour drive from Dublin, mostly via the N2.</li>
-                  <li>The Hillgrove Hotel has on-site parking for hotel guests.</li>
                   <li>
                     Staying at one of the Airbnbs? Check with your host on how many parking spots the house has
                     &mdash; if a few of you are driving, carpooling is a good bet.
                   </li>
-                  <li>Castle Leslie will have parking on the wedding day &mdash; more details closer to the date.</li>
+                  <li>
+                    Castle Leslie will have parking on site for the wedding day if you choose to drive yourself from
+                    the ceremony.
+                  </li>
                 </ul>
               </div>
             </div>

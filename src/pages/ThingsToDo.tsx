@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import PageHeader from '../components/PageHeader'
-import WatercolorDivider from '../components/WatercolorDivider'
 import PhotoPlaceholder from '../components/PhotoPlaceholder'
 import SlideCarousel from '../components/SlideCarousel'
 import { BusIcon, CarIcon, GolfIcon, TrainIcon } from '../components/icons'
@@ -28,8 +27,7 @@ const WEST_COAST = [
     name: 'Cliffs of Moher',
     county: 'Co. Clare',
     driveTime: 'about 55 min from Shannon',
-    description:
-      'Ireland’s most famous sea cliffs, rising 700 feet straight out of the Atlantic. Go for sunset if you can.',
+    description: 'Ireland’s most famous sea cliffs, rising 700 feet straight out of the Atlantic.',
     photos: [cliffsOfMoher, cliffsOfMoherBoys],
   },
   {
@@ -44,8 +42,7 @@ const WEST_COAST = [
     name: 'Dingle Peninsula',
     county: 'Co. Kerry',
     driveTime: 'about 2h 15m from Shannon',
-    description:
-      'Dramatic coastline, Irish-speaking villages, and the Slea Head Drive — one of the most beautiful routes in the country.',
+    description: 'Dramatic coastline and Irish-speaking villages, with some of the most beautiful routes in the country.',
     photos: [dingleHarbour],
   },
   {
@@ -83,8 +80,7 @@ export default function ThingsToDo() {
 
           <p className="mx-auto max-w-2xl text-center text-lg text-ivy-700">
             Flying in early or staying on after the wedding? Consider flying into Shannon Airport (SNN) instead of
-            Dublin and making a loop of the west coast &mdash; it&rsquo;s a different part of the country from
-            Glaslough, so it&rsquo;s worth the extra days if you have them.
+            Dublin and making a loop of the west coast &mdash; it&rsquo;s worth the extra days if you have them.
           </p>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -138,7 +134,6 @@ export default function ThingsToDo() {
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">If You Have a Couple of Days</h2>
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">Dublin</p>
-          <WatercolorDivider />
 
           <p className="mx-auto max-w-2xl text-center text-lg text-ivy-700">
             Dublin is an easy add-on before or after the wedding &mdash; a day or two is enough to get a real feel
@@ -178,7 +173,6 @@ export default function ThingsToDo() {
 
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">Coming Straight to Glaslough</h2>
-          <WatercolorDivider />
 
           <p className="mx-auto max-w-2xl text-center text-lg text-ivy-700">
             Flying directly into Dublin and heading straight up to us? We&rsquo;re so excited to see you! Take the{' '}
@@ -214,7 +208,6 @@ export default function ThingsToDo() {
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">Irish Slang &amp; Glossary</h2>
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">So You&rsquo;re Not Lost at the Bar</p>
-          <WatercolorDivider />
 
           <div className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-2">
             {GLOSSARY.map((entry) => (

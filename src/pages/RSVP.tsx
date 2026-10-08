@@ -21,6 +21,9 @@ type ExistingRsvp = {
 
 type Step = 'search' | 'choose' | 'form' | 'success'
 
+// Flip this to true once invitations have gone out and the guest list is loaded.
+const RSVP_OPEN = false
+
 export default function RSVP() {
   const [step, setStep] = useState<Step>('search')
   const [query, setQuery] = useState('')
@@ -117,6 +120,17 @@ export default function RSVP() {
     }
 
     setStep('success')
+  }
+
+  if (!RSVP_OPEN) {
+    return (
+      <div>
+        <PageHeader title="RSVP" />
+        <div className="mx-auto max-w-xl px-4 py-16 text-center text-lg text-ivy-700">
+          <p>Still finalizing details of the weekend! Please RSVP once you get your invitation.</p>
+        </div>
+      </div>
+    )
   }
 
   return (

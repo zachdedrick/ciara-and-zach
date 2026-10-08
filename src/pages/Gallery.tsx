@@ -1,6 +1,5 @@
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
-import WatercolorDivider from '../components/WatercolorDivider'
 import MarqueeStrip from '../components/MarqueeStrip'
 import dublinGrogans from '../assets/photos/dublin-grogans.jpg'
 import dundalkFamilyHome from '../assets/photos/dundalk-family-home.jpg'
@@ -189,13 +188,11 @@ export default function Gallery() {
 
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">Ciara &amp; Zach Through the Years</h2>
-          <WatercolorDivider />
           <MarqueeStrip photos={THROUGH_THE_YEARS} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={55} reverse />
         </Reveal>
 
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">We Love You All!</h2>
-          <WatercolorDivider />
           <MarqueeStrip photos={WE_LOVE_YOU_ALL} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={55} />
         </Reveal>
       </div>

@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 
@@ -8,13 +7,7 @@ const FAQS: { question: string; answer: ReactNode }[] = [
     question: 'What should I wear?',
     answer: (
       <>
-        <p>
-          See the{' '}
-          <Link to="/itinerary" className="underline hover:text-gold-600">
-            Itinerary page
-          </Link>{' '}
-          for the dress code for each event.
-        </p>
+        <p>Check the invite for dress code.</p>
         <ul className="mt-2 list-disc space-y-1 pl-4">
           <li>Ladies, bring a shawl &mdash; evenings can turn cool.</li>
           <li>Bring a raincoat &mdash; Irish weather is unpredictable!</li>

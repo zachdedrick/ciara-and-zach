@@ -40,7 +40,7 @@ export default function Home() {
         <Reveal className="relative z-10">
           <p className="font-display text-xl italic text-gold-300 sm:text-2xl">C&eacute;ad M&iacute;le F&aacute;ilte</p>
           <h1 className="font-script mt-4 text-6xl sm:text-8xl">Ciara &amp; Zach</h1>
-          <WatercolorDivider className="my-2" size="sm" />
+          <WatercolorDivider className="my-0" size="sm" />
           <p className="text-lg sm:text-xl">21 August 2027</p>
           <p className="mt-1 text-base text-ivy-100">Castle Leslie &middot; Glaslough, Ireland</p>
           <p className="mt-6 text-sm uppercase tracking-[0.2em] text-gold-300">{daysToGo} days to go</p>
@@ -50,7 +50,7 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-4 py-16 sm:py-20">
         <Reveal>
           <h2 className="font-display text-center text-3xl text-ivy-800">
-            We are so excited to share our special day with everyone we love in such a magical place.
+            We are so excited to celebrate our special day with you all!
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-ivy-700">
             You&rsquo;ll find all of our travel tips, events for the weekend, RSVP links and more, but if you have any
