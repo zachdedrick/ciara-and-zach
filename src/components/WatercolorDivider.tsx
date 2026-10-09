@@ -7,7 +7,7 @@ export default function WatercolorDivider({
   className?: string
   size?: 'sm' | 'lg'
 }) {
-  const sizeClass = size === 'sm' ? 'w-48 sm:w-64' : 'w-[26rem] sm:w-[36rem]'
+  const sizeClass = size === 'sm' ? 'w-56 sm:w-72' : 'w-[26rem] sm:w-[36rem]'
 
   return (
     <img
