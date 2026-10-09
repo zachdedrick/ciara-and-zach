@@ -16,18 +16,18 @@ export default function NavBar() {
   const [open, setOpen] = useState(false)
 
   const linkClass = ({ isActive }: { isActive: boolean }) =>
-    `px-3 py-2 text-sm uppercase tracking-[0.15em] transition-colors ${
+    `whitespace-nowrap px-2 py-2 text-sm uppercase tracking-[0.1em] transition-colors ${
       isActive ? 'text-gold-500' : 'text-ivy-50 hover:text-gold-300'
     }`
 
   return (
     <header className="sticky top-0 z-50 bg-ivy-800/95 backdrop-blur-sm shadow-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
         <NavLink to="/" className="font-display text-xl text-parchment sm:text-2xl" onClick={() => setOpen(false)}>
           Ciara &amp; Zach
         </NavLink>
 
-        <nav className="hidden md:flex">
+        <nav className="hidden flex-wrap items-center justify-end gap-x-1 gap-y-1 md:flex">
           {links.map((link) => (
             <NavLink key={link.to} to={link.to} end={link.to === '/'} className={linkClass}>
               {link.label}
