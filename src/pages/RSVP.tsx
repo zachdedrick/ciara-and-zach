@@ -313,7 +313,10 @@ function PreRsvpQuestionnaire() {
 
   if (submitted) {
     return (
-      <p className="mt-10 text-center text-ivy-700">Thanks so much &mdash; this is a huge help as we plan!</p>
+      <div className="mt-10 border-t border-ivy-100 pt-10 text-center">
+        <p className="font-display text-2xl text-ivy-800">Submitted!</p>
+        <p className="mt-2 text-ivy-700">Thanks so much &mdash; this is a huge help as we plan!</p>
+      </div>
     )
   }
 
