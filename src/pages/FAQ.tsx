@@ -10,7 +10,7 @@ const FAQS: { question: string; answer: ReactNode }[] = [
         <p>Check the invite for dress code.</p>
         <ul className="mt-2 list-disc space-y-1 pl-4">
           <li>Ladies, bring a shawl &mdash; evenings can turn cool.</li>
-          <li>Bring a raincoat &mdash; Irish weather is unpredictable!</li>
+          <li>Pack a raincoat &mdash; Irish weather is unpredictable!</li>
         </ul>
       </>
     ),
