@@ -104,7 +104,9 @@ export default function Itinerary() {
             >
               <p>Buses will bring everyone back to the Castle after the ceremony.</p>
               <p>Cocktail hours in Ireland are twice as long &mdash; lucky us!</p>
-              <p>Dress code: castle formal</p>
+              <p>
+                Dress code: <span className="font-script text-2xl text-gold-600">Castle Formal</span>
+              </p>
             </EventCard>
           </div>
         </Reveal>
