@@ -178,7 +178,7 @@ const WE_LOVE_YOU_ALL = [
 export default function Gallery() {
   return (
     <div>
-      <PageHeader title="Gallery" subtitle="Snapshots from our trips to Ireland" />
+      <PageHeader title="Gallery" />
 
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
         <Reveal as="section">
