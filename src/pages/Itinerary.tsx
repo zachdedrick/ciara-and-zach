@@ -73,6 +73,9 @@ export default function Itinerary() {
               Kick off the weekend with us! Join us at the Coach House &amp; Olde Bar &mdash; Glaslough&rsquo;s
               favourite old pub &mdash; for light bites and drinks.
             </p>
+            <p>
+              Dress code: <span className="font-script text-2xl text-gold-600">Pub Chic</span>
+            </p>
           </EventCard>
         </Reveal>
 
