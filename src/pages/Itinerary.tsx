@@ -71,7 +71,7 @@ export default function Itinerary() {
           >
             <p>
               Kick off the weekend with us! Join us at the Coach House &amp; Olde Bar &mdash; Glaslough&rsquo;s
-              favourite old pub &mdash; for light bites and drinks. Stay as late as you like.
+              favourite old pub &mdash; for light bites and drinks.
             </p>
           </EventCard>
         </Reveal>
