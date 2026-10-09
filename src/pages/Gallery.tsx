@@ -112,7 +112,6 @@ const THROUGH_THE_YEARS = [
   { src: engagementBwBoat, alt: 'Ciara & Zach celebrating with friends', objectPosition: '30% 45%' },
   { src: throughYearsDockSelfie, alt: 'Ciara & Zach on the water' },
   { src: throughYearsFilmTable, alt: 'Ciara & Zach at dinner', objectPosition: '50% 15%' },
-  { src: galleryGlydeInn, alt: 'Ciara & Zach outside the Glyde Inn', objectPosition: '50% 92%' },
   { src: throughYearsRainbow, alt: 'Ciara & Zach under a rainbow', objectPosition: '50% 70%' },
   { src: throughYearsCliffside, alt: 'Ciara & Zach at sunset by the sea', objectPosition: '50% 15%' },
   { src: throughYearsBalconyHug, alt: 'Ciara & Zach watching the sunset', objectPosition: '50% 36%' },
