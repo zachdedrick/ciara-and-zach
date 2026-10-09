@@ -88,6 +88,8 @@ import loveyouWhiteHouseFamily from '../assets/photos/loveyou-white-house-family
 import loveyouBarFriendsFilm from '../assets/photos/loveyou-bar-friends-film.jpg'
 import loveyouFirepitGuys from '../assets/photos/loveyou-firepit-guys.jpg'
 import loveyouFormalRooftopGirls from '../assets/photos/loveyou-formal-rooftop-girls.jpg'
+import loveyouBarCelebrationGroup from '../assets/photos/loveyou-bar-celebration-group.jpg'
+import loveyouDinnerFriendsBrick from '../assets/photos/loveyou-dinner-friends-brick.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -186,6 +188,8 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouBarFriendsFilm, alt: "Ciara and friends at a bar" },
   { src: loveyouFirepitGuys, alt: "Zach and friends around a fire pit", objectPosition: '50% 35%' },
   { src: loveyouFormalRooftopGirls, alt: "Ciara and friends dressed up on a NYC rooftop", objectPosition: '50% 30%' },
+  { src: loveyouBarCelebrationGroup, alt: "Ciara celebrating with family and friends", objectPosition: '50% 32%' },
+  { src: loveyouDinnerFriendsBrick, alt: "Ciara and friends at dinner" },
 ]
 
 export default function Gallery() {
