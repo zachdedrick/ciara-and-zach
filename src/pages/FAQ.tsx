@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 
@@ -28,6 +29,19 @@ const FAQS: { question: string; answer: ReactNode }[] = [
           rental provider that you&rsquo;ll be in Northern Ireland!
         </p>
       </>
+    ),
+  },
+  {
+    question: 'Can I stay at Castle Leslie?',
+    answer: (
+      <p>
+        You can stay on the Castle Leslie Estate in either The Lodge or the Old Stable Mews, just call the hotel
+        directly to book and say you&rsquo;re there for our wedding! See the{' '}
+        <Link to="/travel" className="underline hover:text-gold-600">
+          Travel &amp; Accommodation
+        </Link>{' '}
+        page for more details.
+      </p>
     ),
   },
 ]
