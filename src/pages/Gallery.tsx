@@ -193,7 +193,7 @@ export default function Gallery() {
 
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">We Love You All!</h2>
-          <MarqueeStrip photos={WE_LOVE_YOU_ALL} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={55} />
+          <MarqueeStrip photos={WE_LOVE_YOU_ALL} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={70} />
         </Reveal>
       </div>
     </div>
