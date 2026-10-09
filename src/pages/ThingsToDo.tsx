@@ -79,8 +79,8 @@ export default function ThingsToDo() {
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">The Southwest &amp; West Coast</p>
 
           <p className="mx-auto max-w-2xl text-center text-lg text-ivy-700">
-            Flying in early or staying on after the wedding? Consider flying into Shannon Airport (SNN) instead of
-            Dublin and making a loop of the west coast &mdash; it&rsquo;s worth the extra days if you have them.
+            If you&rsquo;re extending your trip, we highly recommend flying into Shannon and exploring the West
+            Coast of Ireland.
           </p>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -136,8 +136,7 @@ export default function ThingsToDo() {
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">Dublin</p>
 
           <p className="mx-auto max-w-2xl text-center text-lg text-ivy-700">
-            Dublin is an easy add-on before or after the wedding &mdash; a day or two is enough to get a real feel
-            for the city.
+            Dublin is an easy add-on before or after the wedding.
           </p>
 
           <div className="mx-auto mt-8 max-w-2xl space-y-4">
@@ -179,8 +178,7 @@ export default function ThingsToDo() {
             <Link to="/travel" className="underline hover:text-gold-600">
               bus or rent a car
             </Link>{' '}
-            up to Glaslough &mdash; and we&rsquo;ll do our best to pack as much Irish culture as we can into the
-            wedding weekend itself.
+            up to Glaslough.
           </p>
 
           <div className="mx-auto mt-8 grid max-w-2xl gap-4 sm:grid-cols-2">

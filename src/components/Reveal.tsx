@@ -22,10 +22,13 @@ export default function Reveal({
     const el = ref.current
     if (!el) return
 
-    // If it's already on screen at mount (above the fold), show it right
-    // away instead of waiting on the observer's first callback.
-    const rect = el.getBoundingClientRect()
-    if (rect.top < window.innerHeight && rect.bottom > 0) {
+    // True once the element has reached the viewport, whether it's
+    // currently on screen or an instant scroll jump (e.g. the End key)
+    // already carried the page past it without an intermediate frame.
+    // Either way there's no reason to keep it hidden.
+    const hasReachedViewport = () => el.getBoundingClientRect().top < window.innerHeight
+
+    if (hasReachedViewport()) {
       setVisible(true)
       return
     }
@@ -41,7 +44,20 @@ export default function Reveal({
     )
 
     observer.observe(el)
-    return () => observer.disconnect()
+
+    const handleScroll = () => {
+      if (hasReachedViewport()) {
+        setVisible(true)
+        window.removeEventListener('scroll', handleScroll)
+        observer.disconnect()
+      }
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [])
 
   return (
