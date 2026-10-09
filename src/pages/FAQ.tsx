@@ -44,6 +44,25 @@ const FAQS: { question: string; answer: ReactNode }[] = [
       </p>
     ),
   },
+  {
+    question: 'Where should we stay?',
+    answer: (
+      <p>
+        Most of the weekend will be spent in Glaslough itself, so staying on the estate or in the village will be
+        most convenient &mdash; but Monaghan is only a 10 minute drive away :)
+      </p>
+    ),
+  },
+  {
+    question: 'Travel Tips',
+    answer: (
+      <p>
+        For your flight home, Dublin airport has its own customs and immigration that you complete after the
+        initial security, so be sure to leave yourself enough time! We&rsquo;d recommend around 2&ndash;3 hours for
+        international flights.
+      </p>
+    ),
+  },
 ]
 
 export default function FAQ() {
