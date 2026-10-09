@@ -126,8 +126,11 @@ export default function RSVP() {
     return (
       <div>
         <PageHeader title="RSVP" />
-        <div className="mx-auto max-w-xl px-4 py-16 text-center text-lg text-ivy-700">
-          <p>Still finalizing details of the weekend! Please RSVP once you get your invitation.</p>
+        <div className="mx-auto max-w-xl px-4 py-16">
+          <p className="text-center text-lg text-ivy-700">
+            Still finalizing details of the weekend! Please RSVP once you get your invitation.
+          </p>
+          <PreRsvpQuestionnaire />
         </div>
       </div>
     )
@@ -273,6 +276,134 @@ export default function RSVP() {
         {step === 'success' && (
           <p className="text-center text-lg text-ivy-700">Thank you &mdash; your RSVP has been received!</p>
         )}
+      </div>
+    </div>
+  )
+}
+
+function PreRsvpQuestionnaire() {
+  const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [errorMessage, setErrorMessage] = useState('')
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    if (!supabase) return
+
+    const form = new FormData(event.currentTarget)
+    setSubmitting(true)
+    setErrorMessage('')
+
+    const { error } = await supabase.from('pre_rsvp_responses').insert({
+      name: form.get('name'),
+      dublin_thursday: form.get('dublin_thursday'),
+      welcome_party: form.get('welcome_party'),
+      bus_transportation: form.get('bus_transportation'),
+    })
+
+    setSubmitting(false)
+
+    if (error) {
+      setErrorMessage(error.message)
+      return
+    }
+
+    setSubmitted(true)
+  }
+
+  if (submitted) {
+    return (
+      <p className="mt-10 text-center text-ivy-700">Thanks so much &mdash; this is a huge help as we plan!</p>
+    )
+  }
+
+  return (
+    <div className="mt-10 border-t border-ivy-100 pt-10">
+      <p className="text-center text-ivy-700">
+        As we iron out some details before you officially RSVP we&rsquo;d appreciate if you could let us know a few
+        things!
+      </p>
+
+      {!isSupabaseConfigured && (
+        <p className="mt-4 rounded-md bg-gold-300/30 px-4 py-3 text-center text-sm text-ivy-800">
+          This questionnaire isn&rsquo;t connected yet &mdash; add Supabase credentials to enable it.
+        </p>
+      )}
+
+      <form onSubmit={handleSubmit} className="mt-6 space-y-5">
+        <div>
+          <label htmlFor="pre-rsvp-name" className="block text-sm text-ivy-800">
+            Your name
+          </label>
+          <input
+            id="pre-rsvp-name"
+            name="name"
+            required
+            className="mt-1 w-full rounded-md border border-ivy-100 px-3 py-2 focus:border-gold-500 focus:outline-none"
+          />
+        </div>
+
+        <QuestionnaireQuestion
+          name="dublin_thursday"
+          question="Will you be around Dublin area on Thursday?"
+          options={[
+            { value: 'yes', label: 'Yes' },
+            { value: 'no', label: 'No' },
+          ]}
+        />
+
+        <QuestionnaireQuestion
+          name="welcome_party"
+          question="Are you planning on attending the welcome party?"
+          options={[
+            { value: 'yes', label: 'Yes, wouldn’t miss it!' },
+            { value: 'unsure', label: 'Not totally sure yet' },
+            { value: 'no', label: 'No, but we’ll see you Saturday!' },
+          ]}
+        />
+
+        <QuestionnaireQuestion
+          name="bus_transportation"
+          question="Will you be taking bus transportation from ceremony to reception?"
+          options={[
+            { value: 'yes', label: 'Yes please' },
+            { value: 'no', label: 'No, I’ll be driving myself' },
+          ]}
+        />
+
+        {errorMessage && <p className="text-sm text-red-600">{errorMessage}</p>}
+
+        <button
+          type="submit"
+          disabled={!isSupabaseConfigured || submitting}
+          className="w-full rounded-md bg-ivy-700 py-2.5 text-parchment transition-colors hover:bg-ivy-800 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          {submitting ? 'Sending…' : 'Submit'}
+        </button>
+      </form>
+    </div>
+  )
+}
+
+function QuestionnaireQuestion({
+  name,
+  question,
+  options,
+}: {
+  name: string
+  question: string
+  options: { value: string; label: string }[]
+}) {
+  return (
+    <div>
+      <span className="block text-sm text-ivy-800">{question}</span>
+      <div className="mt-1 flex flex-wrap gap-x-6 gap-y-2">
+        {options.map((option) => (
+          <label key={option.value} className="flex items-center gap-2 text-ivy-700">
+            <input type="radio" name={name} value={option.value} required />
+            {option.label}
+          </label>
+        ))}
       </div>
     </div>
   )

@@ -58,3 +58,22 @@ create policy "Anyone can read RSVPs to check for an existing one"
   on rsvps for select
   to anon
   using (true);
+
+-- A lightweight pre-RSVP questionnaire shown while the main RSVP form is
+-- still closed, so we can get a rough read on Thursday arrivals, Welcome
+-- Party attendance, and bus usage ahead of the official RSVP.
+create table if not exists pre_rsvp_responses (
+  id uuid primary key default gen_random_uuid(),
+  name text not null,
+  dublin_thursday text not null check (dublin_thursday in ('yes', 'no')),
+  welcome_party text not null check (welcome_party in ('yes', 'unsure', 'no')),
+  bus_transportation text not null check (bus_transportation in ('yes', 'no')),
+  created_at timestamptz not null default now()
+);
+
+alter table pre_rsvp_responses enable row level security;
+
+create policy "Anyone can submit a pre-RSVP response"
+  on pre_rsvp_responses for insert
+  to anon
+  with check (true);

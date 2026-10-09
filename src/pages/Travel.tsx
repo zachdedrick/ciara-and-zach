@@ -189,6 +189,9 @@ export default function Travel() {
           <p className="mt-2 text-ivy-700">
             The most special option &mdash; stay right on the grounds of Castle Leslie itself.
           </p>
+          <p className="mt-2 text-ivy-700">
+            Call the hotel directly to book and say you&rsquo;re here for our wedding!
+          </p>
 
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {ON_ESTATE.map((place) => (
