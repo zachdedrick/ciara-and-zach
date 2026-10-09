@@ -81,6 +81,13 @@ import throughYearsFilmTable from '../assets/photos/through-years-film-table.jpg
 import throughYearsFilmBar from '../assets/photos/through-years-film-bar.jpg'
 import throughYearsPartyHats from '../assets/photos/through-years-party-hats.jpg'
 import throughYearsBalconyHug from '../assets/photos/through-years-balcony-hug.jpg'
+import galleryKerryHikeJump from '../assets/photos/gallery-kerry-hike-jump.jpg'
+import galleryGroupBrickHouse from '../assets/photos/gallery-group-brick-house.jpg'
+import loveyouRooftopSunsetFamily from '../assets/photos/loveyou-rooftop-sunset-family.jpg'
+import loveyouWhiteHouseFamily from '../assets/photos/loveyou-white-house-family.jpg'
+import loveyouBarFriendsFilm from '../assets/photos/loveyou-bar-friends-film.jpg'
+import loveyouFirepitGuys from '../assets/photos/loveyou-firepit-guys.jpg'
+import loveyouFormalRooftopGirls from '../assets/photos/loveyou-formal-rooftop-girls.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -101,6 +108,8 @@ const FEATURED = [
   { src: galleryFamilyFenceDog, alt: 'Cousins and the dog back home' },
   { src: galleryPubToast, alt: 'Raising a glass with friends at a Dublin pub' },
   { src: galleryAlpacas, alt: 'Alpacas on a hillside in Co. Kerry' },
+  { src: galleryKerryHikeJump, alt: 'Friends jumping on a hike in Co. Kerry' },
+  { src: galleryGroupBrickHouse, alt: 'Family and friends outside a house in Ireland' },
 ]
 
 const THROUGH_THE_YEARS = [
@@ -172,6 +181,11 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouFormalFourDark, alt: "Zach and friends at a formal event" },
   { src: loveyouDockGroupTen, alt: "Zach, Ciara, and friends" },
   { src: loveyouNdStadiumGroup, alt: "Zach and friends at a Notre Dame football game" },
+  { src: loveyouRooftopSunsetFamily, alt: "Family on a NYC rooftop at sunset", objectPosition: '50% 35%' },
+  { src: loveyouWhiteHouseFamily, alt: "Family in front of a white colonial building", objectPosition: '50% 30%' },
+  { src: loveyouBarFriendsFilm, alt: "Ciara and friends at a bar" },
+  { src: loveyouFirepitGuys, alt: "Zach and friends around a fire pit", objectPosition: '50% 35%' },
+  { src: loveyouFormalRooftopGirls, alt: "Ciara and friends dressed up on a NYC rooftop", objectPosition: '50% 30%' },
 ]
 
 export default function Gallery() {
