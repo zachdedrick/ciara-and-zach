@@ -100,6 +100,7 @@ import loveyouDadFriendNight from '../assets/photos/loveyou-dad-friend-night.jpg
 import loveyouNdGraduationFamily from '../assets/photos/loveyou-nd-graduation-family.jpg'
 import loveyouNdPorchDog from '../assets/photos/loveyou-nd-porch-dog.jpg'
 import loveyouDockSunsetFamily from '../assets/photos/loveyou-dock-sunset-family.jpg'
+import loveyouRooftopRevealCrowd from '../assets/photos/loveyou-rooftop-reveal-crowd.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -155,6 +156,7 @@ const THROUGH_THE_YEARS = [
 
 // TODO: add more family & friends photos here as we get them.
 const WE_LOVE_YOU_ALL = [
+  { src: loveyouRooftopRevealCrowd, alt: "Friends cheering at the engagement reveal" },
   { src: loveyouFilmFamily, alt: "Ciara with family at a celebration", objectPosition: '50% 42%' },
   { src: loveyouPierMom, alt: "Zach and his mom", objectPosition: '50% 38%' },
   { src: loveyouNdStadiumFamilySelfie, alt: "Zach's family at a Notre Dame football game", objectPosition: '50% 38%' },
