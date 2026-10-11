@@ -35,6 +35,7 @@ const ON_ESTATE: { name: string; description: string; websiteUrl: string; note?:
     name: 'The Old Stable Mews',
     description: 'Self-catering courtyard cottages on the Estate grounds — great for groups.',
     websiteUrl: 'https://www.castleleslie.com/stay/old-stable-mews/',
+    note: 'Call the hotel directly to book and say you’re there for the wedding to get the wedding rate.',
   },
 ]
 
