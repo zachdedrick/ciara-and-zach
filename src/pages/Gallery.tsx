@@ -210,17 +210,17 @@ export default function Gallery() {
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">From Our Trips</h2>
-          <MarqueeStrip photos={FEATURED} tileClassName="aspect-[4/3] w-80 sm:w-[28rem]" durationSeconds={80} />
+          <MarqueeStrip photos={FEATURED} tileClassName="aspect-[4/3] w-80 sm:w-[28rem]" />
         </Reveal>
 
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">Ciara &amp; Zach Through the Years</h2>
-          <MarqueeStrip photos={THROUGH_THE_YEARS} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={55} reverse />
+          <MarqueeStrip photos={THROUGH_THE_YEARS} tileClassName="aspect-[4/3] w-72 sm:w-96" />
         </Reveal>
 
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">We Love You All!</h2>
-          <MarqueeStrip photos={WE_LOVE_YOU_ALL} tileClassName="aspect-[4/3] w-72 sm:w-96" durationSeconds={78} />
+          <MarqueeStrip photos={WE_LOVE_YOU_ALL} tileClassName="aspect-[4/3] w-72 sm:w-96" />
         </Reveal>
       </div>
     </div>

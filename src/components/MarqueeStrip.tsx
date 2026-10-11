@@ -1,45 +1,55 @@
+import { useRef } from 'react'
 import PhotoPlaceholder from './PhotoPlaceholder'
 
 /**
- * A continuously auto-scrolling row of photos (CSS keyframe translate, no JS
- * timer). The photo list is rendered twice back-to-back so the loop is
- * seamless; pass an even number of photos for the cleanest tiling.
+ * A horizontally scrollable row of photos with prev/next arrow buttons that
+ * page the strip by roughly one viewport's width. Purely manual — no
+ * auto-scroll.
  */
 export default function MarqueeStrip({
   photos,
-  durationSeconds = 28,
-  reverse = false,
   tileClassName = 'aspect-square w-40 sm:w-52',
 }: {
   photos: { src?: string; alt: string; objectPosition?: string }[]
-  durationSeconds?: number
-  reverse?: boolean
   tileClassName?: string
 }) {
-  const track = [...photos, ...photos]
+  const scrollerRef = useRef<HTMLDivElement>(null)
+
+  function page(direction: 1 | -1) {
+    const el = scrollerRef.current
+    if (!el) return
+    el.scrollBy({ left: direction * el.clientWidth * 0.9, behavior: 'smooth' })
+  }
 
   return (
-    <div className="overflow-hidden">
+    <div className="relative">
       <div
-        className="flex w-max gap-4"
-        style={{
-          animation: `marquee-scroll ${durationSeconds}s linear infinite`,
-          animationDirection: reverse ? 'reverse' : 'normal',
-        }}
+        ref={scrollerRef}
+        className="flex gap-4 overflow-x-auto scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
-        {track.map((photo, index) => (
+        {photos.map((photo, index) => (
           <div key={index} className={`shrink-0 overflow-hidden rounded-lg shadow-md ${tileClassName}`}>
             <PhotoPlaceholder src={photo.src} alt={photo.alt} objectPosition={photo.objectPosition} />
           </div>
         ))}
       </div>
 
-      <style>{`
-        @keyframes marquee-scroll {
-          from { transform: translateX(0); }
-          to { transform: translateX(-50%); }
-        }
-      `}</style>
+      <button
+        type="button"
+        aria-label="Scroll left"
+        onClick={() => page(-1)}
+        className="absolute left-0 top-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-ivy-900/60 text-xl text-parchment shadow hover:bg-ivy-900/80"
+      >
+        &#8249;
+      </button>
+      <button
+        type="button"
+        aria-label="Scroll right"
+        onClick={() => page(1)}
+        className="absolute right-0 top-1/2 flex h-9 w-9 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-ivy-900/60 text-xl text-parchment shadow hover:bg-ivy-900/80"
+      >
+        &#8250;
+      </button>
     </div>
   )
 }
