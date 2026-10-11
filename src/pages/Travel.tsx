@@ -24,18 +24,16 @@ const AIRPORTS = [
   },
 ]
 
-const ON_ESTATE: { name: string; description: string; websiteUrl: string; note?: string }[] = [
+const ON_ESTATE = [
   {
     name: 'The Lodge',
     description: 'A 4-star hotel right at the entrance to the Estate, steps from the Equestrian Centre.',
     websiteUrl: 'https://www.castleleslie.com/stay/the-lodge/',
-    note: 'Call the hotel directly to book and say you’re there for the wedding to get the wedding rate.',
   },
   {
     name: 'The Old Stable Mews',
     description: 'Self-catering courtyard cottages on the Estate grounds — great for groups.',
     websiteUrl: 'https://www.castleleslie.com/stay/old-stable-mews/',
-    note: 'Call the hotel directly to book and say you’re there for the wedding to get the wedding rate.',
   },
 ]
 
@@ -150,7 +148,7 @@ export default function Travel() {
             The most special option &mdash; stay right on the grounds of Castle Leslie itself.
           </p>
           <p className="mt-2 text-ivy-700">
-            Call the hotel directly to book and say you&rsquo;re here for our wedding!
+            Call the hotel directly to book and say you&rsquo;re here for our wedding to get the wedding rate!
           </p>
 
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
@@ -169,7 +167,6 @@ export default function Travel() {
                       <ExternalLinkIcon className="h-4 w-4" />
                     </a>
                     <p className="mt-1 text-sm text-ivy-700">{place.description}</p>
-                    {place.note && <p className="mt-2 text-sm text-ivy-600">{place.note}</p>}
                   </div>
                 </div>
               </div>
