@@ -95,6 +95,11 @@ import loveyouCigarsDadSon from '../assets/photos/loveyou-cigars-dad-son.jpg'
 import loveyouWeddingHeadTable from '../assets/photos/loveyou-wedding-head-table.jpg'
 import loveyouPorchTrio from '../assets/photos/loveyou-porch-trio.jpg'
 import loveyouSunsetDeckGuys from '../assets/photos/loveyou-sunset-deck-guys.jpg'
+import loveyouParkSelfieFriends from '../assets/photos/loveyou-park-selfie-friends.jpg'
+import loveyouDadFriendNight from '../assets/photos/loveyou-dad-friend-night.jpg'
+import loveyouNdGraduationFamily from '../assets/photos/loveyou-nd-graduation-family.jpg'
+import loveyouNdPorchDog from '../assets/photos/loveyou-nd-porch-dog.jpg'
+import loveyouDockSunsetFamily from '../assets/photos/loveyou-dock-sunset-family.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -157,6 +162,7 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouPubGuys, alt: "Zach and friends at a pub" },
   { src: loveyouRooftopGirls, alt: "Ciara and friends on a NYC rooftop", objectPosition: '50% 45%' },
   { src: loveyouMuralFamily, alt: "Zach with family" },
+  { src: loveyouParkSelfieFriends, alt: "Zach's dad with family friends", objectPosition: '50% 32%' },
   { src: loveyouStpatricksGroup, alt: "Ciara and friends celebrating St. Patrick's Day" },
   { src: loveyouDockFamily, alt: "Zach and Ciara with Zach's family", objectPosition: '50% 38%' },
   { src: loveyouGraduation, alt: "Ciara with her grandparents at graduation", objectPosition: '50% 25%' },
@@ -166,6 +172,7 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouSkiCabin, alt: "Zach and friends on a ski trip", objectPosition: '50% 42%' },
   { src: loveyouGrandmaCafe, alt: "Ciara's grandmother enjoying dessert", objectPosition: '50% 22%' },
   { src: loveyouDerbyBlazers, alt: "Zach and friends at the Kentucky Derby" },
+  { src: loveyouDadFriendNight, alt: "Zach's dad and a friend", objectPosition: '50% 30%' },
   { src: loveyouPorchGirls, alt: "Ciara and friends at sunset", objectPosition: '50% 38%' },
   { src: loveyouNdTailgateFour, alt: "Zach and friends tailgating at Notre Dame", objectPosition: '50% 38%' },
   { src: loveyouBeachGirlsSunset, alt: "Ciara and friends on the beach at sunset", objectPosition: '50% 44%' },
@@ -176,6 +183,7 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouWeddingHeadTable, alt: "Zach and friends at a wedding head table" },
   { src: loveyouPorchGuys, alt: "Zach and friends on a porch", objectPosition: '50% 45%' },
   { src: loveyouSkiBalconyGirls, alt: "Ciara and friends on a ski trip" },
+  { src: loveyouNdGraduationFamily, alt: "Zach's family at a Notre Dame graduation", objectPosition: '50% 30%' },
   { src: loveyouGrandparentsBackyard, alt: "Zach's family in the backyard", objectPosition: '50% 32%' },
   { src: loveyouCouchWomen, alt: "Ciara, her mom, and a friend" },
   { src: loveyouNdBannerGroup, alt: "Zach and friends at Notre Dame" },
@@ -186,6 +194,7 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouPubHugFilm, alt: "Zach and friends at a pub", objectPosition: '50% 24%' },
   { src: loveyouBridesmaidsDock, alt: "Ciara and family at a wedding" },
   { src: loveyouMarlinRestaurant, alt: "Zach and his dad", objectPosition: '50% 40%' },
+  { src: loveyouNdPorchDog, alt: "Family with the dog at Notre Dame", objectPosition: '50% 35%' },
   { src: loveyouChristmasSelfie, alt: "Ciara and her family at Christmas" },
   { src: loveyouDockBrothers, alt: "Zach and his brother", objectPosition: '50% 28%' },
   { src: loveyouBostonFormal, alt: "Zach and Ciara with friends in Boston", objectPosition: '50% 28%' },
@@ -196,6 +205,7 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouRooftopSunsetFamily, alt: "Family on a NYC rooftop at sunset", objectPosition: '50% 35%' },
   { src: loveyouWhiteHouseFamily, alt: "Family in front of a white colonial building", objectPosition: '50% 30%' },
   { src: loveyouBarFriendsFilm, alt: "Ciara and friends at a bar" },
+  { src: loveyouDockSunsetFamily, alt: "Zach's family at a wedding by the water", objectPosition: '50% 32%' },
   { src: loveyouFirepitGuys, alt: "Zach and friends around a fire pit", objectPosition: '50% 35%' },
   { src: loveyouFormalRooftopGirls, alt: "Ciara and friends dressed up on a NYC rooftop", objectPosition: '50% 30%' },
   { src: loveyouBarCelebrationGroup, alt: "Ciara celebrating with family and friends", objectPosition: '50% 32%' },
