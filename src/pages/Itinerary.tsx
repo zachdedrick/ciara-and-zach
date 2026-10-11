@@ -69,10 +69,7 @@ export default function Itinerary() {
               <img src={coachHousePub} alt="The Coach House & Olde Bar, Glaslough" className="h-full w-full object-cover" />
             }
           >
-            <p>
-              Kick off the weekend with us! Join us at the Coach House &amp; Olde Bar &mdash; Glaslough&rsquo;s
-              favourite old pub &mdash; for drinks.
-            </p>
+            <p>Kick off the weekend with us at the Coach House &amp; Olde Bar in Glaslough village.</p>
           </EventCard>
         </Reveal>
 
