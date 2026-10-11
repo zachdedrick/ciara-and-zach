@@ -128,7 +128,8 @@ export default function RSVP() {
         <PageHeader title="RSVP" />
         <div className="mx-auto max-w-xl px-4 py-16">
           <p className="text-center text-lg text-ivy-700">
-            Still finalizing details of the weekend! Please RSVP once you get your invitation.
+            Please let us know your initial travel plans so we can finalize the details and come back to RSVP once
+            your invitation arrives :)
           </p>
           <PreRsvpQuestionnaire />
         </div>
@@ -322,11 +323,6 @@ function PreRsvpQuestionnaire() {
 
   return (
     <div className="mt-10 border-t border-ivy-100 pt-10">
-      <p className="text-center text-ivy-700">
-        As we iron out some details before you officially RSVP we&rsquo;d appreciate if you could let us know a few
-        things!
-      </p>
-
       {!isSupabaseConfigured && (
         <p className="mt-4 rounded-md bg-gold-300/30 px-4 py-3 text-center text-sm text-ivy-800">
           This questionnaire isn&rsquo;t connected yet &mdash; add Supabase credentials to enable it.

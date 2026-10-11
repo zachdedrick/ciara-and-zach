@@ -27,7 +27,7 @@ const WEST_COAST = [
     name: 'Cliffs of Moher',
     county: 'Co. Clare',
     driveTime: 'about 55 min from Shannon',
-    description: 'Ireland’s most famous sea cliffs, rising 700 feet straight out of the Atlantic.',
+    description: 'Beautiful cliff views in Co. Clare, about an hour from Shannon Airport.',
     photos: [cliffsOfMoher, cliffsOfMoherBoys],
   },
   {
@@ -42,7 +42,8 @@ const WEST_COAST = [
     name: 'Dingle Peninsula',
     county: 'Co. Kerry',
     driveTime: 'about 2h 15m from Shannon',
-    description: 'Dramatic coastline and Irish-speaking villages, with some of the most beautiful routes in the country.',
+    description:
+      'Charming harbour town in the southwest of Ireland in Co. Kerry, a stop along the Wild Atlantic Way.',
     photos: [dingleHarbour],
   },
   {

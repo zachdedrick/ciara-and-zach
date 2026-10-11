@@ -226,6 +226,15 @@ export default function Travel() {
           <p className="mt-2 text-ivy-700">
             Local Airbnbs or Bed &amp; Breakfasts are also a great option for groups.
           </p>
+          <a
+            href="https://www.airbnb.com/s/Glaslough--Ireland/homes"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-2 inline-flex items-center gap-1.5 text-ivy-700 underline hover:text-gold-600"
+          >
+            Search Airbnbs in Glaslough
+            <ExternalLinkIcon className="h-4 w-4" />
+          </a>
         </Reveal>
 
         <Reveal as="section">
