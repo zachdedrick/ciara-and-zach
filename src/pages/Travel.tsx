@@ -189,7 +189,7 @@ export default function Travel() {
                       href={hotel.websiteUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 font-display text-xl text-ivy-800 hover:text-gold-600"
+                      className="inline-flex items-center gap-1.5 text-lg text-ivy-800 hover:text-gold-600"
                     >
                       {hotel.name}
                       <ExternalLinkIcon className="h-4 w-4" />
