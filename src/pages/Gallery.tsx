@@ -157,7 +157,7 @@ const THROUGH_THE_YEARS = [
 // TODO: add more family & friends photos here as we get them.
 const WE_LOVE_YOU_ALL = [
   { src: loveyouRooftopRevealCrowd, alt: "Friends cheering at the engagement reveal" },
-  { src: loveyouFilmFamily, alt: "Ciara with family at a celebration", objectPosition: '50% 42%' },
+  { src: loveyouFilmFamily, alt: "Ciara with family at a celebration", objectPosition: '0% 42%' },
   { src: loveyouPierMom, alt: "Zach and his mom", objectPosition: '50% 38%' },
   { src: loveyouNdStadiumFamilySelfie, alt: "Zach's family at a Notre Dame football game", objectPosition: '50% 38%' },
   { src: loveyouBeachFamily, alt: "Ciara's family on the beach at sunset", objectPosition: '50% 42%' },
