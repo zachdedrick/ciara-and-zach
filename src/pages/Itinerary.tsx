@@ -73,9 +73,6 @@ export default function Itinerary() {
               Kick off the weekend with us! Join us at the Coach House &amp; Olde Bar &mdash; Glaslough&rsquo;s
               favourite old pub &mdash; for light bites and drinks.
             </p>
-            <p>
-              Dress code: <span className="font-script text-2xl text-gold-600">Pub Chic</span>
-            </p>
           </EventCard>
         </Reveal>
 
@@ -106,7 +103,6 @@ export default function Itinerary() {
               imageSide="right"
             >
               <p>Buses will bring everyone back to the Castle after the ceremony.</p>
-              <p>Cocktail hours in Ireland are twice as long &mdash; lucky us!</p>
               <p>
                 Dress code: <span className="font-script text-2xl text-gold-600">Castle Formal</span>
               </p>
