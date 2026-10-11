@@ -1,16 +1,7 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import PageHeader from '../components/PageHeader'
-import {
-  BusIcon,
-  CarIcon,
-  ExternalLinkIcon,
-  HotelIcon,
-  HouseIcon,
-  MapPinIcon,
-  PhoneIcon,
-  PlaneIcon,
-} from '../components/icons'
+import { BusIcon, CarIcon, ExternalLinkIcon, HotelIcon, MapPinIcon, PhoneIcon, PlaneIcon } from '../components/icons'
 
 const AIRPORTS = [
   {
@@ -57,39 +48,6 @@ const HOTELS: { name: string; address: string; websiteUrl: string; bookingCode?:
     name: 'Westenra Hotel',
     address: 'The Diamond, Monaghan, Co. Monaghan, Ireland',
     websiteUrl: 'https://www.westenrahotel.com',
-  },
-]
-
-const AIRBNBS: { name: string; capacity: string; url?: string }[] = [
-  {
-    name: '5 Bed House in Glaslough',
-    capacity: 'Sleeps 8',
-    url: 'https://www.airbnb.com/rooms/44093585?check_in=2027-08-20&check_out=2027-08-22&guests=8',
-  },
-  {
-    name: '5 Bed Townhouse in Glaslough',
-    capacity: 'Sleeps 8',
-    url: 'https://www.airbnb.com/rooms/42213711?check_in=2027-08-20&check_out=2027-08-22&guests=8',
-  },
-  {
-    name: '6 Bed Cottage in Glaslough',
-    capacity: 'Sleeps 10',
-    url: 'https://www.airbnb.com/rooms/44455976?check_in=2027-08-20&check_out=2027-08-22&guests=10',
-  },
-  {
-    name: '7 Bed House in Glaslough',
-    capacity: 'Sleeps 11',
-    url: 'https://www.airbnb.com/rooms/1424552398036837395?check_in=2027-08-20&check_out=2027-08-22&guests=11',
-  },
-  {
-    name: '5 Bed Townhouse in Glaslough',
-    capacity: '5 bedrooms',
-    url: 'https://www.airbnb.com/rooms/832412021470029339?check_in=2027-08-20&check_out=2027-08-22',
-  },
-  {
-    name: '2 Bed Townhouse in Glaslough',
-    capacity: '2 bedrooms',
-    url: 'https://www.airbnb.com/rooms/25003224?check_in=2027-08-20&check_out=2027-08-22',
   },
 ]
 
@@ -263,42 +221,11 @@ export default function Travel() {
             <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-ivy-700 font-display text-sm text-parchment">
               3
             </span>
-            <h3 className="text-lg uppercase tracking-wide text-ivy-600">Local Airbnbs in the Village</h3>
+            <h3 className="text-lg uppercase tracking-wide text-ivy-600">Local Rentals</h3>
           </div>
-          <p className="mt-2 text-sm italic text-ivy-600">
-            Most convenient if not staying on property &mdash; located in the village of Glaslough, directly adjacent
-            to the Leslie estate.
-          </p>
           <p className="mt-2 text-ivy-700">
-            A few houses in the village of Glaslough itself, for groups who&rsquo;d rather stay together.
+            Local Airbnbs or Bed &amp; Breakfasts are also a great option for groups.
           </p>
-
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {AIRBNBS.map((listing, index) => (
-              <div key={index} className="rounded-lg border border-ivy-100 p-5">
-                <div className="flex items-start gap-3">
-                  <HouseIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
-                  <div>
-                    {listing.url ? (
-                      <a
-                        href={listing.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-1.5 text-lg text-ivy-800 hover:text-gold-600"
-                      >
-                        {listing.name}
-                        <ExternalLinkIcon className="h-4 w-4" />
-                      </a>
-                    ) : (
-                      <p className="text-lg text-ivy-800">{listing.name}</p>
-                    )}
-                    <p className="mt-1 text-sm text-ivy-600">{listing.capacity}</p>
-                    {!listing.url && <p className="mt-1 text-xs italic text-ivy-600/70">Link coming soon</p>}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </Reveal>
 
         <Reveal as="section">
