@@ -84,6 +84,7 @@ export default function Itinerary() {
               title="Ceremony"
               address="St. Patrick's Cathedral, 41 Cathedral Road, Armagh, BT61 7QX"
               visual={<img src={cathedralPhoto} alt="St. Patrick's Cathedral, Armagh" className="h-full w-full object-cover" />}
+              imageSide="right"
             >
               <p>
                 Please join us for the ceremony at St Patrick&rsquo;s Cathedral, about a 25 minute drive from Castle
@@ -97,7 +98,6 @@ export default function Itinerary() {
               title="Reception"
               address="Castle Leslie Estate, Glaslough, Co. Monaghan"
               visual={<img src={castleAerial} alt="Castle Leslie Estate" className="h-full w-full object-cover" />}
-              imageSide="right"
             >
               <p>Buses will bring everyone back to the Castle after the ceremony.</p>
               <p>
