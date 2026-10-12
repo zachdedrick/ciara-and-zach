@@ -12,6 +12,8 @@ import ringOfKerryCliffs from '../assets/photos/ring-of-kerry-cliffs.jpg'
 import lahinchGolfDunes from '../assets/photos/lahinch-golf-dunes.jpg'
 import lahinchGolfGreen from '../assets/photos/lahinch-golf-green.jpg'
 import golfCourseGroup from '../assets/photos/golf-course-group.jpg'
+import golfClockTowerGroup from '../assets/photos/golf-clock-tower-group.jpg'
+import golfTripCliffsGroup from '../assets/photos/golf-trip-cliffs-group.jpg'
 import cliffsOfMoherBoys from '../assets/photos/gallery-cliffs-of-moher-boys.jpg'
 import galwayFlagsStreet from '../assets/photos/galway-flags-street.jpg'
 import galwayAranCliffs from '../assets/photos/galway-aran-cliffs.jpg'
@@ -19,7 +21,9 @@ import galwayAranCliffs from '../assets/photos/galway-aran-cliffs.jpg'
 const GOLF_COURSES = [
   { src: lahinchGolfDunes, alt: 'Lahinch Golf Club, Co. Clare' },
   { src: lahinchGolfGreen, alt: 'Lahinch Golf Club, Co. Clare' },
-  { src: golfCourseGroup, alt: 'A round of golf on the Co. Clare coast' },
+  { src: golfCourseGroup, alt: 'A round of golf on the Co. Clare coast', objectPosition: '50% 25%' },
+  { src: golfClockTowerGroup, alt: 'The lads at Lahinch Golf Club', objectPosition: '50% 35%' },
+  { src: golfTripCliffsGroup, alt: 'The lads on the Co. Clare coast' },
 ]
 
 const WEST_COAST = [
@@ -110,7 +114,7 @@ export default function ThingsToDo() {
             ))}
           </div>
 
-          <div className="mt-6 overflow-hidden rounded-lg border border-ivy-100 shadow-sm">
+          <div className="mt-6 mx-auto max-w-xl overflow-hidden rounded-lg border border-ivy-100 shadow-sm">
             <SlideCarousel photos={GOLF_COURSES} />
             <div className="p-5">
               <div className="flex items-start gap-3">

@@ -5,7 +5,7 @@ export default function SlideCarousel({
   photos,
   intervalMs = 3500,
 }: {
-  photos: { src?: string; alt: string }[]
+  photos: { src?: string; alt: string; objectPosition?: string }[]
   intervalMs?: number
 }) {
   const [active, setActive] = useState(0)
@@ -30,7 +30,7 @@ export default function SlideCarousel({
       >
         {photos.map((photo, index) => (
           <div key={index} className="h-full w-full shrink-0">
-            <PhotoPlaceholder src={photo.src} alt={photo.alt} />
+            <PhotoPlaceholder src={photo.src} alt={photo.alt} objectPosition={photo.objectPosition} />
           </div>
         ))}
       </div>
