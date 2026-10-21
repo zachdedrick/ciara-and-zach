@@ -297,6 +297,7 @@ function PreRsvpQuestionnaire() {
 
     const { error } = await supabase.from('pre_rsvp_responses').insert({
       name: form.get('name'),
+      ceremony_reception_attending: form.get('ceremony_reception_attending'),
       dublin_thursday: form.get('dublin_thursday'),
       welcome_party: form.get('welcome_party'),
       bus_transportation: form.get('bus_transportation'),
@@ -341,6 +342,16 @@ function PreRsvpQuestionnaire() {
             className="mt-1 w-full rounded-md border border-ivy-100 px-3 py-2 focus:border-gold-500 focus:outline-none"
           />
         </div>
+
+        <QuestionnaireQuestion
+          name="ceremony_reception_attending"
+          question="If you already know, will you be attending the Ceremony & Reception on Saturday 8/21/27?"
+          options={[
+            { value: 'yes', label: 'Yes!' },
+            { value: 'no', label: 'Sorry to miss!' },
+            { value: 'unsure', label: 'Still figuring it out!' },
+          ]}
+        />
 
         <QuestionnaireQuestion
           name="dublin_thursday"

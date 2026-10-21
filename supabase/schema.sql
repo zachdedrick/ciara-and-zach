@@ -65,6 +65,7 @@ create policy "Anyone can read RSVPs to check for an existing one"
 create table if not exists pre_rsvp_responses (
   id uuid primary key default gen_random_uuid(),
   name text not null,
+  ceremony_reception_attending text check (ceremony_reception_attending in ('yes', 'no', 'unsure')),
   dublin_thursday text not null check (dublin_thursday in ('yes', 'no')),
   welcome_party text not null check (welcome_party in ('yes', 'unsure', 'no')),
   bus_transportation text not null check (bus_transportation in ('yes', 'no')),
@@ -77,3 +78,12 @@ create policy "Anyone can submit a pre-RSVP response"
   on pre_rsvp_responses for insert
   to anon
   with check (true);
+
+-- Migration: the Ceremony & Reception question was added after the table
+-- above was first created. If pre_rsvp_responses already exists in your
+-- project, run just this block (it's a no-op if the column is already
+-- there). Left nullable since responses submitted before this change won't
+-- have an answer for it.
+alter table pre_rsvp_responses
+  add column if not exists ceremony_reception_attending text
+  check (ceremony_reception_attending in ('yes', 'no', 'unsure'));
