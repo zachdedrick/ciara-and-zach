@@ -298,9 +298,8 @@ function PreRsvpQuestionnaire() {
     const { error } = await supabase.from('pre_rsvp_responses').insert({
       name: form.get('name'),
       ceremony_reception_attending: form.get('ceremony_reception_attending'),
-      dublin_thursday: form.get('dublin_thursday'),
       welcome_party: form.get('welcome_party'),
-      bus_transportation: form.get('bus_transportation'),
+      driving_self: form.get('driving_self'),
     })
 
     setSubmitting(false)
@@ -344,6 +343,7 @@ function PreRsvpQuestionnaire() {
         </div>
 
         <QuestionnaireQuestion
+          number={1}
           name="ceremony_reception_attending"
           question="If you already know, will you be attending the Ceremony & Reception on Saturday 8/21/27?"
           options={[
@@ -354,15 +354,7 @@ function PreRsvpQuestionnaire() {
         />
 
         <QuestionnaireQuestion
-          name="dublin_thursday"
-          question="Will you be around Dublin area on Thursday?"
-          options={[
-            { value: 'yes', label: 'Yes' },
-            { value: 'no', label: 'No' },
-          ]}
-        />
-
-        <QuestionnaireQuestion
+          number={2}
           name="welcome_party"
           question="Are you planning on attending the welcome party?"
           options={[
@@ -373,11 +365,12 @@ function PreRsvpQuestionnaire() {
         />
 
         <QuestionnaireQuestion
-          name="bus_transportation"
-          question="Will you be taking bus transportation from ceremony to reception?"
+          number={3}
+          name="driving_self"
+          question="Will you be driving yourself to and from the Ceremony on Saturday?"
           options={[
-            { value: 'yes', label: 'Yes please' },
-            { value: 'no', label: 'No, I’ll be driving myself' },
+            { value: 'yes', label: 'Yes' },
+            { value: 'no', label: 'No, I’ll be on the arranged guest transportation' },
           ]}
         />
 
@@ -396,20 +389,24 @@ function PreRsvpQuestionnaire() {
 }
 
 function QuestionnaireQuestion({
+  number,
   name,
   question,
   options,
 }: {
+  number: number
   name: string
   question: string
   options: { value: string; label: string }[]
 }) {
   return (
     <div>
-      <span className="block text-sm text-ivy-800">{question}</span>
+      <span className="block text-sm text-ivy-800">
+        {number}. {question}
+      </span>
       <div className="mt-1 flex flex-wrap gap-x-6 gap-y-2">
         {options.map((option) => (
-          <label key={option.value} className="flex items-center gap-2 text-ivy-700">
+          <label key={option.value} className="flex items-center gap-2 text-sm text-ivy-700">
             <input type="radio" name={name} value={option.value} required />
             {option.label}
           </label>

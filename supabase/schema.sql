@@ -60,15 +60,22 @@ create policy "Anyone can read RSVPs to check for an existing one"
   using (true);
 
 -- A lightweight pre-RSVP questionnaire shown while the main RSVP form is
--- still closed, so we can get a rough read on Thursday arrivals, Welcome
--- Party attendance, and bus usage ahead of the official RSVP.
+-- still closed, so we can get a rough read on Ceremony & Reception
+-- attendance, Welcome Party attendance, and transportation ahead of the
+-- official RSVP.
+--
+-- dublin_thursday and bus_transportation are no longer asked (dropped from
+-- the form) but left in place rather than deleted, so any answers already
+-- collected aren't lost — both are nullable since new submissions won't
+-- fill them in.
 create table if not exists pre_rsvp_responses (
   id uuid primary key default gen_random_uuid(),
   name text not null,
   ceremony_reception_attending text check (ceremony_reception_attending in ('yes', 'no', 'unsure')),
-  dublin_thursday text not null check (dublin_thursday in ('yes', 'no')),
   welcome_party text not null check (welcome_party in ('yes', 'unsure', 'no')),
-  bus_transportation text not null check (bus_transportation in ('yes', 'no')),
+  driving_self text check (driving_self in ('yes', 'no')),
+  dublin_thursday text check (dublin_thursday in ('yes', 'no')),
+  bus_transportation text check (bus_transportation in ('yes', 'no')),
   created_at timestamptz not null default now()
 );
 
@@ -79,11 +86,20 @@ create policy "Anyone can submit a pre-RSVP response"
   to anon
   with check (true);
 
--- Migration: the Ceremony & Reception question was added after the table
--- above was first created. If pre_rsvp_responses already exists in your
--- project, run just this block (it's a no-op if the column is already
--- there). Left nullable since responses submitted before this change won't
--- have an answer for it.
+-- Migrations: run whichever of these you haven't already applied to your
+-- live project. Each is a no-op if already done.
+
+-- Added the Ceremony & Reception question.
 alter table pre_rsvp_responses
   add column if not exists ceremony_reception_attending text
   check (ceremony_reception_attending in ('yes', 'no', 'unsure'));
+
+-- Replaced "taking the bus" with "driving yourself"; dublin_thursday and
+-- bus_transportation are no longer asked, so both become optional.
+alter table pre_rsvp_responses
+  add column if not exists driving_self text
+  check (driving_self in ('yes', 'no'));
+alter table pre_rsvp_responses
+  alter column dublin_thursday drop not null;
+alter table pre_rsvp_responses
+  alter column bus_transportation drop not null;
