@@ -8,6 +8,7 @@ import cliffsOfMoher from '../assets/photos/cliffs-of-moher.jpg'
 import howthCouple from '../assets/photos/howth-couple.jpg'
 import kerryTown from '../assets/photos/kerry-town.jpg'
 import dingleHarbour from '../assets/photos/dingle-harbour.jpg'
+import dingleBabyLambSign from '../assets/photos/dingle-baby-lamb-sign.jpg'
 import ringOfKerryCliffs from '../assets/photos/ring-of-kerry-cliffs.jpg'
 import lahinchGolfDunes from '../assets/photos/lahinch-golf-dunes.jpg'
 import lahinchGolfGreen from '../assets/photos/lahinch-golf-green.jpg'
@@ -48,7 +49,7 @@ const WEST_COAST = [
     driveTime: 'about 2h 15m from Shannon',
     description:
       'Charming harbour town in the southwest of Ireland in Co. Kerry, a stop along the Wild Atlantic Way.',
-    photos: [dingleHarbour],
+    photos: [dingleHarbour, dingleBabyLambSign],
   },
   {
     name: 'Ring of Kerry',
