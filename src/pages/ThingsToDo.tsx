@@ -3,6 +3,7 @@ import Reveal from '../components/Reveal'
 import PageHeader from '../components/PageHeader'
 import PhotoPlaceholder from '../components/PhotoPlaceholder'
 import SlideCarousel from '../components/SlideCarousel'
+import IrelandMap from '../components/IrelandMap'
 import { BusIcon, CarIcon, GolfIcon, TrainIcon } from '../components/icons'
 import cliffsOfMoher from '../assets/photos/cliffs-of-moher.jpg'
 import howthCouple from '../assets/photos/howth-couple.jpg'
@@ -67,6 +68,10 @@ export default function ThingsToDo() {
       <PageHeader title="Exploring Ireland" subtitle="Making the most of your trip" />
 
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
+        <Reveal className="flex justify-center">
+          <IrelandMap className="w-full max-w-xs" />
+        </Reveal>
+
         <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">If You Have a Couple of Days</h2>
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">Dublin</p>
