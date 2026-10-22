@@ -40,7 +40,7 @@ const WEST_COAST = [
     county: 'Co. Galway',
     driveTime: 'about 1h 20m from Shannon',
     description:
-      'A lively, colourful city with some of the best pubs, live music, and food in Ireland. Wander the Latin Quarter and stay for dinner. Take the ferry over to the Aran Islands and rent bikes for about €15 to ride around and see all the views.',
+      'A lively, colourful city with some of the best pubs, live music, and food in Ireland. Take the ferry over to the Aran Islands and rent bikes for about €15 to ride around and see all the views.',
     photos: [galwayFlagsStreet, galwayAranCliffs],
   },
   {
