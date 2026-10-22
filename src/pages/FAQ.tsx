@@ -3,6 +3,19 @@ import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 
+const GLOSSARY = [
+  { term: 'Craic', definition: 'Fun, good times, or news. "What’s the craic?" means "what’s up?"' },
+  { term: 'Gas', definition: 'Hilarious. "That’s gas!"' },
+  { term: 'Grand', definition: 'Fine, good, no problem at all. "I’m grand."' },
+  { term: 'Sláinte', definition: '("SLAWN-cha") Cheers! Said before a drink — literally "health."' },
+  { term: 'Eejit', definition: 'A fool — usually said with affection, not malice.' },
+  { term: 'Deadly', definition: 'Excellent, awesome (nothing dangerous about it).' },
+  { term: 'Fair play', definition: 'Well done, respect.' },
+  { term: 'Yer man / yer one', definition: 'That guy / that woman, when you don’t know or won’t say their name.' },
+  { term: 'Give out', definition: 'To complain or scold. "She gave out to him."' },
+  { term: 'Savage', definition: 'Amazing, brilliant (also nothing to do with being savage).' },
+]
+
 const FAQS: { question: string; answer: ReactNode }[] = [
   {
     question: 'What should I wear?',
@@ -76,6 +89,20 @@ export default function FAQ() {
             <div className="mt-2 text-ivy-700">{faq.answer}</div>
           </Reveal>
         ))}
+
+        <Reveal delayMs={FAQS.length * 80}>
+          <h2 className="font-display text-center text-2xl text-ivy-800">Irish Slang &amp; Glossary</h2>
+          <p className="text-center text-sm uppercase tracking-wide text-gold-600">So You&rsquo;re Not Lost at the Bar</p>
+
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            {GLOSSARY.map((entry) => (
+              <div key={entry.term} className="rounded-lg border border-ivy-100 p-4">
+                <p className="font-display text-lg text-gold-600">{entry.term}</p>
+                <p className="mt-1 text-sm text-ivy-700">{entry.definition}</p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </div>
   )
