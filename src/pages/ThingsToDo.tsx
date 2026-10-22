@@ -90,8 +90,8 @@ export default function ThingsToDo() {
 
           <div className="mx-auto mt-8 max-w-2xl space-y-4">
             <div className="rounded-lg border border-ivy-100 p-5 text-ivy-700">
-              Trinity College&rsquo;s campus is beautiful to just walk around, and Dublin has no shortage of museums
-              &mdash; the National Museum and National Gallery are both free.
+              Dublin has plenty of museums, shops and things to do if you only have a day or two. We highly suggest
+              walking through the college campus of Trinity and checking out the National Gallery!
             </div>
             <div className="overflow-hidden rounded-lg border border-ivy-100">
               <div className="grid items-center sm:grid-cols-[160px_1fr]">
