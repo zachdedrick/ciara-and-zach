@@ -84,10 +84,6 @@ export default function ThingsToDo() {
           <h2 className="font-display text-center text-2xl text-ivy-800">If You Have a Couple of Days</h2>
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">Dublin</p>
 
-          <p className="mx-auto max-w-2xl text-center text-lg text-ivy-700">
-            Dublin is an easy add-on before or after the wedding.
-          </p>
-
           <div className="mx-auto mt-8 max-w-2xl space-y-4">
             <div className="rounded-lg border border-ivy-100 p-5 text-ivy-700">
               Dublin has plenty of museums, shops and things to do if you only have a day or two. We highly suggest
