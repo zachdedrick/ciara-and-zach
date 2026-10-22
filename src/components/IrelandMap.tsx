@@ -5,7 +5,7 @@ const PLACES: { name: string; x: number; y: number; labelSide: 'left' | 'right' 
   { name: 'Castle Leslie', x: 417.5, y: 206.5, labelSide: 'left' },
   { name: 'Ceremony', x: 474.0, y: 203.0, labelSide: 'right' },
   { name: 'Louth', x: 495.0, y: 300.0, labelSide: 'right' },
-  { name: 'Howth', x: 510.0, y: 330.0, labelSide: 'left' },
+  { name: 'Howth', x: 524.0, y: 440.0, labelSide: 'right' },
   { name: 'Dublin Airport', x: 499.8, y: 378.6, labelSide: 'right' },
   { name: 'Kilkenny', x: 392.3, y: 511.9, labelSide: 'right' },
   { name: 'Galway', x: 194.7, y: 404.8, labelSide: 'left' },
