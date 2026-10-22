@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import PageHeader from '../components/PageHeader'
+import IrelandMap from '../components/IrelandMap'
 import { BusIcon, CarIcon, ExternalLinkIcon, HotelIcon, MapPinIcon, PhoneIcon, PlaneIcon } from '../components/icons'
 
 const AIRPORTS = [
@@ -73,6 +74,10 @@ export default function Travel() {
           We&rsquo;re so grateful you&rsquo;re all making the trip to Ireland for our wedding. Below you&rsquo;ll find
           lots of travel and accommodation options depending on what your itinerary looks like!
         </p>
+
+        <Reveal className="flex justify-center">
+          <IrelandMap className="w-full max-w-xs" />
+        </Reveal>
 
         <Reveal as="section">
           <h2 className="font-display text-2xl text-ivy-800">Getting Here</h2>
