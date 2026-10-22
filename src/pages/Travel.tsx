@@ -145,10 +145,9 @@ export default function Travel() {
             <h3 className="text-lg uppercase tracking-wide text-ivy-600">Staying on the Estate</h3>
           </div>
           <p className="mt-2 text-ivy-700">
-            The most special option &mdash; stay right on the grounds of Castle Leslie itself.
-          </p>
-          <p className="mt-2 text-ivy-700">
-            Call the hotel directly to book and say you&rsquo;re here for our wedding to get the wedding rate!
+            The most special option &mdash; stay right on the grounds of Castle Leslie itself. Call or email the
+            hotel directly to book with the wedding rate &mdash; there is limited availability of rooms! Reach out
+            to us if you have any questions with booking.
           </p>
 
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
