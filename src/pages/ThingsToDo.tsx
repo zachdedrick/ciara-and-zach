@@ -108,9 +108,8 @@ export default function ThingsToDo() {
                       harbour.
                     </p>
                     <p>
-                      Walk the cliff path for the views, then grab fish and chips from one of the stalls by the
-                      pier. If you&rsquo;ve got a day to spare in Dublin before or after the wedding, we can&rsquo;t
-                      recommend it enough.
+                      Walk the Howth Cliff Walk, enjoy some fish and chips on the pier and end the day with a pint
+                      before heading back into Dublin.
                     </p>
                   </div>
                 </div>
