@@ -62,7 +62,7 @@ export default function Itinerary() {
           </h2>
 
           <EventCard
-            time="7:00 PM"
+            time="7:30 PM"
             title="Welcome Party"
             address="The Coach House & Olde Bar, Main Street, Glaslough, Co. Monaghan"
             visual={
@@ -100,9 +100,6 @@ export default function Itinerary() {
               visual={<img src={castleAerial} alt="Castle Leslie Estate" className="h-full w-full object-cover" />}
             >
               <p>Buses will bring everyone back to the Castle after the ceremony.</p>
-              <p>
-                Dress code: <span className="font-script text-2xl text-gold-600">Castle Formal</span>
-              </p>
             </EventCard>
           </div>
         </Reveal>
