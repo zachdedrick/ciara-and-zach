@@ -81,6 +81,45 @@ export default function ThingsToDo() {
 
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
         <Reveal as="section">
+          <h2 className="font-display text-center text-2xl text-ivy-800">If You Have a Couple of Days</h2>
+          <p className="text-center text-sm uppercase tracking-wide text-gold-600">Dublin</p>
+
+          <p className="mx-auto max-w-2xl text-center text-lg text-ivy-700">
+            Dublin is an easy add-on before or after the wedding.
+          </p>
+
+          <div className="mx-auto mt-8 max-w-2xl space-y-4">
+            <div className="rounded-lg border border-ivy-100 p-5 text-ivy-700">
+              Trinity College&rsquo;s campus is beautiful to just walk around, and Dublin has no shortage of museums
+              &mdash; the National Museum and National Gallery are both free.
+            </div>
+            <div className="overflow-hidden rounded-lg border border-ivy-100">
+              <div className="grid items-center sm:grid-cols-[160px_1fr]">
+                <div className="aspect-[4/3] sm:aspect-square">
+                  <PhotoPlaceholder src={howthCouple} alt="Ciara & Zach in Howth" />
+                </div>
+                <div className="flex items-start gap-3 p-5">
+                  <TrainIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
+                  <div className="space-y-2 text-ivy-700">
+                    <h3 className="font-display text-lg text-ivy-800">A Day Trip to Howth</h3>
+                    <p>
+                      A trip out to Howth, just outside Dublin, is well worth the trip. Hop on the DART from Tara
+                      Street or Connolly Station &mdash; it&rsquo;s about 30 minutes and drops you right at the
+                      harbour.
+                    </p>
+                    <p>
+                      Walk the cliff path for the views, then grab fish and chips from one of the stalls by the
+                      pier. If you&rsquo;ve got a day to spare in Dublin before or after the wedding, we can&rsquo;t
+                      recommend it enough.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal as="section">
           <h2 className="font-display text-center text-2xl text-ivy-800">If You Have a Week</h2>
           <p className="text-center text-sm uppercase tracking-wide text-gold-600">The Southwest &amp; West Coast</p>
 
@@ -131,45 +170,6 @@ export default function ThingsToDo() {
                   <p className="mt-2 text-sm italic text-ivy-600">
                     If you&rsquo;re unsure where to play, reach out to the groom for some golf recs!
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Reveal>
-
-        <Reveal as="section">
-          <h2 className="font-display text-center text-2xl text-ivy-800">If You Have a Couple of Days</h2>
-          <p className="text-center text-sm uppercase tracking-wide text-gold-600">Dublin</p>
-
-          <p className="mx-auto max-w-2xl text-center text-lg text-ivy-700">
-            Dublin is an easy add-on before or after the wedding.
-          </p>
-
-          <div className="mx-auto mt-8 max-w-2xl space-y-4">
-            <div className="rounded-lg border border-ivy-100 p-5 text-ivy-700">
-              Trinity College&rsquo;s campus is beautiful to just walk around, and Dublin has no shortage of museums
-              &mdash; the National Museum and National Gallery are both free.
-            </div>
-            <div className="overflow-hidden rounded-lg border border-ivy-100">
-              <div className="grid items-center sm:grid-cols-[160px_1fr]">
-                <div className="aspect-[4/3] sm:aspect-square">
-                  <PhotoPlaceholder src={howthCouple} alt="Ciara & Zach in Howth" />
-                </div>
-                <div className="flex items-start gap-3 p-5">
-                  <TrainIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
-                  <div className="space-y-2 text-ivy-700">
-                    <h3 className="font-display text-lg text-ivy-800">A Day Trip to Howth</h3>
-                    <p>
-                      A trip out to Howth, just outside Dublin, is well worth the trip. Hop on the DART from Tara
-                      Street or Connolly Station &mdash; it&rsquo;s about 30 minutes and drops you right at the
-                      harbour.
-                    </p>
-                    <p>
-                      Walk the cliff path for the views, then grab fish and chips from one of the stalls by the
-                      pier. If you&rsquo;ve got a day to spare in Dublin before or after the wedding, we can&rsquo;t
-                      recommend it enough.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
