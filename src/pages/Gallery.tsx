@@ -113,6 +113,9 @@ import throughYearsWeddingDance from '../assets/photos/through-years-wedding-dan
 import throughYearsNdStadiumJerseys from '../assets/photos/through-years-nd-stadium-jerseys.jpg'
 import throughYearsTrainPlatformSelfie from '../assets/photos/through-years-train-platform-selfie.jpg'
 import throughYearsTreeSelfie from '../assets/photos/through-years-tree-selfie.jpg'
+import throughYearsWinterBeachBeanie from '../assets/photos/through-years-winter-beach-beanie.jpg'
+import throughYearsBarMasks from '../assets/photos/through-years-bar-masks.jpg'
+import throughYearsNdDoorFormal from '../assets/photos/through-years-nd-door-formal.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -142,8 +145,11 @@ const THROUGH_THE_YEARS = [
   { src: throughYearsFormalRedDress, alt: 'Ciara & Zach dressed up', objectPosition: '50% 18%' },
   { src: throughYearsWeddingDance, alt: 'Ciara & Zach dancing at a wedding', objectPosition: '50% 35%' },
   { src: throughYearsNdStadiumJerseys, alt: 'Ciara & Zach at a Notre Dame football game', objectPosition: '50% 32%' },
+  { src: throughYearsNdDoorFormal, alt: 'Ciara & Zach dressed up at Notre Dame', objectPosition: '50% 28%' },
   { src: throughYearsNdTailgateDog, alt: 'Ciara & Zach with a dog at a Notre Dame tailgate', objectPosition: '50% 35%' },
   { src: throughYearsTrainPlatformSelfie, alt: 'Ciara & Zach taking a selfie', objectPosition: '50% 42%' },
+  { src: throughYearsWinterBeachBeanie, alt: 'Ciara & Zach on a winter beach walk', objectPosition: '50% 48%' },
+  { src: throughYearsBarMasks, alt: 'Ciara & Zach at a bar', objectPosition: '50% 32%' },
   { src: throughYearsTreeSelfie, alt: 'Ciara & Zach outdoors', objectPosition: '50% 35%' },
   { src: throughYearsLakeHats, alt: 'Ciara & Zach by the water' },
   { src: engagementOnKnee, alt: 'Zach proposing to Ciara' },
