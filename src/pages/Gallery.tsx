@@ -109,6 +109,10 @@ import loveyouNdStatueWhiteGroup from '../assets/photos/loveyou-nd-statue-white-
 import loveyouGrandparentsLobby from '../assets/photos/loveyou-grandparents-lobby.jpg'
 import throughYearsNdTailgateDog from '../assets/photos/through-years-nd-tailgate-dog.jpg'
 import throughYearsFormalRedDress from '../assets/photos/through-years-formal-red-dress.jpg'
+import throughYearsWeddingDance from '../assets/photos/through-years-wedding-dance.jpg'
+import throughYearsNdStadiumJerseys from '../assets/photos/through-years-nd-stadium-jerseys.jpg'
+import throughYearsTrainPlatformSelfie from '../assets/photos/through-years-train-platform-selfie.jpg'
+import throughYearsTreeSelfie from '../assets/photos/through-years-tree-selfie.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -136,7 +140,11 @@ const FEATURED = [
 const THROUGH_THE_YEARS = [
   { src: engagementPosed, alt: 'Ciara & Zach, engagement photo', objectPosition: '50% 20%' },
   { src: throughYearsFormalRedDress, alt: 'Ciara & Zach dressed up', objectPosition: '50% 18%' },
+  { src: throughYearsWeddingDance, alt: 'Ciara & Zach dancing at a wedding', objectPosition: '50% 35%' },
+  { src: throughYearsNdStadiumJerseys, alt: 'Ciara & Zach at a Notre Dame football game', objectPosition: '50% 32%' },
   { src: throughYearsNdTailgateDog, alt: 'Ciara & Zach with a dog at a Notre Dame tailgate', objectPosition: '50% 35%' },
+  { src: throughYearsTrainPlatformSelfie, alt: 'Ciara & Zach taking a selfie', objectPosition: '50% 42%' },
+  { src: throughYearsTreeSelfie, alt: 'Ciara & Zach outdoors', objectPosition: '50% 35%' },
   { src: throughYearsLakeHats, alt: 'Ciara & Zach by the water' },
   { src: engagementOnKnee, alt: 'Zach proposing to Ciara' },
   { src: throughYearsFilmHug, alt: 'Ciara & Zach laughing together', objectPosition: '50% 58%' },
