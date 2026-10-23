@@ -23,8 +23,8 @@ export default function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-ivy-800/95 backdrop-blur-sm shadow-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
-        <NavLink to="/" className="font-display text-xl text-parchment sm:text-2xl" onClick={() => setOpen(false)}>
-          Ciara &amp; Zach
+        <NavLink to="/" className="font-script text-2xl text-parchment sm:text-3xl" onClick={() => setOpen(false)}>
+          Ciara <span className="font-['WindSong'] text-[0.85em]">&amp;</span> Zach
         </NavLink>
 
         <nav className="hidden flex-wrap items-center justify-end gap-x-1 gap-y-1 md:flex">
