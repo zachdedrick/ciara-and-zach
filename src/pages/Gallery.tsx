@@ -106,6 +106,8 @@ import loveyouDockBoatsFamily from '../assets/photos/loveyou-dock-boats-family.j
 import loveyouPoolPartyGirls from '../assets/photos/loveyou-pool-party-girls.jpg'
 import loveyouCiaraMomDeck from '../assets/photos/loveyou-ciara-mom-deck.jpg'
 import loveyouNdStatueWhiteGroup from '../assets/photos/loveyou-nd-statue-white-group.jpg'
+import throughYearsNdTailgateDog from '../assets/photos/through-years-nd-tailgate-dog.jpg'
+import throughYearsFormalRedDress from '../assets/photos/through-years-formal-red-dress.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -132,6 +134,8 @@ const FEATURED = [
 
 const THROUGH_THE_YEARS = [
   { src: engagementPosed, alt: 'Ciara & Zach, engagement photo', objectPosition: '50% 20%' },
+  { src: throughYearsFormalRedDress, alt: 'Ciara & Zach dressed up', objectPosition: '50% 18%' },
+  { src: throughYearsNdTailgateDog, alt: 'Ciara & Zach with a dog at a Notre Dame tailgate', objectPosition: '50% 35%' },
   { src: throughYearsLakeHats, alt: 'Ciara & Zach by the water' },
   { src: engagementOnKnee, alt: 'Zach proposing to Ciara' },
   { src: throughYearsFilmHug, alt: 'Ciara & Zach laughing together', objectPosition: '50% 58%' },
