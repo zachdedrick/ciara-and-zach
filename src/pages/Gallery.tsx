@@ -106,6 +106,7 @@ import loveyouDockBoatsFamily from '../assets/photos/loveyou-dock-boats-family.j
 import loveyouPoolPartyGirls from '../assets/photos/loveyou-pool-party-girls.jpg'
 import loveyouCiaraMomDeck from '../assets/photos/loveyou-ciara-mom-deck.jpg'
 import loveyouNdStatueWhiteGroup from '../assets/photos/loveyou-nd-statue-white-group.jpg'
+import loveyouGrandparentsLobby from '../assets/photos/loveyou-grandparents-lobby.jpg'
 import throughYearsNdTailgateDog from '../assets/photos/through-years-nd-tailgate-dog.jpg'
 import throughYearsFormalRedDress from '../assets/photos/through-years-formal-red-dress.jpg'
 
@@ -168,6 +169,7 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouRooftopRevealCrowd, alt: "Friends cheering at the engagement reveal" },
   { src: loveyouCiaraMomDeck, alt: "Ciara and her mom", objectPosition: '50% 22%' },
   { src: loveyouNdStatueWhiteGroup, alt: "Ciara and friends at Notre Dame", objectPosition: '50% 28%' },
+  { src: loveyouGrandparentsLobby, alt: "Ciara, Zach, and their grandparents", objectPosition: '50% 25%' },
   { src: loveyouBeachFamily, alt: "Ciara's family on the beach at sunset", objectPosition: '50% 42%' },
   { src: loveyouPierMom, alt: "Zach and his mom", objectPosition: '50% 38%' },
   { src: loveyouFilmFamily, alt: "Ciara with family at a celebration", objectPosition: '0% 42%' },
