@@ -148,7 +148,7 @@ const THROUGH_THE_YEARS = [
   { src: throughYearsNdDoorFormal, alt: 'Ciara & Zach dressed up at Notre Dame', objectPosition: '50% 28%' },
   { src: throughYearsNdTailgateDog, alt: 'Ciara & Zach with a dog at a Notre Dame tailgate', objectPosition: '50% 35%' },
   { src: throughYearsTrainPlatformSelfie, alt: 'Ciara & Zach taking a selfie', objectPosition: '50% 42%' },
-  { src: throughYearsWinterBeachBeanie, alt: 'Ciara & Zach on a winter beach walk', objectPosition: '50% 48%' },
+  { src: throughYearsWinterBeachBeanie, alt: 'Ciara & Zach on a winter beach walk', objectPosition: '50% 70%' },
   { src: throughYearsBarMasks, alt: 'Ciara & Zach at a bar', objectPosition: '50% 32%' },
   { src: throughYearsTreeSelfie, alt: 'Ciara & Zach outdoors', objectPosition: '50% 35%' },
   { src: throughYearsLakeHats, alt: 'Ciara & Zach by the water' },
