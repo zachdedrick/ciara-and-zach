@@ -104,6 +104,8 @@ import loveyouRooftopRevealCrowd from '../assets/photos/loveyou-rooftop-reveal-c
 import loveyouRooftopNightGirls from '../assets/photos/loveyou-rooftop-night-girls.jpg'
 import loveyouDockBoatsFamily from '../assets/photos/loveyou-dock-boats-family.jpg'
 import loveyouPoolPartyGirls from '../assets/photos/loveyou-pool-party-girls.jpg'
+import loveyouCiaraMomDeck from '../assets/photos/loveyou-ciara-mom-deck.jpg'
+import loveyouNdStatueWhiteGroup from '../assets/photos/loveyou-nd-statue-white-group.jpg'
 
 // TODO: swap in more trip photos as we get them — just add an import above
 // and drop it into the array below.
@@ -160,6 +162,8 @@ const THROUGH_THE_YEARS = [
 // TODO: add more family & friends photos here as we get them.
 const WE_LOVE_YOU_ALL = [
   { src: loveyouRooftopRevealCrowd, alt: "Friends cheering at the engagement reveal" },
+  { src: loveyouCiaraMomDeck, alt: "Ciara and her mom", objectPosition: '50% 22%' },
+  { src: loveyouNdStatueWhiteGroup, alt: "Ciara and friends at Notre Dame", objectPosition: '50% 28%' },
   { src: loveyouBeachFamily, alt: "Ciara's family on the beach at sunset", objectPosition: '50% 42%' },
   { src: loveyouPierMom, alt: "Zach and his mom", objectPosition: '50% 38%' },
   { src: loveyouFilmFamily, alt: "Ciara with family at a celebration", objectPosition: '0% 42%' },
