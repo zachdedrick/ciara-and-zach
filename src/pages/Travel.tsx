@@ -146,7 +146,7 @@ export default function Travel() {
           </div>
           <p className="mt-2 text-ivy-700">
             The Lodge or the Mews are both right on the Estate &mdash; there is limited availability of rooms! Call
-            or email the estate when booking to get the wedding rate: Reach out to us if you have any questions
+            or email the estate when booking to get the wedding rate. Reach out to us if you have any questions
             about booking!
           </p>
 
