@@ -145,9 +145,9 @@ export default function Travel() {
             <h3 className="text-lg uppercase tracking-wide text-ivy-600">Staying on the Estate</h3>
           </div>
           <p className="mt-2 text-ivy-700">
-            The most special option &mdash; stay right on the grounds of Castle Leslie itself. Call or email the
-            hotel directly to book with the wedding rate &mdash; there is limited availability of rooms! Reach out
-            to us if you have any questions with booking.
+            The Lodge or the Mews are both right on the Estate &mdash; there is limited availability of rooms! Call
+            or email the estate when booking to get the wedding rate: Reach out to us if you have any questions
+            about booking!
           </p>
 
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
