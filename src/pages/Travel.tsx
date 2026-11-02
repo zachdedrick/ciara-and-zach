@@ -37,12 +37,13 @@ const ON_ESTATE = [
   },
 ]
 
-const HOTELS: { name: string; address: string; websiteUrl: string; bookingCode?: string }[] = [
+const HOTELS: { name: string; address: string; websiteUrl: string; bookingCode?: string; bookingNote?: string }[] = [
   {
     name: 'Hillgrove Hotel',
     address: 'Old Armagh Road, Monaghan, Co. Monaghan, Ireland',
     websiteUrl: 'https://www.hillgrovehotel.com',
     bookingCode: 'REF 199847',
+    bookingNote: 'for a rate of €495 for two nights, with breakfast included',
   },
   {
     name: 'Westenra Hotel',
@@ -207,7 +208,8 @@ export default function Travel() {
                     {hotel.bookingCode && (
                       <p className="mt-2 text-sm text-ivy-600">
                         Use this reference when booking directly with the hotel:{' '}
-                        <span className="font-medium">{hotel.bookingCode}</span>
+                        <span className="font-medium">&ldquo;{hotel.bookingCode}&rdquo;</span>
+                        {hotel.bookingNote && <> {hotel.bookingNote}.</>}
                       </p>
                     )}
                   </div>
