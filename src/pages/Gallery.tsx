@@ -181,6 +181,8 @@ const THROUGH_THE_YEARS = [
 // TODO: add more family & friends photos here as we get them.
 const WE_LOVE_YOU_ALL = [
   { src: loveyouRooftopRevealCrowd, alt: "Friends cheering at the engagement reveal" },
+  { src: loveyouGardenFamilyFormal, alt: "Zach and his family dressed up for a wedding", objectPosition: '50% 40%' },
+  { src: loveyouRooftopSunsetFamily, alt: "Family on a NYC rooftop at sunset", objectPosition: '50% 35%' },
   { src: loveyouCiaraMomDeck, alt: "Ciara and her mom", objectPosition: '50% 22%' },
   { src: loveyouNdStatueWhiteGroup, alt: "Ciara and friends at Notre Dame", objectPosition: '50% 28%' },
   { src: loveyouGrandparentsLobby, alt: "Ciara, Zach, and their grandparents", objectPosition: '50% 25%' },
@@ -217,7 +219,6 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouCouchWomen, alt: "Ciara, her mom, and a friend" },
   { src: loveyouNdBannerGroup, alt: "Zach and friends at Notre Dame" },
   { src: loveyouGrandparentsSelfie, alt: "Ciara and her grandparents", objectPosition: '50% 38%' },
-  { src: loveyouGardenFamilyFormal, alt: "Zach and his family dressed up for a wedding", objectPosition: '50% 40%' },
   { src: loveyouCoupleWine, alt: "Ciara's parents", objectPosition: '50% 36%' },
   { src: loveyouPorchTrio, alt: "Friends at an outdoor celebration", objectPosition: '50% 35%' },
   { src: loveyouPubHugFilm, alt: "Zach and friends at a pub", objectPosition: '50% 24%' },
@@ -231,7 +232,6 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouDockGroupTen, alt: "Zach, Ciara, and friends" },
   { src: loveyouSunsetDeckGuys, alt: "Zach and friends at sunset", objectPosition: '50% 35%' },
   { src: loveyouNdStadiumGroup, alt: "Zach and friends at a Notre Dame football game" },
-  { src: loveyouRooftopSunsetFamily, alt: "Family on a NYC rooftop at sunset", objectPosition: '50% 35%' },
   { src: loveyouWhiteHouseFamily, alt: "Family in front of a white colonial building", objectPosition: '50% 30%' },
   { src: loveyouBarFriendsFilm, alt: "Ciara and friends at a bar" },
   { src: loveyouDockSunsetFamily, alt: "Zach's family at a wedding by the water", objectPosition: '50% 32%' },
