@@ -48,8 +48,8 @@ const FAQS: { question: string; answer: ReactNode }[] = [
     question: 'Can I stay at Castle Leslie?',
     answer: (
       <p>
-        You can stay on the Castle Leslie Estate in either The Lodge or the Old Stable Mews, just call the hotel
-        directly to book and say you&rsquo;re there for our wedding! See the{' '}
+        You can stay on the Castle Leslie Estate in either The Lodge or the Old Stable Mews, just call or email the
+        estate directly to book and say you&rsquo;re there for our wedding! See the{' '}
         <Link to="/travel" className="underline hover:text-gold-600">
           Travel &amp; Accommodation
         </Link>{' '}
