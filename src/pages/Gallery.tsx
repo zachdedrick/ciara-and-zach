@@ -107,7 +107,6 @@ import loveyouPoolPartyGirls from '../assets/photos/loveyou-pool-party-girls.jpg
 import loveyouCiaraMomDeck from '../assets/photos/loveyou-ciara-mom-deck.jpg'
 import loveyouNdStatueWhiteGroup from '../assets/photos/loveyou-nd-statue-white-group.jpg'
 import loveyouGrandparentsLobby from '../assets/photos/loveyou-grandparents-lobby.jpg'
-import loveyouNdTailgateVanGroup from '../assets/photos/loveyou-nd-tailgate-van-group.jpg'
 import loveyouBacheloretteWhiteDresses from '../assets/photos/loveyou-bachelorette-white-dresses.jpg'
 import throughYearsNdTailgateDog from '../assets/photos/through-years-nd-tailgate-dog.jpg'
 import throughYearsFormalRedDress from '../assets/photos/through-years-formal-red-dress.jpg'
@@ -193,7 +192,6 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouFilmFamily, alt: "Ciara with family at a celebration", objectPosition: '0% 42%' },
   { src: loveyouNdStadiumFamilySelfie, alt: "Zach's family at a Notre Dame football game", objectPosition: '50% 38%' },
   { src: loveyouPubGuys, alt: "Zach and friends at a pub" },
-  { src: loveyouNdTailgateVanGroup, alt: "Zach's family and friends tailgating at Notre Dame", objectPosition: '50% 38%' },
   { src: loveyouRooftopGirls, alt: "Ciara and friends on a NYC rooftop", objectPosition: '50% 45%' },
   { src: loveyouMuralFamily, alt: "Zach with family" },
   { src: loveyouParkSelfieFriends, alt: "Zach's dad with family friends", objectPosition: '50% 32%' },
