@@ -108,6 +108,8 @@ import loveyouCiaraMomDeck from '../assets/photos/loveyou-ciara-mom-deck.jpg'
 import loveyouNdStatueWhiteGroup from '../assets/photos/loveyou-nd-statue-white-group.jpg'
 import loveyouGrandparentsLobby from '../assets/photos/loveyou-grandparents-lobby.jpg'
 import loveyouBacheloretteWhiteDresses from '../assets/photos/loveyou-bachelorette-white-dresses.jpg'
+import loveyouNdTailgateVanGroup from '../assets/photos/loveyou-nd-tailgate-van-group.jpg'
+import loveyouNdPorchTailgateGroup from '../assets/photos/loveyou-nd-porch-tailgate-group.jpg'
 import throughYearsNdTailgateDog from '../assets/photos/through-years-nd-tailgate-dog.jpg'
 import throughYearsFormalRedDress from '../assets/photos/through-years-formal-red-dress.jpg'
 import throughYearsWeddingDance from '../assets/photos/through-years-wedding-dance.jpg'
@@ -204,6 +206,7 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouSkiCabin, alt: "Zach and friends on a ski trip", objectPosition: '50% 42%' },
   { src: loveyouGrandmaCafe, alt: "Ciara's grandmother enjoying dessert", objectPosition: '50% 22%' },
   { src: loveyouDerbyBlazers, alt: "Zach and friends at the Kentucky Derby" },
+  { src: loveyouNdTailgateVanGroup, alt: "Zach's family and friends tailgating at Notre Dame", objectPosition: '50% 38%' },
   { src: loveyouDadFriendNight, alt: "Zach's dad and a friend", objectPosition: '50% 30%' },
   { src: loveyouPorchGirls, alt: "Ciara and friends at sunset", objectPosition: '50% 38%' },
   { src: loveyouNdTailgateFour, alt: "Zach and friends tailgating at Notre Dame", objectPosition: '50% 38%' },
@@ -223,6 +226,7 @@ const WE_LOVE_YOU_ALL = [
   { src: loveyouGrandparentsSelfie, alt: "Ciara and her grandparents", objectPosition: '50% 38%' },
   { src: loveyouCoupleWine, alt: "Ciara's parents", objectPosition: '50% 36%' },
   { src: loveyouPorchTrio, alt: "Friends at an outdoor celebration", objectPosition: '50% 35%' },
+  { src: loveyouNdPorchTailgateGroup, alt: "Zach and friends tailgating at Notre Dame" },
   { src: loveyouPubHugFilm, alt: "Zach and friends at a pub", objectPosition: '50% 24%' },
   { src: loveyouBridesmaidsDock, alt: "Ciara and family at a wedding" },
   { src: loveyouMarlinRestaurant, alt: "Zach and his dad", objectPosition: '50% 40%' },
