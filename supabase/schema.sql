@@ -18,7 +18,6 @@ drop table if exists parties;
 
 create table parties (
   id uuid primary key default gen_random_uuid(),
-  household_name text,
   contact_email text,
   message text,
   created_at timestamptz not null default now(),
