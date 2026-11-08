@@ -13,6 +13,7 @@
 create or replace view soft_rsvp_status as
 select
   g.full_name,
+  p.household_name,
   p.contact_email,
   (r.id is not null) as has_responded,
   r.ceremony_reception_attending,
