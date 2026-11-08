@@ -17,6 +17,20 @@ Send Claude the updated list (grouped by party, same as before). Claude will:
 
 Every guest currently has `invited_to_rehearsal_dinner = false` by default, since that list hasn't been provided yet. Once you send it, Claude will generate an `update` statement to flip the right guests to `true` — it only shows the extra question on the RSVP form for guests where this is `true`.
 
+## Checking the latest soft RSVP responses
+
+Run `soft_rsvp_status_view.sql` once in the Supabase SQL editor. It creates a
+view called `soft_rsvp_status` that joins guest names to their answers, so
+anyone with access to the project can check **Table Editor > soft_rsvp_status**
+any time to see the latest responses — no SQL, no looking up guest_id values.
+Reloading the page always shows current data; nothing to re-run or refresh
+on your end. Click a column header (e.g. `has_responded`) to sort by it.
+
+To give your fiancé(e) access without sharing your own login: in the
+Supabase dashboard, go to **Project Settings > Team**, invite them by email,
+and give them at least the "Read only" / "Viewer" role — that's enough to
+use Table Editor.
+
 ## Notes
 
 - A party's shared contact email and message (collected on the official RSVP form) live on the `parties` table, not per-guest.
