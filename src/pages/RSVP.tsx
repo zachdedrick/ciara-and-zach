@@ -192,7 +192,7 @@ function OfficialRsvp() {
         <form onSubmit={handleSearch} className="space-y-4">
           <div>
             <label htmlFor="query" className="block text-sm text-ivy-800">
-              Enter your full name as it appears on your invitation
+              Enter your name below
             </label>
             <input
               id="query"
@@ -444,7 +444,7 @@ function PreRsvpQuestionnaire() {
         <form onSubmit={handleSearch} className="mt-6 space-y-4">
           <div>
             <label htmlFor="pre-rsvp-query" className="block text-sm text-ivy-800">
-              Enter your full name as it appears on your invitation
+              Enter your name below
             </label>
             <input
               id="pre-rsvp-query"
