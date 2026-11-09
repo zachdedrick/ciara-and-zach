@@ -233,7 +233,7 @@ export default function Travel() {
             rel="noreferrer"
             className="mt-2 inline-flex items-center gap-1.5 text-ivy-700 underline hover:text-gold-600"
           >
-            Search Airbnbs in Glaslough
+            Search Airbnbs in Glaslough and Monaghan
             <ExternalLinkIcon className="h-4 w-4" />
           </a>
         </Reveal>
