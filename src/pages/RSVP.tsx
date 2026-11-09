@@ -91,7 +91,7 @@ export default function RSVP() {
   if (!RSVP_OPEN) {
     return (
       <div>
-        <PageHeader title="RSVP" />
+        <PageHeader title="Soft RSVP" />
         <div className="mx-auto max-w-xl px-4 py-16">
           <p className="text-center text-lg text-ivy-700">
             Kindly soft RSVP to let us know your initial travel plans so we can finalize the details, and please come

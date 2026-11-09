@@ -8,7 +8,7 @@ const links = [
   { to: '/things-to-do', label: 'Exploring Ireland' },
   { to: '/gallery', label: 'Gallery' },
   { to: '/registry', label: 'Registry' },
-  { to: '/rsvp', label: 'RSVP' },
+  { to: '/rsvp', label: 'Soft RSVP' },
   { to: '/faq', label: 'FAQ' },
 ]
 
