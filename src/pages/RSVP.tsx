@@ -24,6 +24,10 @@ type SearchState =
 // Flip this to true once invitations have gone out and the guest list is loaded.
 const RSVP_OPEN = false
 
+// Shown for any search/lookup failure -- not found, a typo, or a backend
+// error -- so guests never see a raw/technical error message.
+const NAME_NOT_FOUND_MESSAGE = 'Sorry, could not find that name. Please try again.'
+
 // Matches both individual guest names and the household name used on
 // save-the-dates (e.g. "The Herr Family"), so either one finds the party.
 // Results are deduped by party -- if a search matches more than one guest
@@ -132,15 +136,8 @@ function OfficialRsvp() {
     const { guests, error } = await searchGuests(query)
     setSearching(false)
 
-    if (error) {
-      setErrorMessage(error)
-      return
-    }
-
-    if (guests.length === 0) {
-      setErrorMessage(
-        "We couldn't find that name on the guest list. Double check the spelling, or reach out to us directly.",
-      )
+    if (error || guests.length === 0) {
+      setErrorMessage(NAME_NOT_FOUND_MESSAGE)
       return
     }
 
@@ -158,7 +155,7 @@ function OfficialRsvp() {
 
     const { guests, party, error } = await fetchParty(selected.party_id)
     if (error || !party) {
-      setErrorMessage(error ?? 'Something went wrong loading your party.')
+      setErrorMessage(NAME_NOT_FOUND_MESSAGE)
       return
     }
 
@@ -381,15 +378,8 @@ function PreRsvpQuestionnaire() {
     const { guests, error } = await searchGuests(query)
     setSearching(false)
 
-    if (error) {
-      setErrorMessage(error)
-      return
-    }
-
-    if (guests.length === 0) {
-      setErrorMessage(
-        "We couldn't find that name on the guest list. Double check the spelling, or reach out to us directly.",
-      )
+    if (error || guests.length === 0) {
+      setErrorMessage(NAME_NOT_FOUND_MESSAGE)
       return
     }
 
@@ -407,7 +397,7 @@ function PreRsvpQuestionnaire() {
 
     const { guests, error } = await fetchParty(selected.party_id)
     if (error) {
-      setErrorMessage(error)
+      setErrorMessage(NAME_NOT_FOUND_MESSAGE)
       return
     }
 
