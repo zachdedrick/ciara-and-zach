@@ -24,13 +24,45 @@ type SearchState =
 // Flip this to true once invitations have gone out and the guest list is loaded.
 const RSVP_OPEN = false
 
+// Matches both individual guest names and the household name used on
+// save-the-dates (e.g. "The Herr Family"), so either one finds the party.
+// Results are deduped by party -- if a search matches more than one guest
+// in the same party, or both a guest and that party's household name,
+// they collapse into a single choice rather than showing duplicates.
 async function searchGuests(query: string) {
   if (!supabase) return { guests: [] as Guest[], error: null as string | null }
-  const { data, error } = await supabase
-    .from('guests')
-    .select('id, party_id, full_name, invited_to_rehearsal_dinner')
-    .ilike('full_name', `%${query.trim()}%`)
-  return { guests: (data as Guest[] | null) ?? [], error: error?.message ?? null }
+
+  const trimmed = `%${query.trim()}%`
+  const [guestResult, partyResult] = await Promise.all([
+    supabase.from('guests').select('id, party_id, full_name, invited_to_rehearsal_dinner').ilike('full_name', trimmed),
+    supabase.from('parties').select('id, household_name').ilike('household_name', trimmed),
+  ])
+
+  if (guestResult.error) return { guests: [] as Guest[], error: guestResult.error.message }
+  if (partyResult.error) return { guests: [] as Guest[], error: partyResult.error.message }
+
+  const byParty = new Map<string, Guest>()
+
+  for (const guest of (guestResult.data as Guest[] | null) ?? []) {
+    const existing = byParty.get(guest.party_id)
+    if (existing) {
+      existing.full_name = `${existing.full_name} & ${guest.full_name}`
+    } else {
+      byParty.set(guest.party_id, { ...guest })
+    }
+  }
+
+  for (const party of (partyResult.data as { id: string; household_name: string | null }[] | null) ?? []) {
+    if (!party.household_name) continue
+    byParty.set(party.id, {
+      id: party.id,
+      party_id: party.id,
+      full_name: party.household_name,
+      invited_to_rehearsal_dinner: false,
+    })
+  }
+
+  return { guests: Array.from(byParty.values()), error: null as string | null }
 }
 
 async function fetchParty(partyId: string) {

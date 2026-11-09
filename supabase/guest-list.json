@@ -618,33 +618,8 @@
     "id": "98e5991b-0107-464a-a7a7-da330dd32f8f",
     "guests": [
       {
-        "id": "12ea5f09-7697-4f56-bb22-6e6ee98ace32",
-        "full_name": "Natalie Herr",
-        "invited_to_rehearsal_dinner": false
-      },
-      {
         "id": "65bb10ef-14b2-46ac-80d4-11b86424bade",
         "full_name": "Jason",
-        "invited_to_rehearsal_dinner": false
-      }
-    ]
-  },
-  {
-    "id": "89ee920f-80c9-47cc-bd90-f5e0a0469dfb",
-    "guests": [
-      {
-        "id": "b0118f8b-d586-4061-964a-c2c36ef48e9e",
-        "full_name": "Allison Herr",
-        "invited_to_rehearsal_dinner": false
-      }
-    ]
-  },
-  {
-    "id": "2bed6db5-d600-4c05-a028-8247674e11ea",
-    "guests": [
-      {
-        "id": "7eaa259e-1374-4666-bc41-a6634a9694a7",
-        "full_name": "Lizzie Herr",
         "invited_to_rehearsal_dinner": false
       }
     ]
@@ -771,8 +746,24 @@
         "id": "f15bc28b-aff5-4960-a63b-1e23b0101d08",
         "full_name": "John Herr",
         "invited_to_rehearsal_dinner": false
+      },
+      {
+        "id": "12ea5f09-7697-4f56-bb22-6e6ee98ace32",
+        "full_name": "Natalie Herr",
+        "invited_to_rehearsal_dinner": false
+      },
+      {
+        "id": "b0118f8b-d586-4061-964a-c2c36ef48e9e",
+        "full_name": "Allison Herr",
+        "invited_to_rehearsal_dinner": false
+      },
+      {
+        "id": "7eaa259e-1374-4666-bc41-a6634a9694a7",
+        "full_name": "Lizzie Herr",
+        "invited_to_rehearsal_dinner": false
       }
-    ]
+    ],
+    "householdName": "The Herr Family"
   },
   {
     "id": "cfa7b5ea-1e7b-489b-9c32-d6c69607bb56",

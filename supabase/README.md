@@ -17,6 +17,22 @@ Send Claude the updated list (grouped by party, same as before). Claude will:
 
 Every guest currently has `invited_to_rehearsal_dinner = false` by default, since that list hasn't been provided yet. Once you send it, Claude will generate an `update` statement to flip the right guests to `true` — it only shows the extra question on the RSVP form for guests where this is `true`.
 
+## Household names (searching by save-the-date name)
+
+Each party can have a `household_name` (e.g. "The Herr Family") in addition
+to its individual guests. On the RSVP page, searching either a guest's own
+name or the household name finds the same party — so Allison Herr could
+type "Allison Herr" or "The Herr Family" and get the same result.
+
+**One-time setup:** run `updates/2026-11-08-add-household-name.sql` in the
+Supabase SQL editor (adds the `household_name` column — safe to re-run, and
+doesn't touch existing data).
+
+**To fill it in:** send Claude the household name for each party (matching
+how it appears on save-the-dates). Claude will update `guest-list.json` and
+hand you a small `update` script, same pattern as any other guest-list
+change.
+
 ## Checking the latest soft RSVP responses
 
 Run `soft_rsvp_status_view.sql` once in the Supabase SQL editor. It creates a
