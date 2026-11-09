@@ -94,8 +94,8 @@ export default function RSVP() {
         <PageHeader title="RSVP" />
         <div className="mx-auto max-w-xl px-4 py-16">
           <p className="text-center text-lg text-ivy-700">
-            Please let us know your initial travel plans so we can finalize the details and come back to RSVP once
-            your invitation arrives :)
+            Kindly soft RSVP to let us know your initial travel plans so we can finalize the details, and please come
+            back to officially RSVP once your invitation arrives :)
           </p>
           <PreRsvpQuestionnaire />
         </div>
