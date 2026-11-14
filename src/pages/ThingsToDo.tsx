@@ -7,6 +7,8 @@ import IrelandMap from '../components/IrelandMap'
 import { BusIcon, CarIcon, GolfIcon, TrainIcon } from '../components/icons'
 import cliffsOfMoher from '../assets/photos/cliffs-of-moher.jpg'
 import howthCouple from '../assets/photos/howth-couple.jpg'
+import carrickARedeCoast from '../assets/photos/carrick-a-rede-coast.jpg'
+import giantsCauseway from '../assets/photos/giants-causeway.jpg'
 import kerryTown from '../assets/photos/kerry-town.jpg'
 import dingleHarbour from '../assets/photos/dingle-harbour.jpg'
 import dingleBabyLambSign from '../assets/photos/dingle-baby-lamb-sign.jpg'
@@ -100,6 +102,28 @@ export default function ThingsToDo() {
                       Walk the Howth Cliff Walk, enjoy some fish and chips on the pier and end the day with a pint
                       before heading back into Dublin.
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-lg border border-ivy-100">
+              <div className="grid items-center sm:grid-cols-[160px_1fr]">
+                <div className="aspect-[4/3] sm:aspect-square">
+                  <div className="grid h-full grid-cols-2 gap-0.5">
+                    <PhotoPlaceholder src={carrickARedeCoast} alt="The Antrim coast, Northern Ireland" />
+                    <PhotoPlaceholder src={giantsCauseway} alt="Giant's Causeway, Co. Antrim" />
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-5">
+                  <CarIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold-600" />
+                  <div className="space-y-2 text-ivy-700">
+                    <h3 className="font-display text-lg text-ivy-800">Belfast &amp; Northern Ireland</h3>
+                    <p>
+                      Giant&rsquo;s Causeway, Dunluce Castle, the Titanic Museum and Carrick-a-Rede Rope Bridge are
+                      a few famous spots to check out if you&rsquo;re exploring Northern Ireland for a couple days!
+                    </p>
+                    <p>The Merchant Hotel in Belfast is a great place to stay if looking for accommodation.</p>
                   </div>
                 </div>
               </div>
