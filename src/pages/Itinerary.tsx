@@ -81,7 +81,8 @@ export default function Itinerary() {
               >
                 The Fairways
               </a>{' '}
-              in Dundalk is a 10 minute drive north.
+              in Dundalk is about a 15 minute drive north if looking for somewhere to stay for the night before
+              making your way to Glaslough on Friday!
             </p>
           </EventCard>
         </Reveal>
