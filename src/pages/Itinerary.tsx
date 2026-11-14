@@ -5,6 +5,7 @@ import { MapPinIcon } from '../components/icons'
 import castleAerial from '../assets/watercolor/castle-leslie-aerial.jpg'
 import cathedralPhoto from '../assets/watercolor/cathedral-armagh.jpg'
 import coachHousePub from '../assets/watercolor/coach-house-pub.jpg'
+import glydeInnAnnagassan from '../assets/watercolor/glyde-inn-annagassan.jpg'
 
 function mapsUrl(address: string) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
@@ -56,6 +57,35 @@ export default function Itinerary() {
       <PageHeader title="Itinerary" subtitle="A weekend at Castle Leslie" />
 
       <div className="mx-auto max-w-4xl px-4 py-16 space-y-16">
+        <Reveal as="section">
+          <h2 className="font-display text-center text-xl uppercase tracking-[0.25em] text-gold-600">
+            Thursday, 19 August
+          </h2>
+
+          <EventCard
+            time="7:00 PM"
+            title="Drinks & Light Bites for Those Around"
+            address="Glyde Inn, Annagassan"
+            visual={<img src={glydeInnAnnagassan} alt="Glyde Inn, Annagassan" className="h-full w-full object-cover" />}
+          >
+            <p>
+              For anyone who happens to be in the area on Thursday evening, come join us for drinks and bites at the
+              Glyde Inn, about 40 minutes north of Dublin airport.
+            </p>
+            <p>
+              <a
+                href="https://www.fairwayshotel.ie"
+                target="_blank"
+                rel="noreferrer"
+                className="underline hover:text-gold-600"
+              >
+                The Fairways
+              </a>{' '}
+              in Dundalk is a 10 minute drive north.
+            </p>
+          </EventCard>
+        </Reveal>
+
         <Reveal as="section">
           <h2 className="font-display text-center text-xl uppercase tracking-[0.25em] text-gold-600">
             Friday, 20 August
