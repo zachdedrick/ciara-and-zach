@@ -69,7 +69,7 @@ export default function Itinerary() {
             visual={<img src={glydeInnAnnagassan} alt="Glyde Inn, Annagassan" className="h-full w-full object-cover" />}
           >
             <p>
-              For anyone who happens to be in the area on Thursday evening, come join us for drinks and bites at the
+              For anyone who happens to be in the area on Thursday evening, come join us for drinks and light bites at the
               Glyde Inn, about 40 minutes north of Dublin airport.
             </p>
             <p>
