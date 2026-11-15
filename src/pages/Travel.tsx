@@ -127,6 +127,15 @@ export default function Travel() {
                   Bus &Eacute;ireann Expressway Route 32/X32 runs direct from Dublin Airport to Monaghan bus station
                   roughly every couple of hours, taking about 1 hour 40 minutes.
                 </p>
+                <a
+                  href="https://www.buseireann.ie"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-2 inline-flex items-center gap-1.5 text-sm text-ivy-700 underline hover:text-gold-600"
+                >
+                  Book tickets
+                  <ExternalLinkIcon className="h-4 w-4" />
+                </a>
               </div>
             </div>
           </div>
