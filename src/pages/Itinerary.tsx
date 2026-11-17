@@ -67,6 +67,7 @@ export default function Itinerary() {
             title="Drinks & Light Bites for Those Around"
             address="Glyde Inn, Annagassan"
             visual={<img src={glydeInnAnnagassan} alt="Glyde Inn, Annagassan" className="h-full w-full object-cover" />}
+            imageSide="right"
           >
             <p>
               For anyone who happens to be in the area on Thursday evening, come join us for drinks and light bites at the
