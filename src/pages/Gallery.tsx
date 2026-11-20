@@ -2,6 +2,8 @@ import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 import MarqueeStrip from '../components/MarqueeStrip'
 import dublinGrogans from '../assets/photos/dublin-grogans.jpg'
+import giantsCausewayFamily from '../assets/photos/giants-causeway-family.jpg'
+import giantsCausewaySign from '../assets/photos/giants-causeway-sign.jpg'
 import dundalkFamilyHome from '../assets/photos/dundalk-family-home.jpg'
 import galleryBarGuinness from '../assets/photos/gallery-bar-guinness.jpg'
 import galleryGlydeInn from '../assets/photos/gallery-glyde-inn.jpg'
@@ -141,6 +143,8 @@ const FEATURED = [
   { src: galleryAlpacas, alt: 'Alpacas on a hillside in Co. Kerry' },
   { src: galleryKerryHikeJump, alt: 'Friends jumping on a hike in Co. Kerry' },
   { src: galleryGroupBrickHouse, alt: 'Family and friends outside a house in Ireland' },
+  { src: giantsCausewayFamily, alt: "Ciara's family at the Giant's Causeway" },
+  { src: giantsCausewaySign, alt: "Ciara and her sisters at the Giant's Causeway" },
 ]
 
 const THROUGH_THE_YEARS = [
